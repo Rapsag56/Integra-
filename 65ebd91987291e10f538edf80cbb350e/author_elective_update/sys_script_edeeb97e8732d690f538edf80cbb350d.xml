@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>true</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_asscs_allos_o2c_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_asscs_allos_o2c_task">cat_item=173567c3873775501ee364640cbb3572^order=2^EQ<item display_table="sc_cat_item" display_value="Criar, alterar ou inativar objeto de locação (LUC)" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="173567c3873775501ee364640cbb3572"/>
+            <item endquery="false" field="order" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>ART: Abort LUC</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+  if (current.u_luc_info_integracao.changes()) {
+    gs.info('Campo u_luc_info_integracao atualizado. Continuação da ação permitida.');
+    gs.addInfoMessage('Campo u_luc_info_integracao atualizado. Continuação da ação permitida.');
+} else {
+    current.setWorkflow(false);
+    current.setAbortAction(true);
+    gs.info('Ação abortada.');
+    gs.addErrorMessage('Ação abortada: o campo "u_luc_info_integracao" não foi atualizado.');
+    action.setRedirectURL(current);
+}
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-01-03 15:52:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>edeeb97e8732d690f538edf80cbb350d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>ART: Abort LUC</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_script_edeeb97e8732d690f538edf80cbb350d</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-01-03 15:59:54</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=edeeb97e8732d690f538edf80cbb350d"/>
+    <sys_translated_text action="DELETE">
+        <documentkey>edeeb97e8732d690f538edf80cbb350d</documentkey>
+        <fieldname>message</fieldname>
+        <language>pb</language>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-01-03 15:52:48</sys_created_on>
+        <sys_id>02bf317e8732d690f538edf80cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-01-03 15:52:48</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Integra+">65ebd91987291e10f538edf80cbb350e</application>
+        <file_path/>
+        <instance_id>18425d811b7ba5d09377eb9b2d4bcb82</instance_id>
+        <instance_name>allosdev</instance_name>
+        <name>sys_script_edeeb97e8732d690f538edf80cbb350d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;true&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_asscs_allos_o2c_task&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_asscs_allos_o2c_task"&gt;cat_item=173567c3873775501ee364640cbb3572^order=2^EQ&lt;item display_table="sc_cat_item" display_value="Criar, alterar ou inativar objeto de locação (LUC)" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="173567c3873775501ee364640cbb3572"/&gt;&lt;item endquery="false" field="order" goto="false" newquery="false" operator="=" or="false" value="2"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;ART: Abort LUC&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+  if (current.u_luc_info_integracao.changes()) {
+    gs.info('Campo u_luc_info_integracao atualizado. Continuação da ação permitida.');
+    gs.addInfoMessage('Campo u_luc_info_integracao atualizado. Continuação da ação permitida.');
+} else {
+    current.setWorkflow(false);
+    current.setAbortAction(true);
+    gs.info('Ação abortada.');
+    gs.addErrorMessage('Ação abortada: o campo "u_luc_info_integracao" não foi atualizado.');
+    action.setRedirectURL(current);
+}
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;patrick.almeida&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-03 15:52:48&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;edeeb97e8732d690f538edf80cbb350d&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;ART: Abort LUC&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Integra+" source="x_asscs_integra"&gt;65ebd91987291e10f538edf80cbb350e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Integra+"&gt;65ebd91987291e10f538edf80cbb350e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_edeeb97e8732d690f538edf80cbb350d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;patrick.almeida&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-03 15:59:54&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=edeeb97e8732d690f538edf80cbb350d"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;edeeb97e8732d690f538edf80cbb350d&lt;/documentkey&gt;&lt;fieldname&gt;message&lt;/fieldname&gt;&lt;language&gt;pb&lt;/language&gt;&lt;sys_created_by&gt;patrick.almeida&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-03 15:52:48&lt;/sys_created_on&gt;&lt;sys_id&gt;02bf317e8732d690f538edf80cbb35f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;patrick.almeida&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-03 15:52:48&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_script&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1916446791</payload_hash>
+        <record_name>ART: Abort LUC</record_name>
+        <reverted_from/>
+        <source>65ebd91987291e10f538edf80cbb3511</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-01-03 15:59:54</sys_created_on>
+        <sys_id>025142b28772d690f538edf80cbb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1942ce505bc0000001</sys_recorded_at>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-01-03 15:59:54</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>825142b24f72d690a5ceead5dc742989</update_guid>
+        <update_guid_history>825142b24f72d690a5ceead5dc742989:-1916446791,3eb0c6329172d69048570206c6badc02:-598879385,b2508afefc32d690631c2d7d3cfc5b8a:-815865137,a1300efe1d32d690d115ba2e6cc5d19a:812442280,edff35fec932d690508bbdb9b166f04d:-882070874,eaefb5fe9732d690f6be620bd72ed87a:-132197419,42bf317e4232d69069a186dcc5dbeef4:-1958227759</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-01-03 16:00:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>0f98c6ff1dfb4eaa8a992199f486a581</sys_id>
+        <sys_metadata>edeeb97e8732d690f538edf80cbb350d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ART: Abort LUC</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_parent display_value="Tarefa de Faturamento (O2C)">f5ad75231b79791068724112fa4bcba6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_scope_delete display_value="">8e4800c294bd4124b288a88ab9075364</sys_scope_delete>
+        <sys_update_name>sys_script_edeeb97e8732d690f538edf80cbb350d</sys_update_name>
+        <sys_update_version display_value="sys_script_edeeb97e8732d690f538edf80cbb350d">025142b28772d690f538edf80cbb358a</sys_update_version>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-01-03 16:00:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
