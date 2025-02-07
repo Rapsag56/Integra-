@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+    "BasicInfo": {&#13;
+        "CPF": "15254888725",&#13;
+        "FirstName": "TESTE PESSOA FISICA",&#13;
+        "LastName": "PF"&#13;
+    },&#13;
+    "BPGrouping": "Z001",&#13;
+    "BPType": "Z001",&#13;
+    "SearchTerm1": "IARA+",&#13;
+    "SearchTerm2": "15254888725",&#13;
+    "BPAdditionalText": "Numero RTIM xxxx",&#13;
+    "BPAddress": {&#13;
+        "StreetName": "Rua Tomas Lopes 2",&#13;
+        "CityName": "Rio de Janeiro",&#13;
+        "HouseNumber": "500",&#13;
+        "District": "Vila da Penha",&#13;
+        "Complement": "Complement",&#13;
+        "Region": "RJ",&#13;
+        "Country": "BR",&#13;
+        "PostalCode": "21221-210",&#13;
+        "PhoneNumber": "2125839800",&#13;
+        "EmailAddress": "contabilidade@allos.co",&#13;
+        "Language":"PT"&#13;
+    },&#13;
+    "BPTaxes": [&#13;
+        {&#13;
+            "BPTaxType": "BR2",&#13;
+            "BPTaxNumber": "15254888725"&#13;
+        }&#13;
+    ],&#13;
+    "BPRoles": [&#13;
+        {&#13;
+            "BPRoleCode": "FLCU00",&#13;
+            "ValidFrom": "1900-01-01",&#13;
+            "ValidTo": "9999-12-31"&#13;
+        },&#13;
+        {&#13;
+            "BPRoleCode": "TR0600",&#13;
+            "ValidFrom": "1900-01-01",&#13;
+            "ValidTo": "9999-12-31"&#13;
+        },&#13;
+        {&#13;
+            "BPRoleCode": "TR0200",&#13;
+            "ValidFrom": "1900-01-01",&#13;
+            "ValidTo": "9999-12-31"&#13;
+        },&#13;
+        {&#13;
+            "BPRoleCode": "TR0806",&#13;
+            "ValidFrom": "1900-01-01",&#13;
+            "ValidTo": "9999-12-31"&#13;
+        },&#13;
+        {&#13;
+            "BPRoleCode": "TR0605",&#13;
+            "ValidFrom": "1900-01-01",&#13;
+            "ValidTo": "9999-12-31"&#13;
+        }&#13;
+    ]&#13;
+}</content>
+        <function_name>criarClientes</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile display_value="SAP - Bearer Token default_profile">cb2e2d6d87699e10f538edf80cbb3506</oauth2_profile>
+        <protocol_name/>
+        <qualified_name>SAP - ServiceNow [ criarClientes ]</qualified_name>
+        <rest_endpoint>https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/crm/business-partner</rest_endpoint>
+        <rest_message display_value="SAP - ServiceNow">2e1c915987291e10f538edf80cbb3528</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-11-01 17:30:43</sys_created_on>
+        <sys_id>4d29352a87659650f538edf80cbb3506</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>criarClientes</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_4d29352a87659650f538edf80cbb3506</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-11-04 15:42:06</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

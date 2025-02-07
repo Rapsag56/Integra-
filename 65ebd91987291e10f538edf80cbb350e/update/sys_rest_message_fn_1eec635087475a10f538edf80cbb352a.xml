@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "CompanyCode": "1050",&#13;
+  "ContractNumber": "10008214",&#13;
+  "ContractEndDate": "2026-01-01",        &#13;
+  "MonetaryCorrectionIndex": "IPCA", &#13;
+  "BaseYear": "1993",&#13;
+  "BusinessPartners": [&#13;
+    {&#13;
+      "BPNumber": "10007392",&#13;
+      "BPRoleCode": "TR0600",&#13;
+      "BPValidTo": "2024-11-04"&#13;
+    },&#13;
+    {&#13;
+      "BPNumber": "10002619",&#13;
+      "BPRoleCode": "TR0600",      &#13;
+      "BPValidFrom": "2024-11-05"&#13;
+    }&#13;
+  ],&#13;
+  "TermPayments": [&#13;
+    {&#13;
+      "TermNumber" : "",&#13;
+      "BPNumber": "10007392",&#13;
+      "ValidFrom": "2022-01-01",&#13;
+      "ValidTo": "2024-11-04"&#13;
+    },&#13;
+    {&#13;
+      "TermNumber" : "",&#13;
+      "BPNumber": "10002619",&#13;
+      "ValidFrom": "2024-11-05"&#13;
+    }&#13;
+  ],&#13;
+  "TermWithHoldingTaxes": [&#13;
+    {&#13;
+      "TermNumber": "",&#13;
+      "TermText": "LOCATÁRIO",&#13;
+      "BPNumber": "10007392",&#13;
+      "ValidFrom": "2022-01-01",&#13;
+      "ValidTo": "2024-11-04"&#13;
+    },&#13;
+    {&#13;
+      "TermNumber": "",&#13;
+      "TermText": "LOCATÁRIO",&#13;
+      "BPNumber": "10002619",&#13;
+      "ValidFrom": "2024-11-05"&#13;
+    }&#13;
+  ]  &#13;
+}</content>
+        <function_name>adicionarBP</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile display_value="SAP - Bearer Token default_profile">cb2e2d6d87699e10f538edf80cbb3506</oauth2_profile>
+        <protocol_name/>
+        <qualified_name>SAP - ServiceNow [ adicionarBP ]</qualified_name>
+        <rest_endpoint>https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/contracts/addendum</rest_endpoint>
+        <rest_message display_value="SAP - ServiceNow">2e1c915987291e10f538edf80cbb3528</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-01-08 15:42:27</sys_created_on>
+        <sys_id>1eec635087475a10f538edf80cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>adicionarBP</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_1eec635087475a10f538edf80cbb352a</sys_update_name>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-01-08 15:42:27</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

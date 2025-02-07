@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_basic">
+    <sys_auth_profile_basic action="INSERT_OR_UPDATE">
+        <name>SAP - Token </name>
+        <password>bzYoSP27FIoArN1YYuxubdp9IhsJyBLZV1PbZXFDBkYWykl0IidgaHz+xRTHzCSs1PvO4ibodi/kB7otn6y1FjqvfUFG5Ove4o4HMtxCyXnn7ceUfOdKJg==</password>
+        <sys_class_name>sys_auth_profile_basic</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-10-28 18:11:01</sys_created_on>
+        <sys_id>c8cc919987291e10f538edf80cbb35f3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>SAP - Token </sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_auth_profile_basic_c8cc919987291e10f538edf80cbb35f3</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-01-28 21:11:28</sys_updated_on>
+        <username>sb-8677270b-50b8-4a3a-a612-71b90a05ac68!b5349|it-rt-allos-integration-dev!b106</username>
+    </sys_auth_profile_basic>
+</record_update>

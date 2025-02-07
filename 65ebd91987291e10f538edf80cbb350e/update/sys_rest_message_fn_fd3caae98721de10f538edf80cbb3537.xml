@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="SAP - Token ">c8cc919987291e10f538edf80cbb35f3</basic_auth_profile>
+        <basic_auth_user/>
+        <content>{&#13;
+  "BrandCode": "32372",&#13;
+  "BrandName": "Marca Teste Att",&#13;
+  "Nature": "Education"&#13;
+}</content>
+        <function_name>atualizarMarca</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>SAP - ServiceNow [ atualizarMarca ]</qualified_name>
+        <rest_endpoint>https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/crm/marca</rest_endpoint>
+        <rest_message display_value="SAP - ServiceNow">2e1c915987291e10f538edf80cbb3528</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-10-29 18:37:30</sys_created_on>
+        <sys_id>fd3caae98721de10f538edf80cbb3537</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>atualizarMarca</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_fd3caae98721de10f538edf80cbb3537</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-10-30 17:25:14</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

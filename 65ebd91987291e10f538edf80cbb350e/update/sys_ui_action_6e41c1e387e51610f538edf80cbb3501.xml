@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>integrateSAP</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    g_modal.confirm("Confirmação", "Deseja criar o cliente?", function (confirmed) {
+        if (confirmed) {
+            
+            g_form.addInfoMessage('Aguarde...');
+
+            g_form.submit('integrateSAP')
+                .then(function () {
+                    g_form.clearMessages();
+                    g_form.addInfoMessage('Chamada realizada, verifique as notas de trabalho por gentileza.');
+                })
+                .catch(function (error) {
+                    g_form.clearMessages();
+                    g_form.addErrorMessage('Ocorreu um erro durante o processo: ' + error.message);
+                });
+        }
+    });
+}
+]]></client_script_v2>
+        <comments>current.order==1 &amp;&amp; current.request_item.cat_item == '14e82a1587ccc2901ee364640cbb3517'  &amp;&amp; current.marca_cadastrada_alterada != true &amp;&amp; current.u_cliente_possui_cadastro_no_sap == nao &amp;&amp; current.assigned_to !=  ''</comments>
+        <condition>current.u_cliente_possui_cadastro_no_sap == 'nao' &amp;&amp; current.request_item.cat_item == '14e82a1587ccc2901ee364640cbb3517'  &amp;&amp; current.marca_cadastrada_alterada != true</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Criar Cliente no SAP</name>
+        <onclick>integrateSAP()</onclick>
+        <order>100</order>
+        <script><![CDATA[function integrateSAP() {
+    gsftSubmit(null, g_form.getFormElement(), 'integrateSAP');
+}
+if (typeof window == 'undefined') {
+    integrateSAPmarca();
+}
+
+
+function integrateSAPmarca() {
+    try {
+        var cpf = current.variables.renter_cpf ? current.variables.renter_cpf.getDisplayValue().replace(/[^\d]/g, '') : null;
+        var cnpj = current.variables.renter_cnpj ? current.variables.renter_cnpj.getDisplayValue().replace(/[^\d]/g, '') : null;
+        var customerRole = current.variables.customer_role ? current.variables.customer_role.getValue() : null;
+
+        var aux = new x_asscs_integra.SAPintegraUtils().criarCliente(current, cpf, cnpj, customerRole);
+
+        // Verificar se 'aux' é uma string e faça o parse se necessário
+        var auxObj = typeof aux === 'string' ? JSON.parse(aux) : aux;
+
+        // Extraindo os valores de http e responseBody
+        var httpStatus = auxObj.http;
+        var responseBody = auxObj.responseBody;
+
+        var responseBodyObj = JSON.parse(responseBody);
+        var businessPartner = responseBodyObj.BusinessPartner;
+        gs.info('Business Partner: ' + businessPartner);
+
+
+        var msg = '';
+
+        if (httpStatus == 200 || httpStatus == 201 || httpStatus == 202) {
+            msg += '\n\n Criação de cliente realizada com sucesso \n\n' + '\n Business Partner: ' + businessPartner;
+            current.work_notes = msg;
+			current.marca_cadastrada_alterada = true;
+			current.u_codigo_bp_sap_integration = businessPartner;
+            current.update();
+            action.setRedirectURL(current);
+        } else {
+            var codeError = auxObj.code;
+            var descriptionError = auxObj.description;
+            var message = auxObj.message;
+            current.work_notes = '\n\n Houve um erro na criação de cliente.\n\n' + '\n Código: ' + codeError + '\n Descrição: ' + descriptionError + '\n Mensagem: ' + message;
+			current.marca_cadastrada_alterada = false;
+            current.update();
+            action.setRedirectURL(current);
+        }
+    } catch (e) {
+
+        // var errorMsg = 'Catch Houve um erro na criação de cliente.\n\n' + (e.message || '');
+        var errorMsg = 'Catch Houve um erro na criação de cliente.\n\n';
+
+        if (typeof auxObj !== 'undefined' && auxObj.code && auxObj.description && auxObj.message) {
+            errorMsg += '\n Código: ' + auxObj.code + '\n Descrição: ' + auxObj.description + '\n Mensagem: ' + auxObj.message;
+        } else {
+            errorMsg += e.message || 'Erro desconhecido';
+        }
+		
+        current.work_notes = errorMsg;
+        current.update();
+        action.setRedirectURL(current);
+        gs.addErrorMessage('Houve um erro na criação de cliente. Consulte as notas para mais detalhes.');
+    }
+
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-11-04 16:03:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e41c1e387e51610f538edf80cbb3501</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_name>Criar Cliente no SAP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_ui_action_6e41c1e387e51610f538edf80cbb3501</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-03 20:30:35</sys_updated_on>
+        <table>x_asscs_allos_o2c_task</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "CompanyCode": "1050",&#13;
+  "ContractNumber": "10008562",&#13;
+  "Conditions": [&#13;
+    {&#13;
+      "ConditionType": "Z034",&#13;
+      "ValidFrom": "2022-01-01",&#13;
+      "UnitPrice": 50,&#13;
+      "CalcNorm": "A",&#13;
+      "Degrau": false,&#13;
+      "ExternalPurpose": "A",&#13;
+      "LucKey": "1050/PAS/DTMAPP1",&#13;
+      "DistRule": "A"&#13;
+    }&#13;
+  ]&#13;
+}</content>
+        <function_name>desconto</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile display_value="SAP - Bearer Token default_profile">cb2e2d6d87699e10f538edf80cbb3506</oauth2_profile>
+        <protocol_name/>
+        <qualified_name>SAP - ServiceNow [ desconto ]</qualified_name>
+        <rest_endpoint>https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/contracts/discounts</rest_endpoint>
+        <rest_message display_value="SAP - ServiceNow">2e1c915987291e10f538edf80cbb3528</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-01-08 16:03:10</sys_created_on>
+        <sys_id>46c17f9887475a10f538edf80cbb3585</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>desconto</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_46c17f9887475a10f538edf80cbb3585</sys_update_name>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-01-08 16:03:10</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

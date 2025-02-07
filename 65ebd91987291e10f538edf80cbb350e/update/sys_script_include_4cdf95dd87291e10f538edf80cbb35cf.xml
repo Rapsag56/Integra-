@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_asscs_integra.SAPintegraUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SAPintegraUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SAPintegraUtils = Class.create();
+SAPintegraUtils.prototype = {
+    initialize: function() {},
+
+    getToken: function() {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_asscs_integra.SAP - ServiceNow', 'Token');
+            r.setAuthenticationProfile('basic', gs.getProperty('x_asscs_integra.integraMais_sap_token_profile'));
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            var parsedResponse = JSON.parse(responseBody);
+            var accessToken = parsedResponse.access_token;
+
+            // gs.info('### SAPintegraUtils Access Token: ' + accessToken);
+            // gs.info('### SAPintegraUtils HTTP Status: ' + httpStatus);
+
+            return accessToken;
+        } catch (ex) {
+            var message = ex.message;
+            gs.error('### SAPintegraUtils Error fetching token: ' + message);
+            return null;
+        }
+    },
+
+    postBrand: function(current) {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_asscs_integra.SAP - ServiceNow', 'criarMarca');
+            //r.setEndpoint('https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/crm/marca');
+            r.setEndpoint(this.getEndpoint() + '/crm/marca');
+            r.setRequestHeader('Authorization', 'Bearer ' + this.getToken());
+            r.setRequestHeader('Content-Type', 'application/json');
+
+            var requestBody = this.buildBodyBrand(current);
+            r.setRequestBody(requestBody);
+
+            gs.info('### Corpo da requisição: ' + requestBody);
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            var obj = {
+                http: httpStatus,
+                responseBody: responseBody,
+                requestBody: requestBody,
+            };
+
+            gs.info('### SAPintegraUtils.postBrand body enviado e valores: ' + JSON.stringify(obj));
+
+            if (httpStatus == 200 || httpStatus == 201 || httpStatus == 202) {
+                //gs.info("### Requisição bem-sucedida: " + JSON.stringify(obj));
+                var brandRespose = JSON.parse(responseBody);
+                gs.info("### SAPintegraUtils brandcode Criado: " + brandRespose.BrandCode);
+                return JSON.stringify(obj);
+
+            } else {
+                gs.info("### SAPintegraUtils.postBrand STATUS " + httpStatus);
+                gs.info("### SAPintegraUtils.postBrand Response  " + responseBody);
+                return "Erro na Integração: " + responseBody;
+            }
+
+        } catch (ex) {
+            gs.info("Erro na requisição: " + ex.message);
+            return "Catch Erro na Integração: " + responseBody + '\n' + ex;
+        }
+    },
+
+    buildBodyBrand: function(current) {
+        var myObj = {
+            "BrandName": (current.variables.nome_da_marca && current.variables.nome_da_marca.getDisplayValue()) ||
+                (current.variables.nome_marca && current.variables.nome_marca.getDisplayValue()) ||
+                "", // Valor padrão caso ambas sejam undefined
+            "Nature": (current.variables.natureza_projeto_bahia && current.variables.natureza_projeto_bahia.getDisplayValue()) ||
+                (current.variables.new_natureza_projeto_bahia && current.variables.new_natureza_projeto_bahia.getDisplayValue()) ||
+                "" // Valor padrão
+        };
+        return JSON.stringify(myObj);
+    },
+
+
+    attBrand: function(current) {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_asscs_integra.SAP - ServiceNow', 'atualizarMarca');
+            //r.setEndpoint('https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/crm/marca');
+            r.setEndpoint(this.getEndpoint() + '/crm/marca');
+            r.setRequestHeader('Authorization', 'Bearer ' + this.getToken());
+            r.setRequestHeader('Content-Type', 'application/json');
+
+            var requestBody = this.buildBodyATTBrand(current);
+            r.setRequestBody(requestBody);
+
+            gs.info('### SAPintegraUtils Corpo da requisição - ATT Brand: ' + requestBody);
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            var obj = {
+                http: httpStatus,
+                responseBody: responseBody,
+                requestBody: requestBody,
+            };
+
+            gs.info('### SAPintegraUtils.attBrand body enviado e valores: ' + JSON.stringify(obj));
+
+            if (httpStatus == 200 || httpStatus == 201 || httpStatus == 202) {
+                //gs.info("### Requisição bem-sucedida: " + JSON.stringify(obj));
+                var brandRespose = JSON.parse(responseBody);
+                gs.info(brandRespose.BrandCode);
+                return JSON.stringify(obj);
+
+            } else {
+                gs.info("### SAPintegraUtils.attBrand STATUS " + httpStatus);
+                gs.info("### SAPintegraUtils.attBrand Response  " + responseBody);
+                return "Erro na Integração: " + responseBody;
+            }
+
+        } catch (ex) {
+            gs.info("Erro na requisição: " + ex.message);
+            return "Catch Erro na Integração: " + responseBody + '\n' + ex;
+        }
+    },
+
+    buildBodyATTBrand: function(current) {
+
+        var grPar = new GlideRecord('x_asscs_allos_o2c_requested_item');
+        grPar.addEncodedQuery('sys_id=' + current.request_item);
+        grPar.query();
+
+        if (grPar.next()) {
+            var brandCode = grPar.variables.brand_code.getValue();
+            //var brandCode = 'teste1234';
+        }
+
+        var myObj = {
+            "BrandCode": brandCode,
+            "BrandName": current.variables.nome_da_marca.getDisplayValue(),
+            "Nature": current.variables.natureza_projeto_bahia.getDisplayValue()
+        };
+        return JSON.stringify(myObj);
+    },
+
+    getEndpoint: function() {
+        var instanceName = gs.getProperty('instance_name');
+
+        if (instanceName == 'allos') {
+            gs.info(gs.getProperty('x_asscs_integra.sap_integramais_endpoint_prd'));
+            return gs.getProperty('x_asscs_integra.sap_integramais_endpoint_prd');
+        } else {
+            gs.info(gs.getProperty('x_asscs_integra.sap_integramais_endpoint_dev_qa'));
+            return gs.getProperty('x_asscs_integra.sap_integramais_endpoint_dev_qa');
+        }
+    },
+
+    postLuc: function(current) {
+        try {
+            var tokenBearer = this.getToken();
+            var r = new sn_ws.RESTMessageV2('x_asscs_integra.SAP - ServiceNow', 'criarLuc');
+            r.setStringParameterNoEscape('token', tokenBearer);
+
+            //override authentication profile 
+            r.setEndpoint(this.getEndpoint() + '/crm/luc');
+            r.setRequestHeader('Authorization', 'Bearer ' + tokenBearer);
+            r.setRequestHeader('Content-Type', 'application/json');
+
+            var requestBody = this.buildBodyLuc(current);
+            r.setRequestBody(requestBody);
+
+            gs.info('### Corpo da requisição: POST LUC ' + requestBody);
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            var obj = {
+                http: httpStatus,
+                responseBody: responseBody,
+                requestBody: requestBody,
+            };
+
+            gs.info('### SAPintegraUtils.postLuc body enviado e valores: ' + JSON.stringify(obj));
+
+            if (httpStatus == 200 || httpStatus == 201 || httpStatus == 202) {
+                gs.info("### Requisição bem-sucedida: " + JSON.stringify(obj));
+                return JSON.stringify(obj);
+
+            } else {
+                gs.info("### SAPintegraUtils.postLuc STATUS " + httpStatus);
+                gs.info("### SAPintegraUtils.postLuc Response  " + responseBody);
+                return "Erro na Integração: " + responseBody;
+            }
+
+        } catch (ex) {
+            gs.info("Erro na requisição: " + ex.message);
+            return "Catch Erro na Integração: " + responseBody + '\n' + ex;
+        }
+    },
+
+    buildBodyLuc: function(current) {
+        var myObj = {
+            "CompanyCode": "1050", //FORM.company_code
+            "BusinessEntity": "PAS", //form.company.name
+            "Luc": "vm/test", //form.codigo da nova luc
+            "LucType": "RU", // fixo
+            "UsageType": "1001", //form.categoria da LUC
+            "LucText": "vm/test - teste modifica", //form.codigo da nova luc
+            "Building": "1", //form.parte_do_edificio OBS: padronizar Verificar com a Silvana
+            "ExistingULNo": "vm/test", //Verificar Só modificar em Alterar, caso seja cadastrar repetir o codigo da nova luc
+            "ClassTypeOfUse": "MEGA LOJA", //form.categorizacao_do_espaco
+            "ValidFrom": "2022-01-01", //form.data_de_inicio_de_criacao_da_luc
+            "ValidTo": "2025-01-01", //Deixar vazio \ quando for inativado tem que ter o campo. - JUNÇÂO e Divisão e qundo é inativação
+            "FirstPostingFrom": "2024-10-24", //data_de_inicio_de_criacao_da_luc
+            "CPICompanyType": "CPI1",
+            "CPIBudgetType": "CG", //verificar com faturamento
+            "AdditionalData": {
+                "SaleRentable": "LOCA", //verificar com faturamento
+                "Piso": "", //verificar com o SAP se é fixo
+                "Floor": "401", //form.Pavimento / Andar
+                "FloorTo": "401", //form.Pavimento / Andar
+                "LocationFloor": "H" //form.corredor_asset
+            },
+            "Measurements": [{
+                    "MeasType": "ZD01", //form. tipo de encargo
+                    "MeasValue": 1.0945, //form. tamanho
+                    //se for AR Condicionado = zd06 o tamanho vai ser o campo TR
+                    //se for Agua = zf02 o tamanho vai ser o campo area metro quadrado
+                    //se for IPTU = zd02 o tamanho vai ser o campo fator do rateio
+                    //Se for IPTU = zd04 o tamanho vai ser campo area metro quadrado
+                    //Se for seguro = zd03 o tamanho vai ser o campo fator do rateio
+                    //se for seguro = zd08 o tamanho vai ser campo area metro quadrado
+                    // se for energia = zf01 o tamanho vai ser o campo area metro quadrado
+                    "MeasValidFrom": "2021-01-01", //ou Inicio da Vigencia (se for filho) ou data de inicio de criação da LUC(se for o proprio chamado)
+                    "MeasValidTo": "2023-12-31" //fixar 2040-12-31
+                },
+                {
+                    "MeasType": "ZA03",
+                    "MeasValue": 100,
+                    "MeasValidFrom": "2024-10-24",
+                    "MeasValidTo": "2025-12-31"
+                }
+            ],
+            "Counters": [{
+                    "NameCharacteristic": "Z_MEDIDOR_ENERGIA", //puxar codigo baseado no "MeasType":  Verificar se posso enviar dessa forma
+                },
+                {
+                    "NameCharacteristic": "Z_MEDIDOR_AGUA", //puxar codigo baseado no "MeasType": //puxar codigo baseado no "MeasType": 
+                }
+
+            ]
+        };
+        return JSON.stringify(myObj);
+    },
+
+    criarCliente: function(current, cpFParameter, cnpjParameter, cRole) {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_asscs_integra.SAP - ServiceNow', 'criarClientes');
+            r.setAuthenticationProfile('oauth2', gs.getProperty('x_asscs_integra.integraMais_sap_bearer_token_profile'));
+            r.setEndpoint(this.getEndpoint() + '/crm/business-partner');
+            r.setRequestHeader('Content-Type', 'application/json');
+
+            var cpf = cpFParameter; //verificar quando é cpf
+            var cnpj = cnpjParameter; //verificar quando é cpf
+            var requestBody = '';
+            gs.info('Linha 267 ' + cpf);
+            gs.info('Linha 268');
+            gs.info('Linha 269 ' + cnpj);
+
+            if (cpf) {
+                requestBody = this.buildBodyClientesCPF(current, cpf, cRole);
+                gs.info('Linha 272');
+                gs.info('Linha 273 ' + requestBody);
+                r.setRequestBody(requestBody);
+            } else if (cnpj) {
+                requestBody = this.buildBodyClientesCNPJ(current, cnpj, cRole);
+                gs.info('Linha 277');
+                gs.info('Linha 278 ' + requestBody);
+                r.setRequestBody(requestBody);
+            }
+
+            gs.info('### SAPintegraUtils.criarCliente Corpo da requisição: POST Clientes ' + requestBody);
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            var obj = {
+                http: httpStatus,
+                responseBody: responseBody,
+                requestBody: requestBody,
+            };
+
+            gs.info('### SAPintegraUtils.criarCliente body enviado e valores: ' + JSON.stringify(obj));
+
+            if (httpStatus == 200 || httpStatus == 201 || httpStatus == 202) {
+                gs.info("\n\n ### Requisição bem-sucedida criarClientCPF:\n" + JSON.stringify(obj, null, 2));
+                return JSON.stringify(obj, null, 2);
+            } else {
+                gs.info("### SAPintegraUtils.criarClientCPF STATUS " + httpStatus);
+                gs.info("### SAPintegraUtils.criarClientCPF Response  " + responseBody);
+                return responseBody;
+            }
+
+        } catch (ex) {
+            gs.info("Erro na requisição criarCliente: " + ex.message);
+            return "Catch Erro na Integração: " + responseBody + '\n' + ex;
+        }
+    },
+
+    buildBodyClientesCPF: function(current, cpfFormatado, cRole) {
+
+        var roleCode = this.getRoleCode(cRole);
+        var rawZipCode = current.variables.zip_code.getDisplayValue();
+        var formattedZipCode = this.formatPostalCode(rawZipCode);
+
+        // var myObj = {
+        //     "BasicInfo": {
+        //         "CPF": cpfFormatado.toString() || "não há", //form.cpf
+        //         "FirstName": current.primeiro_nome.getDisplayValue() || "não há", //form.nome IMPLANTAR
+        //         "LastName": current.ultimo_nome.getDisplayValue() || "não há" //form.ultimoNome IMPLANTAR
+        //     },
+        //     "BPGrouping": "Z001", //fixo para PF  form
+        //     "BPType": "Z001", //fixo para PF  form
+        //     "SearchTerm1": "IARA+", //ServiceNow form
+        //     "SearchTerm2": cpfFormatado.toString() || "não há", //CPF form
+        //     "BPAdditionalText": current.number.getValue() || "não há", //Numero do Chamado form
+        //     "BPAddress": {
+        //         "StreetName": current.variables.address.getDisplayValue() || "não há", //logradouro form
+        //         "CityName": current.variables.city.getDisplayValue() || "não há", //cidade form
+        //         "HouseNumber": current.variables.custumer_address_number.getDisplayValue() || "não há", //numero form 
+        //         "District": current.variables.neighborhood.getDisplayValue() || "não há", //Bairro form
+        //         "Complement": current.variables.complement.getDisplayValue() || "não há", //complemento form
+        //         "Region": current.variables.uf.getDisplayValue().toUpperCase() || "não há", //UF form
+        //         "Country": "BR", //Fixo form
+        //         "PostalCode": formattedZipCode || "não há", //cep form 
+        //         "PhoneNumber": current.variables.customer_phone_number.getDisplayValue() || "não há", //celular form
+        //         "EmailAddress": current.variables.customer_email.getDisplayValue() || "não há", //email do cliente form
+        //         "Language": "PT" //Fixo
+        //     },
+        //     "BPTaxes": [{
+        //         "BPTaxType": "BR2", //Fixo para CPF
+        //         "BPTaxNumber": cpfFormatado.toString() || "não há" //CPF
+        //     }],
+        //     "BPRoles": [{
+        //             "BPRoleCode": "FLCU00",
+        //             "ValidFrom": "1900-01-01",
+        //             "ValidTo": "9999-12-31"
+        //         },
+        //         {
+        //             "BPRoleCode": roleCode || "não há",
+        //             "ValidFrom": "1900-01-01",
+        //             "ValidTo": "9999-12-31"
+        //         }
+        //     ],
+        // };
+
+        var myObj = {
+            "BasicInfo": {
+                "CPF": cpfFormatado.toString() || "não há", // form.cpf
+                "FirstName": current.variables.primeiro_nome.getDisplayValue() || "não há", //form.nome IMPLANTAR
+                "LastName": current.variables.ultimo_nome.getDisplayValue() || "não há" //form.ultimoNome IMPLANTAR
+                // "FirstName": "Patrick" || "não há", // form.nome IMPLANTAR
+                // "LastName": "Almeida" || "não há" // form.ultimoNome IMPLANTAR
+            },
+            "BPGrouping": "Z001", // fixo para PF form
+            "BPType": "Z001", // fixo para PF form
+            "SearchTerm1": "IARA+", // ServiceNow form
+            "SearchTerm2": cpfFormatado.toString() || "não há", // CPF form
+            "BPAdditionalText": current.number.getValue() || "não há", // Numero do Chamado form
+            "BPAddress": {
+                "StreetName": current.variables.address.getDisplayValue() || "não há", // logradouro form
+                "CityName": current.variables.city.getDisplayValue() || "não há", // cidade form
+                "HouseNumber": current.variables.custumer_address_number.getDisplayValue() || "não há", // numero form
+                "District": current.variables.neighborhood.getDisplayValue() || "não há", // Bairro form
+                "Complement": current.variables.complement.getDisplayValue() || "não há", // complemento form
+                "Region": current.variables.uf.getDisplayValue().toUpperCase() || "não há", // UF form
+                "Country": "BR", // Fixo form
+                "PostalCode": formattedZipCode || "não há", // cep form
+                "PhoneNumber": current.variables.customer_phone_number.getDisplayValue() || "não há", // celular form
+                "EmailAddress": current.variables.customer_email.getDisplayValue() || "não há", // email do cliente form
+                "Language": "PT" // Fixo
+            },
+            "BPTaxes": [{
+                "BPTaxType": "BR2", // Fixo para CPF
+                "BPTaxNumber": cpfFormatado.toString() // CPF
+            }],
+            "BPRoles": [{
+                    "BPRoleCode": "FLCU00",
+                    "ValidFrom": "1900-01-01",
+                    "ValidTo": "9999-12-31"
+                },
+                {
+                    "BPRoleCode": roleCode || "não há",
+                    "ValidFrom": "1900-01-01",
+                    "ValidTo": "9999-12-31"
+                }
+            ]
+        };
+        gs.info('Linha 363 ' + JSON.stringify(myObj));
+        return JSON.stringify(myObj);
+    },
+
+    getConclusion: function(id) {
+        var grConclusaoTask = new GlideRecord('x_asscs_allos_o2c_task');
+        grConclusaoTask.addEncodedQuery('parent=' + id + '^order=23');
+        grConclusaoTask.query();
+        if (grConclusaoTask.next()) {
+            var dateConclusion = grConclusaoTask.data_de_assinatura_do_contrato_loc.getDisplayValue();
+            var formattedDate = this.formatDateToISO(dateConclusion);
+            gs.info('Data formatada: ' + formattedDate);
+            return formattedDate;
+        }
+    },
+
+    getTermSales: function(id, inicio_da_vigencia) {
+
+        var grXAAO2RI = new GlideRecord('x_asscs_allos_o2c_requested_item');
+        grXAAO2RI.addEncodedQuery("sys_id=" + id);
+        grXAAO2RI.query();
+
+        var termSaleRulesRhythm = [];
+
+
+        if (grXAAO2RI.next()) {
+
+            var rowData = JSON.parse(grXAAO2RI.variables.aluguel_percentual_vendas);
+            var termNumber = 10;
+            for (var i = 0; i < rowData.length; i++) {
+
+                var row = rowData[i];
+                var obj = {
+                    "TermNumber": termNumber.toString(), // de  10 em 10
+                    "ValidFrom": inicio_da_vigencia, // Substitua pelo valor correto, caso disponível
+                    "FrequencyType": "11", // verificar com jessica
+                    "FrequencyStartDate": row.fim_periodo_vs, //Usando o valor de `fim_periodo_vs`
+                    "Frequency": "001", //padrao
+                    "FrequencyUnit": "0", //padrao
+                    "ProRataMethod": "0", // verificar
+                    "ProRataMethodCalculation": "0", //verificar
+                    "PayCredits": false // verificar
+                    //	"FixedPeriod: "// verificar
+
+                };
+            }
+            termSaleRulesRhythm.push(obj);
+            termNumber += 10;
+            return termSaleRulesRhythm;
+        } else {
+            gs.info("Nenhum registro encontrado para o sys_id especificado.");
+        }
+
+    },
+
+
+    getContractStartDate: function(id) {
+        var grConclusaoTask = new GlideRecord('x_asscs_allos_o2c_task');
+        grConclusaoTask.addEncodedQuery('parent=' + id + '^order=14');
+        grConclusaoTask.query();
+        if (grConclusaoTask.next()) {
+            var dateStartInicioVigencia = grConclusaoTask.variables.inicio_da_vigencia.getDisplayValue();
+            //var dateEndFimVigencia = grConclusaoTask.variables.fim_da_vigencia.getDisplayValue();
+            var formattedDate = this.formatDateToISO(dateStartInicioVigencia);
+
+
+
+            var dateStartMudanca = grConclusaoTask.data_inicio_vigencia_atualizada_nova_loc.getDisplayValue();
+            var dateEndMudanca = grConclusaoTask.data_fim_vigencia_atualizada_nova_loc.getDisplayValue();
+            var formattedDateMudanca = this.formatDateToISO(dateStartMudanca);
+            var vigencia = grConclusaoTask.possui_mudanca_de_vigencia_nova_loc;
+            var tipoGarantiaTask = grConclusaoTask.tipo_de_garantia_fiador_nova_loc;
+            var dataInauguracaoTask = grConclusaoTask.data_da_previsao_de_inauguracao;
+            var cliente_possui_cadastro_sap_locatarioTask = grConclusaoTask.cliente_possui_cadastro_sap_locatario;
+            var codigo_bp_sap_locatarioTask = grConclusaoTask.codigo_bp_sap_locatario;
+
+            if (!dateEndMudanca) {
+                dateEndMudanca = '31/12/2040';
+            } else {
+                dateEndMudanca = this.formatDateToISO(dateEndMudanca);
+            }
+
+
+            return {
+                formattedDate: formattedDate,
+                formattedDateMudanca: formattedDateMudanca,
+                dateEndMudanca: dateEndMudanca,
+                vigencia: vigencia,
+                tipoGarantiaTask: tipoGarantiaTask,
+                dataInauguracaoTask: dataInauguracaoTask,
+                cliente_possui_cadastro_sap_locatarioTask: cliente_possui_cadastro_sap_locatarioTask,
+                codigo_bp_sap_locatarioTask: codigo_bp_sap_locatarioTask
+            };
+        } else {
+            return 'Error na função getContractStartDate';
+        }
+
+    },
+
+    getRoleCode: function(funcaoCliente) {
+        // FLCU00 - Cliente (contab.financ.)
+        // TR0600 - Locatário
+        // TR0200 - Fiador
+        // TR0806 - Representante Legal"
+        if (funcaoCliente == 'Tenant') {
+            return "TR0600";
+        } else if (funcaoCliente == 'Legal representative') {
+            return "TR0806";
+        } else if (funcaoCliente == 'Financial representative') {
+            return "FLCU00";
+        } else if (funcaoCliente == 'Guarantor') {
+            return "TR0200";
+        }
+    },
+
+
+    formatDateToISO: function(dateString) {
+        var dateParts = dateString.split('/');
+        var day = dateParts[0];
+        var month = dateParts[1];
+        var year = dateParts[2];
+        var dataNova = year + '-' + month + '-' + day;
+
+        return dataNova;
+    },
+
+
+    payloadContratoFaturamento: function(idTask) {
+
+        var current = new GlideRecord("x_asscs_allos_o2c_task");
+        if (current.get(idTask)) { //a96131883b0256104a3b3537f4e45a4f , 5653a1e53b1f92104a3b3537f4e45add
+
+            var currentID = current.sys_id;
+            var currentRecord = new GlideRecord("x_asscs_allos_o2c_task");
+            if (currentRecord.get(currentID)) {
+                // gs.info("TESTE " + currentRecord.request_item.sys_id)
+                var idRitm = currentRecord.request_item.sys_id;
+                //Clientes
+                var number = currentRecord.parent.getDisplayValue();
+
+
+                // var bpCode = getDadosLocatario(idRitm);
+                // gs.info("DADOS DO LOCATARIO " + JSON.stringify(bpCode));
+                // // -------------------------------------------------------------
+
+                //Variaveis no Registro Validar e cadastrar contrato no ERP
+                var tipoProposta = currentRecord.variables.proposal_type.getValue();
+                var periodoVigenciaInderterminado = currentRecord.variables.periodo_de_vigencia_indeterminado.getValue();
+                var inicioVigencia = currentRecord.variables.inicio_da_vigencia.getValue();
+                var registered_brand = currentRecord.variables.registered_brand.getValue();
+                var tipo_Operador = currentRecord.variables.tipo_operador.getValue();
+                var indiceCorrecao = currentRecord.variables.indice_de_correcao.getDisplayValue();
+
+                gs.info('Indice Correção: ' + indiceCorrecao);
+
+                var mesBaseReajuste = currentRecord.variables.mes_base_de_reajuste.getDisplayValue();
+                gs.info('Mes Reajuste: ' + mesBaseReajuste);
+                var partesData = mesBaseReajuste.split('/');
+                var mes = partesData[0];
+                var ano = parseInt(partesData[1]);
+                ano += 1;
+                var novaDataReajuste = mes + '/' + ano;
+                gs.info('Nova Data após adicionar 1 ano: ' + novaDataReajuste);
+
+                var possuiCondicaoEspecialAluguel = currentRecord.variables.condicoes_especial_para_a.getValue();
+                gs.info('Possui Condição Especial Aluguel (Yes) (No): ' + possuiCondicaoEspecialAluguel);
+                var termSaleRulesRhythm = new SAPintegraUtils().getTermSales(idRitm, inicioVigencia);
+
+                var aspectoProposta = '';
+                if (currentRecord.variables.proposal_aspect) {
+                    aspectoProposta = currentRecord.variables.proposal_aspect.getValue();
+                }
+                var contractType = new SAPintegraUtils().getContractType(tipoProposta, aspectoProposta);
+                gs.info('Tipo Contrato : ' + contractType);
+
+
+                var brandData = null;
+                var brandName = '';
+                var brandCode = '';
+                var marcaLojista = null;
+
+
+
+                var tipo_Garantia = new SAPintegraUtils().getContractStartDate(idRitm);
+                tipo_Garantia = tipo_Garantia.tipoGarantiaTask;
+                if (tipo_Garantia) {
+                    if (tipo_Garantia == 'sem_garantia') {
+                        tipo_Garantia = "001";
+                    }
+                    if (tipo_Garantia == 'fianca') {
+                        tipo_Garantia = "002";
+                    }
+                    if (tipo_Garantia == 'caucao') {
+                        tipo_Garantia = "003";
+                    }
+                    if (tipo_Garantia == 'fisica') {
+                        tipo_Garantia = "004";
+                    }
+                    if (tipo_Garantia == 'juridica') {
+                        tipo_Garantia = "005";
+                    }
+                    if (tipo_Garantia == 'seguro') {
+                        tipo_Garantia = "006";
+                    }
+                    if (tipo_Garantia == 'titulo') {
+                        tipo_Garantia = "007";
+                    }
+                    if (tipo_Garantia == 'outros') {
+                        tipo_Garantia = "008";
+                    }
+                }
+                gs.info("Periodo: " + inicioVigencia);
+                gs.info("tipo Operador: " + tipo_Operador);
+
+                if (tipo_Operador) {
+                    if (tipo_Operador == 'franquia') {
+                        tipo_Operador = "2";
+                    }
+                    if (tipo_Operador == 'proprio') {
+                        tipo_Operador = "1";
+                    }
+                } else {
+                    gs.info("Error : Tipo de operador vazio");
+                }
+
+                var possuiCadastroSap = '';
+                var bpNumber = '';
+                possuiCadastroSap = new SAPintegraUtils().getContractStartDate(idRitm);
+
+                if (possuiCadastroSap) {
+                    if (possuiCadastroSap.codigo_bp_sap_locatarioTask) {
+                        if (possuiCadastroSap.cliente_possui_cadastro_sap_locatarioTask == 'sim')
+                            bpNumber = possuiCadastroSap.codigo_bp_sap_locatarioTask.toString();
+                    } else if (possuiCadastroSap.cliente_possui_cadastro_sap_locatarioTask == 'nao') {
+                        var bpNumberFilho = new SAPintegraUtils().getBrandCode(idRitm);
+                        if (bpNumberFilho) {
+                            bpNumber = bpNumberFilho.codigoSap_Filho.toString();
+                        } else {
+                            gs.info('ERRO: Não há Número de Contrato');
+                        }
+                    }
+                }
+
+
+                gs.info("bp: " + bpNumber);
+
+
+
+                gs.info("Tipo garantia: " + tipo_Garantia);
+                var categorizacaoEspaco = '';
+                var natureza_projeto_bahia = '';
+                var macrosegmento = '';
+                var update = '';
+
+                if (registered_brand == "Yes") {
+
+                    categorizacaoEspaco = current.variables.space_category.getValue();
+                    natureza_projeto_bahia = current.variables.natureza_projeto_bahia_lojista.getValue();
+                    macrosegmento = current.variables.macrossegmento_lojista.getValue();
+
+                } else if (registered_brand == "No") {
+                    gs.info('FOi ??');
+                    marcaLojista = new SAPintegraUtils().getBrandCode(idRitm);
+                    if (marcaLojista) {
+
+                        categorizacaoEspaco = marcaLojista.categorizacaoEspaco_Filho;
+                        natureza_projeto_bahia = marcaLojista.new_natureza_projeto_bahia_Filho;
+                        macrosegmento = marcaLojista.macrossegmento_lojista_Filho;
+                        update = marcaLojista.updade;
+                    }
+                }
+
+                var dataInauguracao = new SAPintegraUtils().getContractStartDate(idRitm);
+                if (dataInauguracao) {
+                    dataInauguracao = dataInauguracao.dataInauguracaoTask;
+                }
+
+                gs.info("Data Inauguração: " + dataInauguracao);
+
+                gs.info("Categorização: " + categorizacaoEspaco);
+                gs.info("Natureza: " + natureza_projeto_bahia);
+                gs.info("Macrosegmento: " + macrosegmento);
+
+
+
+                if (!current.variables.brand_name) {
+                    brandData = new SAPintegraUtils().getBrandCode(idRitm);
+                    if (brandData) {
+                        brandName = brandData.brandName;
+                    }
+                } else {
+                    brandName = current.variables.brand_name.getDisplayValue();
+                }
+                gs.info('Nome da Marca : ' + brandName);
+
+                if (!current.variables.codigo_da_marca) {
+                    if (!brandData) { //evitar chamada duplicada
+                        brandData = new SAPintegraUtils().getBrandCode(idRitm);
+                    }
+                    if (brandData) {
+                        brandCode = brandData.brandCode;
+                    }
+                } else {
+                    brandCode = current.variables.codigo_da_marca.getDisplayValue();
+                }
+                gs.info('Código da Marca : ' + brandCode);
+                var conclusionDate = new SAPintegraUtils().getConclusion(idRitm);
+                gs.info('Data da Assinatura: ' + conclusionDate);
+
+
+
+                var contractStartDateFunction = new SAPintegraUtils().getContractStartDate(idRitm);
+                var contractStartDate = '';
+                var contractEndDate = contractStartDateFunction.dateEndMudanca;
+
+
+                if (contractStartDateFunction.vigencia == 'nao') {
+                    contractStartDate = contractStartDateFunction.formattedDate;
+
+                } else if (contractStartDateFunction.vigencia == 'sim') {
+                    contractStartDate = contractStartDateFunction.formattedDateMudanca;
+
+                } else {
+                    gs.info('Erro na chamada contractStartDateFunction');
+                }
+                var contractText = brandName + ' - ' + brandCode;
+
+
+
+
+                var businessPartners = [];
+                var termPayments = [];
+
+
+
+                var mrvsAluguel = current.variables.art_aluguel_mensal;
+                var totalRowsAluguel = mrvsAluguel.getRowCount();
+                var contractConditions = [];
+
+                for (var e = 0; e < totalRowsAluguel; e++) {
+                    var dataInicio = mrvsAluguel.getRow(e).getCell('data_de_inicio').getCellDisplayValue();
+                    var dataInicioFormatada = new SAPintegraUtils().formatDateToDDMMYYYY(dataInicio);
+
+                    var dataFim = mrvsAluguel.getRow(e).getCell('data_fim').getCellDisplayValue();
+                    var dataFimFormatada =  new SAPintegraUtils().formatDateToDDMMYYYY(dataFim);
+
+                    var aluguelMinimo = mrvsAluguel.getRow(e).getCell('aluguel_minimo').getCellDisplayValue();
+                    var aluguelMinimoFormatado = aluguelMinimo.replace("R$", "").replace(",", ".").trim();
+
+                    gs.info("Data Inicio: " + dataInicioFormatada);
+                    gs.info("Data Fim: " + dataFimFormatada);
+                    gs.info("Aluguel Minimo : " + aluguelMinimoFormatado);
+
+                    var conditionObj = {
+                        "ConditionType": "Z010",
+                        "ValidFrom": dataInicioFormatada,
+                        "UnitPrice": aluguelMinimoFormatado,
+                        "CalcNorm": "A",
+                        "TermNoAdjustment": "10",
+                        "TermNoSalesRule": "10",
+                        "ExternalPurpose": "A", //não existe no mapping
+                        "Degrau": false, //não existe no mapping
+                        "LucKey": "1050/PAS/NOW00010", //não existe no mapping
+                        "DistRule": "A" //não existe no mapping
+                    };
+
+                }
+
+                // Obtém os dados do locatário
+                var auxLocatario = new SAPintegraUtils().getDadosLocatario(idRitm);
+                if (auxLocatario && auxLocatario.codigoSAPLocatario) {
+                    var locatario = {
+                        "BPNumber": auxLocatario.codigoSAPLocatario,
+                        "BPRoleCode": "TR0600"
+                    };
+
+                    // Adiciona o locatário ao businessPartners e termPayments
+                    businessPartners.push(locatario);
+                    termPayments.push({
+                        "BPNumber": locatario.BPNumber
+                    });
+                }
+
+                var auxFiador = new SAPintegraUtils().getDadosFiador(idRitm);
+                if (auxFiador && auxFiador.length > 0) {
+                    for (var u = 0; u < auxFiador.length; u++) {
+                        if (auxFiador[u].codigoSAPFiador) {
+                            var fiador = {
+                                "BPNumber": auxFiador[u].codigoSAPFiador,
+                                "BPRoleCode": auxFiador[u].bpRole || "TR0600"
+                            };
+
+
+                            businessPartners.push(fiador);
+                            termPayments.push({
+                                "BPNumber": fiador.BPNumber
+                            });
+                        }
+                    }
+                }
+
+
+                var grLucParent = new GlideRecord('x_asscs_allos_o2c_requested_item');
+                grLucParent.addEncodedQuery('parent=' + currentRecord.request_item + '^cat_item=173567c3873775501ee364640cbb3572'); //Item LUC
+                grLucParent.query();
+
+                if (grLucParent.next()) {
+                    var lucParentID = grLucParent.sys_id;
+                    var grLucTask = new GlideRecord('x_asscs_allos_o2c_task');
+                    grLucTask.addEncodedQuery('parent=' + lucParentID + '^order=2');
+                    grLucTask.query();
+                    if (grLucTask.next()) {
+                        var companyCode = grLucTask.variables.company_code.getDisplayValue();
+                        var lucKey = grLucTask.u_luc_info_integracao.getDisplayValue();
+                        var rtim = grLucTask.number.getDisplayValue();
+                        gs.info("rtim: " + rtim);
+                    }
+                }
+
+
+
+
+                if (possuiCondicaoEspecialAluguel == 'Yes') {
+
+
+                    var mrvs = current.variables.aluguel_percentual_vendas;
+                    var totalRows = mrvs.getRowCount();
+                    var additionalRentNotificationRules = [];
+
+                    var inicioVigenciaRent = current.variables.inicio_da_vigencia.getValue();
+                    gs.info('Inicio Vigencia Rent: ' + inicioVigenciaRent);
+
+                    var partesDataRent = inicioVigenciaRent.split('-');
+                    var novaDataVigenciaRentRule = '';
+
+                    if (partesDataRent.length === 3) {
+                        novaDataVigenciaRentRule = partesDataRent[0] + '-' + partesDataRent[1] + '-01';
+                        gs.info('Nova Data com dia 01: ' + novaDataVigenciaRentRule);
+                    } else {
+                        gs.info('Formato de data inválido');
+                    }
+
+                    var termNumber = 10;
+
+                    for (var i = 0; i < totalRows; i++) {
+                        var itemVenda = mrvs.getRow(i).getCell('item_de_venda').getCellDisplayValue();
+                        var inicioPeriodo = mrvs.getRow(i).getCell('periodo_vs').getCellDisplayValue();
+                        var tipoVenda = mrvs.getRow(i).getCell('tipo_de_venda').getCellDisplayValue();
+
+                        var grossNetSalesValue = tipoVenda === "Bruta" ? "G" : (tipoVenda === "Líquida" ? "" : null);
+
+
+                        var formattedStartDate = new SAPintegraUtils().formatDateToDDMMYYYY(inicioPeriodo);
+                        var rentRule = {
+                            "TermNumber": termNumber.toString(),
+                            "TermText": "VENDA INFORMADA",
+                            "Assortment": itemVenda,
+                            "ValidFrom": novaDataVigenciaRentRule,
+                            "FrequencyStartDate": formattedStartDate,
+                            "Frequency": "10",
+                            "FrequencyUnit": "0",
+                            "GrossNetSales": grossNetSalesValue,
+                            "SalesRepIsStatical": false,
+                            "FrequencyType": "1",
+                            "Tolerance": 0
+                        };
+                        additionalRentNotificationRules.push(rentRule);
+                        // Incrementar termNumber de 10 em 10
+                        termNumber += 10;
+                    }
+                    // gs.info(JSON.stringify(additionalRentNotificationRules));
+                }
+
+
+                var myObj = {
+                    "CompanyCode": companyCode,
+                    "ContractType": contractType,
+                    "LucKey": lucKey,
+                    "ContractText": contractText,
+                    "ContractConclusionDate": conclusionDate,
+                    "IsSaleRelated": true, // Verificar campo
+                    "ExecutionTime": {
+                        "ContractStartDate": contractStartDate,
+                        "FirstEndDate": contractEndDate,
+                        "CashFlowStartDate": contractStartDate,
+                        "RenewalType": "1", //padrao
+                        "RenewalRule": contractType
+                    },
+                    "ContractAdditionalData": {
+                        "RiskStore": "Não", // padrao
+                        "BrigadeRequirement": "Não", // padrao
+                        "ABLGroup": categorizacaoEspaco,
+                        "AbrasceGroup": macrosegmento,
+                        "BrandName": brandName,
+                        "NaturePB": natureza_projeto_bahia,
+                        "GuaranteeType": tipo_Garantia,
+                        "NonAdjustableContract": false, //padrao
+                        "CorporateGroup": "", // Incluir campo no "Iara"
+                        "ContractEndDate": inicioVigencia,
+                        "OperatorType": tipo_Operador,
+                        "MonetaryCorrectionIndex": indiceCorrecao,
+                        "BaseYear": "1993",
+                        "StoreOpeningDate": dataInauguracao.toString(),
+                        "ConstructionCost": false, //padrao
+                        "IndeterminateValidity": periodoVigenciaInderterminado,
+                        "InterestPercent": 1, // não tem no mapeamento
+                        "FinePercent": 10 // não tem no mapeamento
+                    },
+                    "BusinessPartners": businessPartners,
+                    "TermPayments": termPayments,
+
+                    // "PromotionFunds": [{
+                    //     "PromoFundCode": "FPR", //verificar com a Jessica (possui cobrança de FPP)
+                    //     "FromDate": "2022-01-01",
+                    //     "EndDate": "9999-12-31",
+                    //     "ConditionType": "Z091"
+                    // }],
+                    // "Adjustments": [{
+                    //     "TermNumber": "10", // fixo
+                    //     "IndexSerie": indiceCorrecao,
+                    //     "FirstIndexDate": mesBaseReajuste,
+                    //     "FirstReadjDate": novaDataReajuste,
+                    //     "IndexSeriesBaseYear": "1993", // não tem no mapeamento (fixo?)
+                    //     "AdjustmentRule": "INDXCN", // não tem no mapeamento
+                    //     "ElementaryAdjRule": "INDXCN" // não tem no mapeamento
+                    // }],
+                     "Conditions":conditionObj,
+					// [{
+                    //         "ConditionType": "Z010",
+                    //         "ValidFrom": "2022-01-01",
+                    //         "UnitPrice": 10000.00,
+                    //         "CalcNorm": "A",
+                    //         "TermNoAdjustment": "10",
+                    //         "TermNoSalesRule": "10",
+                    //         "ExternalPurpose": "A",
+                    //         "Degrau": false,
+                    //         "LucKey": "1050/PAS/NOW00010",
+                    //         "DistRule": "A"
+                    //     },
+                    //     {
+                    //         "ConditionType": "Z016",
+                    //         "ValidFrom": "2022-01-01",
+                    //         "UnitPrice": 10000.00,
+                    //         "CalcNorm": "U",
+                    //         "CalcRuleParameter": "",
+                    //         "TermNoRhythm": "",
+                    //         "TermNoAdjustment": "",
+                    //         "TermNoPayment": "",
+                    //         "TermNoSalesRule": "10",
+                    //         "ExternalPurpose": "A",
+                    //         "Degrau": false,
+                    //         "LucKey": "1050/PAS/NOW00010",
+                    //         "DistRule": "A"
+                    //     }
+                    // ],
+                    "AdditionalTexts": [{
+                        "TextCode": "10",
+                        "Text": "Solicitar nova locação - " + number + " - " + update
+                    }],
+
+                    "TermRhythms": [{
+                        "TermText": "SEM PRO-RATA",
+                        "Frequency": "10", //padrao
+                        "FrequencyUnit": "0", //padrão
+                        "ProRataMethod": "4",
+                        "ProRataMethodCalculation": "1",
+                        "PaymentForm": "0",
+                        "DueDateCorrDay": 0,
+                        "DueDateCorrMonth": 0,
+                        "DueDateCorrYear": 0,
+                        "DueDateCorrUnit": "00"
+                    }],
+                    "AdditionalRentNotificationRules": additionalRentNotificationRules,
+                    // "AdditionalRentBillingRules": [{
+                    //     "TermNumber": "10",
+                    //     "TermText": "REGRA DE FATURAMENTO",
+                    //     "PercSalesAsRent": 5,
+                    //     "TermNumReportRule": "10",
+                    //     "GradingItemNo": "001",
+                    //     "UsePeriodPostingForPost": true,
+                    //     "SalesForCalculation": "X",
+                    //     "MinMonetarySales": 0,
+                    //     "MaxMonetarySales": 0,
+                    //     "MinQuantitativeSales": 0,
+                    //     "MaxQuantitativeSales": 0,
+                    //     "UnitPriceGrossNet": "G",
+                    //     "GradingQuanSalesFrom": 0,
+                    //     "GradingQuanSalesTo": 0,
+                    //     "PricePerUnit": 0,
+                    //     "MinRentSalesGrading": 0,
+                    //     "MinMonetarySalesBCA": 0,
+                    //     "MaxMonetarySalesBCA": 0,
+                    //     "MinRentSalesGradingBCA": 0,
+                    //     "ValidFrom": "2022-01-01"
+                    // }],
+
+                    "TermSaleRulesRhythm": termSaleRulesRhythm
+                };
+
+                //gs.info(JSON.stringify(myObj));
+
+            }
+        }
+        if (myObj) {
+            return JSON.stringify(myObj);
+        } else {
+            return false;
+        }
+
+    },
+
+    getBrandCode: function(id) {
+
+        var grBrandParent = new GlideRecord('x_asscs_allos_o2c_requested_item');
+        grBrandParent.addEncodedQuery('parent=' + id + '^cat_item=693c3e601b8dd25075adb8481b4bcb35'); // Item LUC - 
+        grBrandParent.query();
+
+        if (grBrandParent.next()) {
+            var brandParentID = grBrandParent.sys_id;
+
+            var grBrandTask = new GlideRecord('x_asscs_allos_o2c_task');
+            grBrandTask.addEncodedQuery('parent=' + brandParentID + '^order=3'); // parent=6044310d3b839e104a3b3537f4e45a0e^order=3
+            grBrandTask.query();
+
+            if (grBrandTask.next()) {
+
+                var brandCode = grBrandTask.getValue('u_codigo_marca');
+                var brandName = grBrandTask.variables.nome_marca.getDisplayValue();
+                var categorizacaoEspaco_Filho = grBrandTask.variables.new_macrosegmento.getDisplayValue();
+                var codigoSap_Filho = grBrandTask.u_codigo_bp_sap_integration.getValue();
+                var new_natureza_projeto_bahia_Filho = grBrandTask.variables.new_natureza_projeto_bahia.getDisplayValue();
+                var macrossegmento_lojista_Filho = grBrandTask.variables.new_macrosegmento.getDisplayValue();
+                var updade = grBrandTask.getValue('sys_updated_on');
+                return {
+
+                    brandCode: brandCode,
+                    brandName: brandName,
+                    categorizacaoEspaco_Filho: categorizacaoEspaco_Filho,
+                    new_natureza_projeto_bahia_Filho: new_natureza_projeto_bahia_Filho,
+                    macrossegmento_lojista_Filho: macrossegmento_lojista_Filho,
+                    codigoSap_Filho: codigoSap_Filho,
+                    updade: updade
+                };
+            }
+        }
+        return null;
+    },
+
+
+
+    getContractType: function(proposalType, naturezaDaProposta) {
+
+        switch (true) {
+            case proposalType === "store":
+                return "Z001";
+            case proposalType === "mall" && naturezaDaProposta != "temporary":
+                return "Z002";
+            case proposalType === "Mall" && naturezaDaProposta == "temporary":
+                return "Z006";
+            default:
+                return "Tipo desconhecido";
+        }
+    },
+
+    formatPostalCode: function(rawZipCode) {
+        var zipCode = rawZipCode.replace(/[^\d]/g, '');
+        if (zipCode.length === 8) {
+            // Insere o hífen para o formato 28015-223
+            return zipCode.replace(/(\d{5})(\d{3})/, "$1-$2");
+        } else {
+            gs.error('Código Postal inválido. Deve conter 8 dígitos.');
+            return null;
+        }
+    },
+
+    buildBodyClientesCNPJ: function(current, cnpj, cRole) {
+
+
+        var roleCode = this.getRoleCode(cRole);
+        var rawZipCode = current.variables.zip_code.getDisplayValue();
+        var formattedZipCode = this.formatPostalCode(rawZipCode);
+
+        gs.info('Linha 439 buildBodyClientesCNPJ ' + roleCode + ' - ' + rawZipCode + ' - ' + formattedZipCode);
+
+
+        var myObj = {
+            "BasicInfo": {
+                "CNPJ": cnpj || "não há", // Valor padrão caso 'cnpj' seja null ou undefined
+                "BusinessName": current.variables.corporate_name_customer.getDisplayValue() || "não há", // Valor padrão
+                "OrganizationBPName1": current.variables.fantasy_name.getDisplayValue() || "não há",
+                "OrganizationBPName2": current.variables.fantasy_name.getDisplayValue() || "não há",
+                "CustomerTaxInfo": {
+                    "CNAE": current.variables.cnae_principal.getDisplayValue().toString() || "não há", // Uso de optional chaining para evitar erro se for undefined
+                    "LegalNature": current.variables.codigo_e_descricao_da_natureza_juridica.getDisplayValue().toString() || "não há"
+                }
+            },
+            "BPGrouping": "Z002", // Fixo
+            "BPType": "Z001", // Fixo
+            "SearchTerm1": "IARA+", // Serviço fixo
+            "SearchTerm2": cnpj || "não há", // Valor padrão caso 'cnpj' seja null ou undefined
+            "BPAdditionalText": current.number.getDisplayValue().toString() || "não há",
+            "BPAddress": {
+                "StreetName": current.variables.address.getDisplayValue() || "não há",
+                "CityName": current.variables.city.getDisplayValue() || "não há",
+                "HouseNumber": current.variables.custumer_address_number.getDisplayValue().toString() || "não há",
+                "District": current.variables.neighborhood.getDisplayValue() || "não há",
+                "Complement": current.variables.complement.getDisplayValue() || "não há",
+                "Region": current.variables.uf.getDisplayValue().toUpperCase() || "não há",
+                "Country": "BR", // Fixo
+                "PostalCode": formattedZipCode || "não há",
+                "PhoneNumber": current.variables.customer_phone_local_number.getDisplayValue().toString() || "não há",
+                "EmailAddress": current.variables.customer_email.getDisplayValue() || "não há",
+                "Language": "PT" // Fixo
+            },
+            "BPTaxes": [{
+                "BPTaxType": "BR1", // Fixo para CNPJ
+                "BPTaxNumber": cnpj || "não há"
+            }],
+            "BPRoles": [{
+                    "BPRoleCode": "FLCU00",
+                    "ValidFrom": "1900-01-01",
+                    "ValidTo": "9999-12-31"
+                },
+                {
+                    "BPRoleCode": roleCode || "não há",
+                    "ValidFrom": "1900-01-01",
+                    "ValidTo": "9999-12-31"
+                }
+            ],
+        };
+
+        return JSON.stringify(myObj);
+    },
+
+    uiActionClientes: function(current) {
+        if (current.u_cliente_possui_cadastro_no_sap == 'nao' && current.assigned_to != '' && current.order == 1 && current.u_codigo_bp_sap_integration != '' && current.request_item.cat_item == '14e82a1587ccc2901ee364640cbb3517') {
+            return true;
+        } else {
+            return false;
+        }
+
+    },
+
+    getBPSapIntegration_Juridica: function(id, cnpj) {
+
+        var grRequestedItemCnpjFiador5 = new GlideRecord("x_asscs_allos_o2c_requested_item");
+        grRequestedItemCnpjFiador5.addQuery("parent", id);
+        grRequestedItemCnpjFiador5.addQuery("variables.e50394a1878c06901ee364640cbb356a", cnpj); // Filtro por CNPJ do fiador
+        grRequestedItemCnpjFiador5.query();
+
+        if (grRequestedItemCnpjFiador5.next()) {
+
+
+            var grTaskCNPJFiador5 = new GlideRecord("x_asscs_allos_o2c_task");
+            grTaskCNPJFiador5.addQuery("parent", grRequestedItemCnpjFiador5.sys_id.toString());
+            grTaskCNPJFiador5.addQuery("order", 1);
+            grTaskCNPJFiador5.query();
+
+            if (grTaskCNPJFiador5.next()) {
+
+
+
+                bpNumberFiador5 = grTaskCNPJFiador5.u_codigo_bp_sap_integration.toString();
+                var funcaoClienteCNPJFiador5 = grRequestedItemCnpjFiador5.variables.customer_role;
+
+                return grTaskCNPJFiador5.getValue('u_codigo_bp_sap');
+
+            }
+        }
+    },
+
+    getDadosLocatario: function(id) {
+
+        var brandParentID = id;
+
+        var grClienteTaskPrincipal = new GlideRecord('x_asscs_allos_o2c_task');
+        grClienteTaskPrincipal.addEncodedQuery('parent=' + brandParentID + '^order=14');
+        grClienteTaskPrincipal.query();
+        if (grClienteTaskPrincipal.next()) {
+
+            var locatarioVerificacao = grClienteTaskPrincipal.getValue('tipo_de_pessoa_locatario');
+
+            if (locatarioVerificacao) {
+
+                var possuiCodLoc = grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_locatario');
+
+                var obj_Locatario = '';
+
+                if (possuiCodLoc == 'sim') {
+
+                    if (locatarioVerificacao == 'fisica') {
+
+                        obj_Locatario = {
+                            locatarioCPF: grClienteTaskPrincipal.getValue('cpf_locatario_nova_loc'),
+                            possuiCadastroLocatario: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_locatario'),
+                            codigoSAPLocatario: grClienteTaskPrincipal.getValue('codigo_bp_sap_locatario')
+                        };
+                        return obj_Locatario;
+                    } else if (locatarioVerificacao == 'juridica') {
+                        obj_Locatario = {
+                            locatarioCNPJ: grClienteTaskPrincipal.getValue('cnpj_locatario_nova_loc'),
+                            possuiCadastroLocatario: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_locatario'),
+                            codigoSAPLocatario: grClienteTaskPrincipal.getValue('codigo_bp_sap_locatario')
+                        };
+                        return obj_Locatario;
+                    } else {
+                        return null;
+                    }
+                } else if (possuiCodLoc == 'nao') {
+
+                    if (locatarioVerificacao == 'fisica') {
+
+                        obj_Locatario = {
+                            locatarioCPF: grClienteTaskPrincipal.getValue('cpf_locatario_nova_loc'),
+                            possuiCadastroLocatario: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_locatario'),
+                            codigoSAPLocatario: this.getBPSapIntegration_Fisica_locatario_filho(id, grClienteTaskPrincipal.getValue('cpf_locatario_nova_loc'), )
+                        };
+
+
+
+                        return obj_Locatario;
+                    } else if (locatarioVerificacao == 'juridica') {
+                        obj_Locatario = {
+                            locatarioCNPJ: grClienteTaskPrincipal.getValue('cnpj_locatario_nova_loc'),
+                            possuiCadastroLocatario: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_locatario'),
+                            codigoSAPLocatario: this.getBPSapIntegration_Juridica_locatario_filho(id, grClienteTaskPrincipal.getValue('cnpj_locatario_nova_loc'))
+                        };
+                        return obj_Locatario;
+                    } else {
+                        return null;
+                    }
+
+                }
+
+            }
+        }
+    },
+
+    getBPSapIntegration_Juridica_locatario_filho: function(id, cnpj) {
+
+        var grRequestedItemCnpjFiador5 = new GlideRecord("x_asscs_allos_o2c_requested_item");
+        grRequestedItemCnpjFiador5.addQuery("parent", id);
+        grRequestedItemCnpjFiador5.addQuery("variables.e50394a1878c06901ee364640cbb356a", cnpj); // Filtro por CNPJ do fiador
+        grRequestedItemCnpjFiador5.query();
+
+        if (grRequestedItemCnpjFiador5.next()) {
+            var grTaskCNPJFiador5 = new GlideRecord("x_asscs_allos_o2c_task");
+            grTaskCNPJFiador5.addQuery("parent", grRequestedItemCnpjFiador5.sys_id.toString());
+            grTaskCNPJFiador5.addQuery("order", 1);
+            grTaskCNPJFiador5.query();
+
+            if (grTaskCNPJFiador5.next()) {
+                bpNumberFiador5 = grTaskCNPJFiador5.u_codigo_bp_sap_integration.toString();
+                var funcaoClienteCNPJFiador5 = grRequestedItemCnpjFiador5.variables.customer_role;
+
+                if (funcaoClienteCNPJFiador5 === "Tenant") {
+                    bpRoleCodeFiador5 = "TR0600";
+                } else if (funcaoClienteCNPJFiador5 === "Legal representative") {
+                    bpRoleCodeFiador5 = "TR0806";
+                } else if (funcaoClienteCNPJFiador5 === "Financial representative") {
+                    bpRoleCodeFiador5 = "FLCU00";
+                } else if (funcaoClienteCNPJFiador5 === "Guarantor") {
+                    bpRoleCodeFiador5 = "TR0200";
+                }
+            }
+        }
+    },
+
+
+    getBPSapIntegration_Fisica_locatario_filho: function(id, cpf) {
+
+
+        var grRequestedItemFiador5 = new GlideRecord("x_asscs_allos_o2c_requested_item");
+        grRequestedItemFiador5.addEncodedQuery("parent=" + id + "^variables.5b42ba99870006901ee364640cbb3562=" + cpf.replaceAll(".", "").replace("-", ""));
+
+        grRequestedItemFiador5.query();
+
+        if (grRequestedItemFiador5.next()) {
+
+
+            var grTaskFiador5 = new GlideRecord("x_asscs_allos_o2c_task");
+            grTaskFiador5.addQuery("parent", grRequestedItemFiador5.sys_id.toString());
+            grTaskFiador5.addQuery("order", 1);
+            grTaskFiador5.query();
+
+            if (grTaskFiador5.next()) {
+                //u_codigo_bp_sap_integration
+                return grTaskFiador5.getValue('u_codigo_bp_sap');
+            }
+        }
+    },
+
+
+    getBPSapIntegration_Fisica: function(id, cpf) {
+
+        var grRequestedItemFiador5 = new GlideRecord("x_asscs_allos_o2c_requested_item");
+        grRequestedItemFiador5.addQuery("parent", id);
+        grRequestedItemFiador5.addQuery("variables.5b42ba99870006901ee364640cbb3562", cpf.replaceAll(".", "").replace("-", "")); // Filtro por CPF do fiador
+        grRequestedItemFiador5.query();
+
+        if (grRequestedItemFiador5.next()) {
+            var grTaskFiador5 = new GlideRecord("x_asscs_allos_o2c_task");
+            grTaskFiador5.addQuery("parent", grRequestedItemFiador5.sys_id.toString());
+            grTaskFiador5.addQuery("order", 1);
+            grTaskFiador5.query();
+
+            if (grTaskFiador5.next()) {
+
+                return grTaskFiador5.getValue('u_codigo_bp_sap');
+            }
+        }
+    },
+
+    getDadosFiador: function(id) {
+
+        var brandParentID = id;
+        var grClienteTaskPrincipal = new GlideRecord('x_asscs_allos_o2c_task');
+        grClienteTaskPrincipal.addEncodedQuery('parent=' + brandParentID + '^order=14');
+        grClienteTaskPrincipal.query();
+        if (grClienteTaskPrincipal.next()) {
+
+            var fiadorVerificacao1 = grClienteTaskPrincipal.getValue('possui_fiador');
+            var fiadorVerificacao2 = grClienteTaskPrincipal.getValue('possui_fiador_2');
+            var fiadorVerificacao3 = grClienteTaskPrincipal.getValue('possui_fiador_3');
+            var fiadorVerificacao4 = grClienteTaskPrincipal.getValue('possui_fiador_4');
+            var fiadorVerificacao5 = grClienteTaskPrincipal.getValue('possui_fiador_5');
+            var fiadorVerificacao6 = grClienteTaskPrincipal.getValue('possui_fiador_6');
+
+            var fiadores = [];
+
+            //############## FIADOR 1 ########################################
+            if (fiadorVerificacao1 == 'sim') {
+                var obj_fiador1 = {};
+                var codSap = '';
+                if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador') == 'fisica') {
+
+                    if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador') == '') {
+
+                        codSap = this.getBPSapIntegration_Fisica(id, grClienteTaskPrincipal.getValue('cpf_loc_fiador'));
+
+                    } else {
+                        codSap = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador');
+                    }
+
+
+                    obj_fiador1 = {
+                        fiador_1_Cpf: grClienteTaskPrincipal.getValue('cpf_loc_fiador'),
+                        possuiCadastroFiador_1: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador'),
+                        codigoSAPFiador: codSap,
+                        bpRole: "TR0200"
+
+
+                    };
+
+                } else if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador') == 'juridica') {
+
+                    if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador') == '') {
+
+                        codSap = this.getBPSapIntegration_Juridica(id, grClienteTaskPrincipal.getValue('cnpj_loc_fiador'));
+
+                    } else {
+                        codSap = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador');
+
+                    }
+
+                    obj_fiador1 = {
+
+                        fiador_1_Cnpj: grClienteTaskPrincipal.getValue('cnpj_loc_fiador'),
+                        possuiCadastroFiador_1: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador'),
+                        codigoSAPFiador: codSap,
+                        bpRole: "TR0200"
+
+                    };
+
+
+                }
+
+                //############## FIADOR 2 ############################################
+
+                if (fiadorVerificacao2 == 'sim') {
+                    var obj_fiador2 = {};
+                    var codSap2 = '';
+                    if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_2') == 'fisica') {
+
+                        if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_2') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_2') == '') {
+
+                            codSap2 = this.getBPSapIntegration_Fisica(id, grClienteTaskPrincipal.getValue('cpf_fiador_2'));
+
+                        } else {
+                            codSap2 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_2');
+                        }
+                        obj_fiador2 = {
+                            cpf_loc_fiador2: grClienteTaskPrincipal.getValue('cpf_fiador_2'),
+                            possuiCadastroFiador2: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_2'),
+                            codigoSAPFiador: codSap2,
+                            bpRole: "TR0200"
+
+                        };
+
+                    } else if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_2') == 'juridica') {
+
+                        if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_2') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_2') == '') {
+
+                            codSap2 = this.getBPSapIntegration_Juridica(id, grClienteTaskPrincipal.getValue('cnpj_fiador_2'));
+
+                        } else {
+
+                            codSap2 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_2');
+                        }
+
+                        obj_fiador2 = {
+
+                            fiador_2_Cnpj: grClienteTaskPrincipal.getValue('cnpj_fiador_2'),
+                            possuiCadastroFiador_2: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_2'),
+                            codigoSAPFiador: codSap2,
+                            bpRole: "TR0200"
+
+                        };
+
+                    }
+
+                    //############## FIADOR 3 ##############################################
+                    if (fiadorVerificacao3 == 'sim') {
+                        var obj_fiador3 = {};
+                        var codSap3 = '';
+                        if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_3') == 'fisica') {
+
+                            if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_3') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_3') == '') {
+
+                                codSap3 = this.getBPSapIntegration_Fisica(id, grClienteTaskPrincipal.getValue('cpf_loc_fiador_3'));
+
+                            } else {
+                                codSap3 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_3');
+                            }
+                            obj_fiador3 = {
+
+                                fiador_3_Cpf: grClienteTaskPrincipal.getValue('cfp_fiador_3'),
+                                possuiCadastroFiador_3: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_3'),
+                                codigoSAPFiador: codSap3,
+                                bpRole: "TR0200"
+
+
+                            };
+
+                        } else if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_3') == 'juridica') {
+
+                            if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_3') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_3') == '') {
+
+                                codSap3 = this.getBPSapIntegration_Juridica(id, grClienteTaskPrincipal.getValue('cnpj_fiador_3'));
+
+                            } else {
+
+                                codSap3 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_3');
+                            }
+                            obj_fiador3 = {
+
+                                fiador_3_Cnpj: grClienteTaskPrincipal.getValue('cnpj_fiador_3'),
+                                possuiCadastroFiador_3: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_3'),
+                                codigoSAPFiador: codSap3,
+                                bpRole: "TR0200"
+
+                            };
+
+                        }
+                        //############## FIADOR 4 #################################################
+                        if (fiadorVerificacao4 == 'sim') {
+                            var obj_fiador4 = {};
+                            var codSap4 = '';
+                            if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_4') == 'fisica') {
+
+                                if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_4') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_4') == '') {
+
+                                    codSap4 = this.getBPSapIntegration_Fisica(id, grClienteTaskPrincipal.getValue('cpf_loc_fiador_4'));
+
+                                } else {
+                                    codSap4 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_4');
+                                }
+                                obj_fiador4 = {
+                                    fiador_4_Cpf: grClienteTaskPrincipal.getValue('cpf_fiador_4'),
+                                    possuiCadastroFiador_4: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_4'),
+                                    codigoSAPFiador: codSap4,
+                                    bpRole: "TR0200"
+
+
+                                };
+
+                            } else if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_4') == 'juridica') {
+
+                                if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_4') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_4') == '') {
+
+                                    codSap4 = this.getBPSapIntegration_Juridica(id, grClienteTaskPrincipal.getValue('cnpj_fiador_4'));
+
+                                } else {
+                                    codSap4 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_4');
+                                }
+
+                                obj_fiador4 = {
+
+                                    fiador_4_Cnpj: grClienteTaskPrincipal.getValue('cnpj_fiador_4'),
+                                    possuiCadastroFiador_4: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_4'),
+                                    codigoSAPFiador: codSap4,
+                                    bpRole: "TR0200"
+
+                                };
+
+                            }
+                            //############## FIADOR 5 ###################################################
+                            if (fiadorVerificacao5 == 'sim') {
+                                var obj_fiador5 = {};
+                                var codSap5 = '';
+                                if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_5') == 'fisica') {
+
+                                    if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_5') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_5') == '') {
+
+                                        codSap5 = this.getBPSapIntegration_Fisica(id, grClienteTaskPrincipal.getValue('cpf_loc_fiador_5'));
+
+                                    } else {
+                                        codSap5 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_5');
+                                    }
+                                    obj_fiador5 = {
+                                        fiador_5_Cpf: grClienteTaskPrincipal.getValue('cpf_fiador_5'),
+                                        possuiCadastroFiador_5: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_5'),
+                                        codigoSAPFiador: codSap5,
+                                        bpRole: "TR0200"
+                                    };
+
+                                } else if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_5') == 'juridica') {
+
+                                    if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_5') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_5') == '') {
+
+                                        codSap5 = this.getBPSapIntegration_Juridica(id, grClienteTaskPrincipal.getValue('cnpj_fiador_5'));
+
+                                    } else {
+                                        codSap5 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_5');
+                                    }
+
+                                    obj_fiador5 = {
+
+                                        fiador_5_Cnpj: grClienteTaskPrincipal.getValue('cnpj_fiador_5'),
+                                        possuiCadastroFiador_5: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_5'),
+                                        codigoSAPFiador: codSap5,
+                                        bpRole: "TR0200"
+                                    };
+                                }
+                                //############## FIADOR 6 #################################################
+                                if (fiadorVerificacao6 == 'sim') {
+                                    var obj_fiador6 = {};
+                                    var codSap6 = '';
+                                    if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_6') == 'fisica') {
+
+                                        if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_6') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_6') == '') {
+
+                                            codSap6 = this.getBPSapIntegration_Fisica(id, grClienteTaskPrincipal.getValue('cpf_loc_fiador'));
+
+                                        } else {
+                                            codSap6 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_6');
+                                        }
+
+                                        obj_fiador6 = {
+                                            fiador_6_Cpf: grClienteTaskPrincipal.getValue('cpf_fiador_6'),
+                                            possuiCadastroFiador_6: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_6'),
+                                            codigoSAPFiador: codSap6,
+                                            bpRole: "TR0200"
+                                        };
+
+                                    } else if (grClienteTaskPrincipal.getValue('tipo_de_pessoa_fiador_6') == 'juridica') {
+
+                                        if (grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_6') == null || grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_6') == '') {
+
+                                            codSap6 = this.getBPSapIntegration_Juridica(id, grClienteTaskPrincipal.getValue('cnpj_fiador_6'));
+
+                                        } else {
+                                            codSap6 = grClienteTaskPrincipal.getValue('codigo_bp_sap_fiador_6');
+                                        }
+
+                                        obj_fiador6 = {
+
+                                            fiador_6_Cnpj: grClienteTaskPrincipal.getValue('cnpj_fiador_6'),
+                                            possuiCadastroFiador_6: grClienteTaskPrincipal.getValue('cliente_possui_cadastro_sap_fiador_6'),
+                                            codigoSAPFiador: codSap6,
+                                            bpRole: "TR0200"
+                                        };
+                                    }
+
+
+                                    fiadores = [obj_fiador1, obj_fiador2, obj_fiador3, obj_fiador4, obj_fiador5, obj_fiador6];
+
+                                    return fiadores;
+
+                                } else {
+
+                                    fiadores = [obj_fiador1, obj_fiador2, obj_fiador3, obj_fiador4, obj_fiador5];
+
+                                    return fiadores;
+                                }
+
+                            } else {
+
+                                fiadores = [obj_fiador1, obj_fiador2, obj_fiador3, obj_fiador4];
+
+                                return fiadores;
+
+
+                            }
+
+                        } else {
+
+                            fiadores = [obj_fiador1, obj_fiador2, obj_fiador3];
+
+                            return fiadores;
+                        }
+
+                    } else {
+
+
+                        fiadores = [obj_fiador1, obj_fiador2];
+
+                        return fiadores;
+
+                    }
+
+                } else {
+
+                    fiadores = [obj_fiador1];
+
+                    return fiadores;
+                }
+
+            } else {
+
+                return null;
+            }
+        }
+    },
+
+    getDadosRepresentante: function(id) {
+
+        var brandParentID = id;
+        var grClienteTaskPrincipal = new GlideRecord('x_asscs_allos_o2c_task');
+        grClienteTaskPrincipal.addEncodedQuery('parent=' + brandParentID + '^order=14');
+        grClienteTaskPrincipal.query();
+        if (grClienteTaskPrincipal.next()) {
+
+            var representanteVerificacao1 = grClienteTaskPrincipal.getValue('possui_representante');
+            if (representanteVerificacao1 == 'sim') {
+                return {
+                    nomeRepresentante: "TR0806"
+                };
+            } else {
+                return null;
+            }
+
+        }
+    },
+
+    formatDateToDDMMYYYY: function(dateString) {
+        var date = new Date(dateString);
+        var day = ("0" + date.getDate()).slice(-2);
+        var month = ("0" + (date.getMonth() + 1)).slice(-2);
+        var year = date.getFullYear();
+        return year + '-' + month + '-' + day;
+    },
+
+
+
+    type: 'SAPintegraUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-10-28 19:40:32</sys_created_on>
+        <sys_id>4cdf95dd87291e10f538edf80cbb35cf</sys_id>
+        <sys_mod_count>150</sys_mod_count>
+        <sys_name>SAPintegraUtils</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_script_include_4cdf95dd87291e10f538edf80cbb35cf</sys_update_name>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-07 15:55:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

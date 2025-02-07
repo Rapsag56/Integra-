@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>token</name>
+        <rest_message_function display_value="criarLuc">3cfa212987699e10f538edf80cbb3560</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-10-29 14:31:19</sys_created_on>
+        <sys_id>f4243de587a99e10f538edf80cbb353e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>token</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_f4243de587a99e10f538edf80cbb353e</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 17:34:37</sys_updated_on>
+        <type>string</type>
+        <value>eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYWxsb3MtaW50ZWdyYXRpb24tZGV2LmF1dGhlbnRpY2F0aW9uLmJyMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS02OTQ2NDQ4OTUiLCJ0eXAiOiJKV1QiLCJqaWQiOiAicEVKdGUvWW50NHNEVWFmT0dZNnRUWU0rWURZeTJRT0tkb3hxSjV1aTRPQT0ifQ.eyJqdGkiOiJiODQxY2U4Njg3NDI0Yjk0OGVmZTRkZmJiMGJhMTY0NiIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiI4MDFiYmRiOC1hNmY4LTRjZTAtOWFiNi05ZWJiM2ZiNjQyZTQiLCJ6ZG4iOiJhbGxvcy1pbnRlZ3JhdGlvbi1kZXYiLCJzZXJ2aWNlaW5zdGFuY2VpZCI6Ijg2NzcyNzBiLTUwYjgtNGEzYS1hNjEyLTcxYjkwYTA1YWM2OCJ9LCJzdWIiOiJzYi04Njc3MjcwYi01MGI4LTRhM2EtYTYxMi03MWI5MGEwNWFjNjghYjUzNDl8aXQtcnQtYWxsb3MtaW50ZWdyYXRpb24tZGV2IWIxMDYiLCJhdXRob3JpdGllcyI6WyJ1YWEucmVzb3VyY2UiLCJpdC1ydC1hbGxvcy1pbnRlZ3JhdGlvbi1kZXYhYjEwNi5TTm93LnNlbmQiXSwic2NvcGUiOlsidWFhLnJlc291cmNlIiwiaXQtcnQtYWxsb3MtaW50ZWdyYXRpb24tZGV2IWIxMDYuU05vdy5zZW5kIl0sImNsaWVudF9pZCI6InNiLTg2NzcyNzBiLTUwYjgtNGEzYS1hNjEyLTcxYjkwYTA1YWM2OCFiNTM0OXxpdC1ydC1hbGxvcy1pbnRlZ3JhdGlvbi1kZXYhYjEwNiIsImNpZCI6InNiLTg2NzcyNzBiLTUwYjgtNGEzYS1hNjEyLTcxYjkwYTA1YWM2OCFiNTM0OXxpdC1ydC1hbGxvcy1pbnRlZ3JhdGlvbi1kZXYhYjEwNiIsImF6cCI6InNiLTg2NzcyNzBiLTUwYjgtNGEzYS1hNjEyLTcxYjkwYTA1YWM2OCFiNTM0OXxpdC1ydC1hbGxvcy1pbnRlZ3JhdGlvbi1kZXYhYjEwNiIsImdyYW50X3R5cGUiOiJjbGllbnRfY3JlZGVudGlhbHMiLCJyZXZfc2lnIjoiY2ZhYzZkZjkiLCJpYXQiOjE3MzM4NTIwNjQsImV4cCI6MTczMzg1NTY2NCwiaXNzIjoiaHR0cHM6Ly9hbGxvcy1pbnRlZ3JhdGlvbi1kZXYuYXV0aGVudGljYXRpb24uYnIxMC5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aC90b2tlbiIsInppZCI6IjgwMWJiZGI4LWE2ZjgtNGNlMC05YWI2LTllYmIzZmI2NDJlNCIsImF1ZCI6WyJpdC1ydC1hbGxvcy1pbnRlZ3JhdGlvbi1kZXYhYjEwNi5TTm93IiwidWFhIiwic2ItODY3NzI3MGItNTBiOC00YTNhLWE2MTItNzFiOTBhMDVhYzY4IWI1MzQ5fGl0LXJ0LWFsbG9zLWludGVncmF0aW9uLWRldiFiMTA2Il19.L51F2zOOnPXZg_80CgKMA_PfoNyed6Czw-Y5KhCzSCdraHGzrdskd-_WRMi1RUxIpugNoYdDCzAZ0mQMRanjEPkQWPUEi6EJjZOaCKOYJXdvBn2fcnJyuAc2yPa-mrw2yG1iL4Xw907iMfX72HGJ88zrzeBOoh51BfUBc_UDBAjAsS2f0So5D6LCoiCeDS4GBH8-rVqzrIQgaGAivIqlDqQcKCOBbGm2VHN58qVmoISEHxqh_YLy0UtBthiee9uebK5bo20mn-hr8XAscrDf7fCLLLK9lfDtRDpCWlp2_6x0qkNP5fHXrMj4wA2lvFjfPv8nRRX4rPPL8-hNZaLecg</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

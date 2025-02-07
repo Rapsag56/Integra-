@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>sb-8677270b-50b8-4a3a-a612-71b90a05ac68!b5349|it-rt-allos-integration-dev!b106</client_id>
+        <client_secret>bzYoSP27FIoArN1YYuxubdp9IhsJyBLZV1PbZXFDBkYWykl0IidgaHz+xRTHzCSs1PvO4ibodi/kB7otn6y1FjqvfUFG5Ove4o4HMtxCyXnn7ceUfOdKJg==</client_secret>
+        <client_type/>
+        <client_uuid>b2cd616d87699e10f538edf80cbb35ce</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>authorization_code</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>SAP - Bearer Token</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://allosdev.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-10-29 14:05:15</sys_created_on>
+        <sys_id>f2cd616d87699e10f538edf80cbb35ce</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>SAP - Bearer Token</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>oauth_entity_f2cd616d87699e10f538edf80cbb35ce</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-01-28 21:26:45</sys_updated_on>
+        <token_url>https://allos-integration-dev.authentication.br10.hana.ondemand.com/oauth/token</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+</record_update>

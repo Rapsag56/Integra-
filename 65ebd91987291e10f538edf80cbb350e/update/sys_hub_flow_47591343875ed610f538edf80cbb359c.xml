@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2806000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>integra_luc_cadastro</internal_name>
+        <label_cache>[{"name":"subflow.current","label":"entrada➛current","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"61da8842-9b15-40ab-853e-afb20facd6e4":["current"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"6cef4912-74a9-4680-8af4-adca57faa31b"}},{"name":"61da8842-9b15-40ab-853e-afb20facd6e4.answer","label":"1 - Integra+ - Luc - Cadastrar - Action➛answer","reference_display":"answer","type":"string","base_type":"string","usedInstances":{"ed7576e8-274b-451f-94ec-78651c071452":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2856a4fb-b4e5-463b-a9ef-5e444cd255e8"}}]</label_cache>
+        <master_snapshot>600a5b83875ed610f538edf80cbb3586</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Integra+ Luc Cadastro</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:31:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>47591343875ed610f538edf80cbb359c</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Integra+ Luc Cadastro</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_hub_flow_47591343875ed610f538edf80cbb359c</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:18:19</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=47591343875ed610f538edf80cbb359c"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>47591343875ed610f538edf80cbb359c</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>pb</language>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:31:32</sys_created_on>
+        <sys_id>43591343875ed610f538edf80cbb359d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:31:32</sys_updated_on>
+        <tablename>sys_hub_flow</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=47591343875ed610f538edf80cbb359c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_47591343875ed610f538edf80cbb359c^id=47591343875ed610f538edf80cbb359c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=47591343875ed610f538edf80cbb359c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=47591343875ed610f538edf80cbb359c^sys_idNOT INd7591343875ed610f538edf80cbb35a3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>47591343875ed610f538edf80cbb359c</id>
+        <name>Integra+ Luc Cadastro</name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:31:33</sys_created_on>
+        <sys_id>d7591343875ed610f538edf80cbb35a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:31:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d7591343875ed610f538edf80cbb35a3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=47591343875ed610f538edf80cbb359c^sys_idNOT INb6e9d383875ed610f538edf80cbb35df"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6cef4912-74a9-4680-8af4-adca57faa31b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>current</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integra+ Luc Cadastro">47591343875ed610f538edf80cbb359c</model>
+        <model_id>47591343875ed610f538edf80cbb359c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_47591343875ed610f538edf80cbb359c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:33:59</sys_created_on>
+        <sys_id>b6e9d383875ed610f538edf80cbb35df</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:10:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b6e9d383875ed610f538edf80cbb35df"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=47591343875ed610f538edf80cbb359c^sys_idNOT IN55716f83879ed610f538edf80cbb353d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e8ebc15c-ed42-4712-a30e-dc381da10133</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>teste</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integra+ Luc Cadastro">47591343875ed610f538edf80cbb359c</model>
+        <model_id>47591343875ed610f538edf80cbb359c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_47591343875ed610f538edf80cbb359c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 21:06:55</sys_created_on>
+        <sys_id>55716f83879ed610f538edf80cbb353d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:18:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=55716f83879ed610f538edf80cbb353d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=47591343875ed610f538edf80cbb359c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=47591343875ed610f538edf80cbb359c"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=47591343875ed610f538edf80cbb359c^sys_idNOT IN3ae9d783875ed610f538edf80cbb3543,89cd93cb875ed610f538edf80cbb354d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Luc - Cadastrar - Action">b80be5b287165610f538edf80cbb35b2</action_type>
+        <action_type_parent display_value="Integra+ - Luc - Cadastrar - Action">a7d1e9be87925610f538edf80cbb35b9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>b80be5b287165610f538edf80cbb35b2</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Luc Cadastro">47591343875ed610f538edf80cbb359c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:33:59</sys_created_on>
+        <sys_id>3ae9d783875ed610f538edf80cbb3543</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:20:29</sys_updated_on>
+        <ui_id>61da8842-9b15-40ab-853e-afb20facd6e4</ui_id>
+        <values>H4sIAAAAAAAA/41SXW/bMAz8L3p2DKeuYydvQ4MCA7YVWLu+FIVBSXQiQJZdfaT1jPz3UbGTbS0w7JHHo+541NPIlGQb1lQZx4JfVeVyVayWWVPkFUpCBed5wdcsYQZaJKYI1qLxBBxAh4iMowu80d1rOveOR+pK5XoNw+M/SWKvtKSKbZ6eE9aDJQ2Plm3Gd63/NamBo/7L5Qfbfugj4LxVZjfXX+ax+zPYWRltLBOGbx6NRNJvQDtMWAtGgu/swDbeBgIsgrwzergw9oqENoxF7ptTP0muyrIsMhskFwKn7qV8AK5xOwU2tZoteCA3QfhgZ7rYd0qgmwKR2EDQ/uZPbCLc9V51Zhrx8eF5utOhNd+mNNjlgfN9CAkOa4l93Db6n5dp7vfd6/ez01tlTsHMTd0J0JcKPMXHg49+RhbUw7ukJ+RD1qixJcW6hb4npO5td1AnFTLdpjtNRRq/DrlzamdSEHHDlK4A6S3h2xP8CFbFdb/SMzQc5X4Y9RLw8+nvlGV+vS6uFlBmuLjOMrmAFa4WZb6ucixywZuSHRPmBnejwbnfQdGV6pcQ15ximwOqp4zjiLCq95/I1AHnLI7PvwBap3G3WQMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Luc Cadastro">47591343875ed610f538edf80cbb359c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:50:47</sys_created_on>
+        <sys_id>89cd93cb875ed610f538edf80cbb354d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:20:29</sys_updated_on>
+        <ui_id>ed7576e8-274b-451f-94ec-78651c071452</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8FYNny5Bsy3F8C+KmKJo4RVPkEgTGilzZBChKJSk7ruHv6anHfkF+rEtLftR5wClyK6DLDpermeXs3i2ZFGzA4oRHCee9uBOFYYe+JI3EaRSeIo/7J+KENZmGDClT5ZOxwhkqgmagSo9JneYUCmkLBYvbGv1EqMng8efjb7R0zKdSCYOaDe7um6wAQwUdGjZYHhwdy0hBQjQGbPT4q+LzDEW3KDzEp7nkWMeX9b3zDZgb4XmETYYPDrVAIpCCsthkGWgBLjeLLWIQxLVWO2AqtaNqzCc/WPmD/tcNfV6KJIljdbYNv0GicFi1qjpKh+DgxpmSu9LU6RVhSw1ZbnUeNvSg/bWKaNXcXTmbSZvvpc7B6F1qez/1gzH7mUih2aV2VvQwAlMolTt/hlsQNEaop2XWCIK9Ki/QOk5J+3glneOVdL2Sqr3XhZM5mY5F3hn+Xerm56rM9KhyE9vqvj2we4UOX3d9aXEssPCu8japPZPeTPP5140lLqReU6sPVc5BbSNwzsikdL7hS4YKMyo0zqAopJ6MC5PP5Poysc5aE0VBK1X5nH5q5US3gHuNLTIxtC4IH67hWzDS672iMnR51WR2Yc8VWLtTTY4dfy89k6oHtYbxumPrK9zIwp3RD2ZY0/XPsB7fdue18cX472nN0FqY4N6jXV5/bHz53Fgue5GAfr/bDk6TKA66ISRBP+5gAGnSDlPgoofdFmg7R7NaPV1C/1znbdvqCLkbd16h9lqzlzpQbyxLr64nBxvrZgNuhurdNlY7jt9vZT23Kp4O3Ztm7v+bpPs/ERkcr5wHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=47591343875ed610f538edf80cbb359c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=47591343875ed610f538edf80cbb359c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=47591343875ed610f538edf80cbb359c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=47591343875ed610f538edf80cbb359c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_47591343875ed610f538edf80cbb359c^sys_idNOT INf6e9d783875ed610f538edf80cbb353f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>current</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_47591343875ed610f538edf80cbb359c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:33:59</sys_created_on>
+        <sys_id>f6e9d783875ed610f538edf80cbb353f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:33:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_47591343875ed610f538edf80cbb359c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_47591343875ed610f538edf80cbb359c^sys_idNOT IN9d716f83879ed610f538edf80cbb3540"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>teste</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_output_47591343875ed610f538edf80cbb359c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 21:06:55</sys_created_on>
+        <sys_id>9d716f83879ed610f538edf80cbb3540</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:18:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_47591343875ed610f538edf80cbb359c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>integra_luc_cadastro</internal_name>
+        <label_cache>[{"name":"subflow.current","label":"entrada➛current","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"61da8842-9b15-40ab-853e-afb20facd6e4":["current"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"6cef4912-74a9-4680-8af4-adca57faa31b"}},{"name":"61da8842-9b15-40ab-853e-afb20facd6e4.answer","label":"1 - Integra+ - Luc - Cadastrar - Action➛answer","reference_display":"answer","type":"string","base_type":"string","usedInstances":{"ed7576e8-274b-451f-94ec-78651c071452":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2856a4fb-b4e5-463b-a9ef-5e444cd255e8"}}]</label_cache>
+        <master>true</master>
+        <name>Integra+ Luc Cadastro</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Integra+ Luc Cadastro">47591343875ed610f538edf80cbb359c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:34:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>600a5b83875ed610f538edf80cbb3586</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:18:19</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>600a5b83875ed610f538edf80cbb3586</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>pb</language>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:34:22</sys_created_on>
+        <sys_id>a80a5b83875ed610f538edf80cbb3586</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:34:22</sys_updated_on>
+        <tablename>sys_hub_flow_snapshot</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_600a5b83875ed610f538edf80cbb3586^id=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=600a5b83875ed610f538edf80cbb3586^sys_idNOT INac0a5b83875ed610f538edf80cbb35ac"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>600a5b83875ed610f538edf80cbb3586</id>
+        <name>Integra+ Luc Cadastro</name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:34:22</sys_created_on>
+        <sys_id>ac0a5b83875ed610f538edf80cbb35ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:34:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ac0a5b83875ed610f538edf80cbb35ac"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=600a5b83875ed610f538edf80cbb3586^sys_idNOT INac0a5b83875ed610f538edf80cbb35ae"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6cef4912-74a9-4680-8af4-adca57faa31b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>current</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integra+ Luc Cadastro">600a5b83875ed610f538edf80cbb3586</model>
+        <model_id>600a5b83875ed610f538edf80cbb3586</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_600a5b83875ed610f538edf80cbb3586</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:34:22</sys_created_on>
+        <sys_id>ac0a5b83875ed610f538edf80cbb35ae</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:10:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ac0a5b83875ed610f538edf80cbb35ae"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=600a5b83875ed610f538edf80cbb3586^sys_idNOT IN25716f83879ed610f538edf80cbb35ac"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e8ebc15c-ed42-4712-a30e-dc381da10133</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>teste</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integra+ Luc Cadastro">600a5b83875ed610f538edf80cbb3586</model>
+        <model_id>600a5b83875ed610f538edf80cbb3586</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_600a5b83875ed610f538edf80cbb3586</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 21:06:56</sys_created_on>
+        <sys_id>25716f83879ed610f538edf80cbb35ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:18:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=25716f83879ed610f538edf80cbb35ac"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=600a5b83875ed610f538edf80cbb3586^sys_idNOT IN240a5b83875ed610f538edf80cbb35ce,59cd93cb875ed610f538edf80cbb35f4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Luc - Cadastrar - Action">b80be5b287165610f538edf80cbb35b2</action_type>
+        <action_type_parent display_value="Integra+ - Luc - Cadastrar - Action">a7d1e9be87925610f538edf80cbb35b9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>b80be5b287165610f538edf80cbb35b2</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Luc Cadastro">600a5b83875ed610f538edf80cbb3586</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:34:22</sys_created_on>
+        <sys_id>240a5b83875ed610f538edf80cbb35ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:34:22</sys_updated_on>
+        <ui_id>61da8842-9b15-40ab-853e-afb20facd6e4</ui_id>
+        <values>H4sIAAAAAAAA/41SXW/bMAz8L3p2DKeuYydvQ4MCA7YVWLu+FIVBSXQiQJZdfaT1jPz3UbGTbS0w7JHHo+541NPIlGQb1lQZx4JfVeVyVayWWVPkFUpCBed5wdcsYQZaJKYI1qLxBBxAh4iMowu80d1rOveOR+pK5XoNw+M/SWKvtKSKbZ6eE9aDJQ2Plm3Gd63/NamBo/7L5Qfbfugj4LxVZjfXX+ax+zPYWRltLBOGbx6NRNJvQDtMWAtGgu/swDbeBgIsgrwzergw9oqENoxF7ptTP0muyrIsMhskFwKn7qV8AK5xOwU2tZoteCA3QfhgZ7rYd0qgmwKR2EDQ/uZPbCLc9V51Zhrx8eF5utOhNd+mNNjlgfN9CAkOa4l93Db6n5dp7vfd6/ez01tlTsHMTd0J0JcKPMXHg49+RhbUw7ukJ+RD1qixJcW6hb4npO5td1AnFTLdpjtNRRq/DrlzamdSEHHDlK4A6S3h2xP8CFbFdb/SMzQc5X4Y9RLw8+nvlGV+vS6uFlBmuLjOMrmAFa4WZb6ucixywZuSHRPmBnejwbnfQdGV6pcQ15ximwOqp4zjiLCq95/I1AHnLI7PvwBap3G3WQMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Luc Cadastro">600a5b83875ed610f538edf80cbb3586</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:50:48</sys_created_on>
+        <sys_id>59cd93cb875ed610f538edf80cbb35f4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:50:48</sys_updated_on>
+        <ui_id>ed7576e8-274b-451f-94ec-78651c071452</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8FYNny5Bsy3F8C+KmKJo4RVPkEgTGilzZBChKJSk7ruHv6anHfkF+rEtLftR5wClyK6DLDpermeXs3i2ZFGzA4oRHCee9uBOFYYe+JI3EaRSeIo/7J+KENZmGDClT5ZOxwhkqgmagSo9JneYUCmkLBYvbGv1EqMng8efjb7R0zKdSCYOaDe7um6wAQwUdGjZYHhwdy0hBQjQGbPT4q+LzDEW3KDzEp7nkWMeX9b3zDZgb4XmETYYPDrVAIpCCsthkGWgBLjeLLWIQxLVWO2AqtaNqzCc/WPmD/tcNfV6KJIljdbYNv0GicFi1qjpKh+DgxpmSu9LU6RVhSw1ZbnUeNvSg/bWKaNXcXTmbSZvvpc7B6F1qez/1gzH7mUih2aV2VvQwAlMolTt/hlsQNEaop2XWCIK9Ki/QOk5J+3glneOVdL2Sqr3XhZM5mY5F3hn+Xerm56rM9KhyE9vqvj2we4UOX3d9aXEssPCu8japPZPeTPP5140lLqReU6sPVc5BbSNwzsikdL7hS4YKMyo0zqAopJ6MC5PP5Poysc5aE0VBK1X5nH5q5US3gHuNLTIxtC4IH67hWzDS672iMnR51WR2Yc8VWLtTTY4dfy89k6oHtYbxumPrK9zIwp3RD2ZY0/XPsB7fdue18cX472nN0FqY4N6jXV5/bHz53Fgue5GAfr/bDk6TKA66ISRBP+5gAGnSDlPgoofdFmg7R7NaPV1C/1znbdvqCLkbd16h9lqzlzpQbyxLr64nBxvrZgNuhurdNlY7jt9vZT23Kp4O3Ztm7v+bpPs/ERkcr5wHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=600a5b83875ed610f538edf80cbb3586"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_600a5b83875ed610f538edf80cbb3586^sys_idNOT INac0a5b83875ed610f538edf80cbb35c8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>current</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_600a5b83875ed610f538edf80cbb3586</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:34:22</sys_created_on>
+        <sys_id>ac0a5b83875ed610f538edf80cbb35c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 20:34:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_600a5b83875ed610f538edf80cbb3586"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_600a5b83875ed610f538edf80cbb3586^sys_idNOT IN2d716f83879ed610f538edf80cbb35b0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>teste</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_output_600a5b83875ed610f538edf80cbb3586</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 21:06:56</sys_created_on>
+        <sys_id>2d716f83879ed610f538edf80cbb35b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:18:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_600a5b83875ed610f538edf80cbb3586"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>47591343875ed610f538edf80cbb359c</sys_id>
+        <latest_snapshot>600a5b83875ed610f538edf80cbb3586</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix3b-11-14-2024_11-25-2024_0807.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=47591343875ed610f538edf80cbb359c"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=47591343875ed610f538edf80cbb359c^sys_idNOT IN680a5b83875ed610f538edf80cbb35d9"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"680a5b83875ed610f538edf80cbb35d9","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Integra+ Luc Cadastro">47591343875ed610f538edf80cbb359c</plan_id>
+        <snapshot>04946f4b879ed610f538edf80cbb35b9</snapshot>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-12-10 20:34:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>680a5b83875ed610f538edf80cbb35d9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 21:18:19</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

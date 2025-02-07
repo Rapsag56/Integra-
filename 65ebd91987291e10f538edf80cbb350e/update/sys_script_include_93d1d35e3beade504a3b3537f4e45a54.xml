@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_asscs_integra.testeObj</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>testeObj</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var testeObj = Class.create();
+testeObj.prototype = {
+    initialize: function() {},
+
+    transformarEmObj: function(obj) {
+
+        // Transformar o objeto em um array
+        var array = Object.values(obj.DadosDaLucAtual);
+        var array2 = [];
+
+        // Iterar sobre cada elemento do array
+        array.forEach(function(dadosLuc) {
+            var luc_atual_v2 = dadosLuc.luc_atual_v2;
+            var area_anterior_m = dadosLuc.area_anterior_m;
+
+            var obj = {
+                lucAtual: luc_atual_v2,
+                areaAnterior_m: area_anterior_m
+            };
+
+            // Adicionar o objeto ao novo array
+            array2.push(obj);
+        });
+
+        // Log para depuração
+        gs.info("ARRAY2: " + JSON.stringify(array2));
+
+		return array2;
+
+    },
+
+    type: 'testeObj'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2024-12-20 22:22:12</sys_created_on>
+        <sys_id>93d1d35e3beade504a3b3537f4e45a54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>testeObj</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_script_include_93d1d35e3beade504a3b3537f4e45a54</sys_update_name>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2024-12-20 22:22:12</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "CompanyCode": "1050",&#13;
+  "ContractType": "Z001",&#13;
+  "LucKey": "1050/PAS/NOW00012",&#13;
+  "ContractText": "Text PK",&#13;
+  "ContractConclusionDate": "2026-01-01",&#13;
+  "IsSaleRelated": true, &#13;
+  "ExecutionTime": {&#13;
+    "ContractStartDate": "2022-01-01",&#13;
+    "FirstEndDate": "2026-01-01",&#13;
+    "CashFlowStartDate": "2022-01-01",&#13;
+    "RenewalType": "1",&#13;
+    "RenewalRule": "Z001"&#13;
+  },&#13;
+  "ContractAdditionalData": {&#13;
+    "RiskStore": "Não",&#13;
+    "BrigadeRequirement": "Não",&#13;
+    "ABLGroup": "SATÉLITE",&#13;
+    "AbrasceGroup": "002",&#13;
+    "BrandName": "00043",&#13;
+    "NaturePB": "RESTAURANTES",&#13;
+    "GuaranteeType": "008",&#13;
+    "NonAdjustableContract": true,&#13;
+    "CorporateGroup": "",&#13;
+    "ContractEndDate": "2026-01-01",&#13;
+    "OperatorType": "1",&#13;
+    "MonetaryCorrectionIndex": "IPCA",&#13;
+    "BaseYear": "1993",&#13;
+    "StoreOpeningDate": "2024-12-15",&#13;
+    "ConstructionCost": true,&#13;
+    "IndeterminateValidity": false,&#13;
+    "InterestPercent": 1,&#13;
+    "FinePercent": 10&#13;
+  },&#13;
+  "BusinessPartners": [&#13;
+    {&#13;
+      "BPNumber": "10007392",&#13;
+      "BPRoleCode": "TR0600"&#13;
+    },&#13;
+    {&#13;
+      "BPNumber": "20009192",&#13;
+      "BPRoleCode": "TR0200"&#13;
+    }&#13;
+  ],&#13;
+  "TermPayments": [&#13;
+    {&#13;
+      "BPNumber": "10007392"&#13;
+    }&#13;
+  ],&#13;
+  "PromotionFunds": [&#13;
+    {&#13;
+      "PromoFundCode": "FPR",&#13;
+      "FromDate": "2022-01-01",&#13;
+      "EndDate": "9999-12-31",&#13;
+      "ConditionType": "Z091"&#13;
+    }&#13;
+  ],&#13;
+  "Adjustments": [&#13;
+    {&#13;
+      "TermNumber": "10",&#13;
+      "IndexSerie": "IPCA",&#13;
+      "FirstIndexDate": "2021-01-01",&#13;
+      "FirstReadjDate": "2022-01-01",&#13;
+      "IndexSeriesBaseYear": "1993",&#13;
+      "AdjustmentRule": "INDXCN",&#13;
+      "ElementaryAdjRule": "INDXCN"&#13;
+    }&#13;
+  ],&#13;
+  "Conditions": [&#13;
+    {&#13;
+      "ConditionType": "Z010",&#13;
+      "ValidFrom": "2022-01-01",&#13;
+      "UnitPrice": 10000.00,&#13;
+      "CalcNorm": "A",&#13;
+      "TermNoAdjustment": "10",&#13;
+    "TermNoSalesRule": "10", &#13;
+      "ExternalPurpose": "A",&#13;
+      "Degrau": false,&#13;
+      "LucKey": "1050/PAS/NOW00012",&#13;
+      "DistRule": "A"&#13;
+    },&#13;
+    {&#13;
+      "ConditionType": "Z016",&#13;
+      "ValidFrom": "2022-01-01",&#13;
+      "UnitPrice": 10000.00,&#13;
+      "CalcNorm": "U",&#13;
+      "CalcRuleParameter": "",&#13;
+      "TermNoRhythm": "",&#13;
+      "TermNoAdjustment": "",&#13;
+      "TermNoPayment": "",&#13;
+      "TermNoSalesRule": "10",&#13;
+      "ExternalPurpose": "A",&#13;
+      "Degrau": false,&#13;
+      "LucKey": "1050/PAS/NOW00012",&#13;
+      "DistRule": "A"&#13;
+    }&#13;
+  ],&#13;
+  "AdditionalTexts": [&#13;
+    {&#13;
+      "TextCode": "10",&#13;
+      "Text": "Solicitar nova locação 1050/PAS/NOW00010- RITM xxxx - 13-12-2024"&#13;
+    }&#13;
+  ],&#13;
+  "TermWithHoldingTaxes": [&#13;
+    {&#13;
+      "TermText": "LOCATÁRIO",&#13;
+      "BPNumber": "10007392"&#13;
+    }&#13;
+  ],&#13;
+  "TermRhythms": [&#13;
+    {&#13;
+      "TermText": "SEM PRO-RATA",&#13;
+      "Frequency": "001",&#13;
+      "FrequencyUnit": "0",&#13;
+      "ProRataMethod": "4",&#13;
+      "ProRataMethodCalculation": "1",&#13;
+      "PaymentForm": "0",&#13;
+      "DueDateCorrDay": 0,&#13;
+      "DueDateCorrMonth": 0,&#13;
+      "DueDateCorrYear": 0,&#13;
+      "DueDateCorrUnit": "00"&#13;
+    }&#13;
+  ],&#13;
+  "AdditionalRentNotificationRules": [&#13;
+    {&#13;
+      "TermNumber": "10",&#13;
+      "TermText": "VENDA INFORMADA",&#13;
+      "Assortment": "Z012",&#13;
+      "ValidFrom": "2022-01-01",&#13;
+      "FrequencyStartDate": "2022-01-01",&#13;
+      "Frequency": "001",&#13;
+      "FrequencyUnit": "0",&#13;
+      "GrossNetSales": "G",&#13;
+      "SalesRepIsStatical": false,&#13;
+      "FrequencyType": "1",&#13;
+      "Tolerance": 0&#13;
+    }&#13;
+  ],&#13;
+  "AdditionalRentBillingRules": [&#13;
+    {&#13;
+      "TermNumber": "10",&#13;
+      "TermText": "REGRA DE FATURAMENTO",&#13;
+      "PercSalesAsRent": 5,&#13;
+      "TermNumReportRule": "10",&#13;
+      "GradingItemNo": "001",&#13;
+      "UsePeriodPostingForPost": true,&#13;
+      "SalesForCalculation": "X",&#13;
+      "MinMonetarySales": 0,&#13;
+      "MaxMonetarySales": 0,&#13;
+      "MinQuantitativeSales": 0,&#13;
+      "MaxQuantitativeSales": 0,&#13;
+      "UnitPriceGrossNet": "G",&#13;
+      "GradingQuanSalesFrom": 0,&#13;
+      "GradingQuanSalesTo": 0,&#13;
+      "PricePerUnit": 0,&#13;
+      "MinRentSalesGrading": 0,&#13;
+      "MinMonetarySalesBCA": 0,&#13;
+      "MaxMonetarySalesBCA": 0,&#13;
+      "MinRentSalesGradingBCA": 0,&#13;
+      "ValidFrom": "2022-01-01"&#13;
+    }&#13;
+  ],&#13;
+  "TermSaleRulesRhythm": {&#13;
+    "TermNumber": "10",&#13;
+    "ValidFrom": "2022-01-01",&#13;
+    "FrequencyType": "11",&#13;
+    "FrequencyStartDate": "2022-01-01",&#13;
+    "Frequency": "001",&#13;
+    "FrequencyUnit": "0",&#13;
+    "ProRataMethod": "0",&#13;
+    "ProRataMethodCalculation": "0",&#13;
+    "PayCredits": false&#13;
+  }&#13;
+ &#13;
+}</content>
+        <function_name>criarContrato</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile display_value="SAP - Bearer Token default_profile">cb2e2d6d87699e10f538edf80cbb3506</oauth2_profile>
+        <protocol_name/>
+        <qualified_name>SAP - ServiceNow [ criarContrato ]</qualified_name>
+        <rest_endpoint>https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/contracts</rest_endpoint>
+        <rest_message display_value="SAP - ServiceNow">2e1c915987291e10f538edf80cbb3528</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-01-07 13:00:42</sys_created_on>
+        <sys_id>ef5e39003bcb96104a3b3537f4e45a7a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>criarContrato</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_ef5e39003bcb96104a3b3537f4e45a7a</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:44:13</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

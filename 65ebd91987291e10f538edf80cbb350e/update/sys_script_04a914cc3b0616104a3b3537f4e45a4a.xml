@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_asscs_allos_o2c_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_asscs_allos_o2c_task">cat_item=14e82a1587ccc2901ee364640cbb3517^order=1^stateCHANGESTO6^u_cliente_possui_cadastro_no_sap=nao^EQ<item display_table="sc_cat_item" display_value="Cadastrar e alterar dados de clientes" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="14e82a1587ccc2901ee364640cbb3517"/>
+            <item endquery="false" field="order" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item display_value="Resolved" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="6"/>
+            <item display_value="Não" endquery="false" field="u_cliente_possui_cadastro_no_sap" goto="false" newquery="false" operator="=" or="false" value="nao"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>ART: Criar Cliente</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+     try {
+        var cpf = current.variables.renter_cpf ? current.variables.renter_cpf.getDisplayValue().replace(/[^\d]/g, '') : null;
+        var cnpj = current.variables.renter_cnpj ? current.variables.renter_cnpj.getDisplayValue().replace(/[^\d]/g, '') : null;
+        var customerRole = current.variables.customer_role ? current.variables.customer_role.getValue() : null;
+
+        var aux = new x_asscs_integra.SAPintegraUtils().criarCliente(current, cpf, cnpj, customerRole);
+
+        // Verificar se 'aux' é uma string e faça o parse se necessário
+        var auxObj = typeof aux === 'string' ? JSON.parse(aux) : aux;
+
+        // Extraindo os valores de http e responseBody
+        var httpStatus = auxObj.http;
+        var responseBody = auxObj.responseBody;
+
+        var responseBodyObj = JSON.parse(responseBody);
+        var businessPartner = responseBodyObj.BusinessPartner;
+        gs.info('Business Partner: ' + businessPartner);
+
+
+        var msg = '';
+
+        if (httpStatus == 200 || httpStatus == 201 || httpStatus == 202) {
+            msg += '\n\n Criação de cliente realizada com sucesso \n\n' + '\n Business Partner: ' + businessPartner;
+            current.work_notes = msg;
+            current.update();
+            // action.setRedirectURL(current);
+        } else {
+            var codeError = auxObj.code;
+            var descriptionError = auxObj.description;
+            var message = auxObj.message;
+            current.work_notes = '\n\n Houve um erro na criação de cliente.\n\n' + '\n Código: ' + codeError + '\n Descrição: ' + descriptionError + '\n Mensagem: ' + message;
+            // current.update();
+            // action.setRedirectURL(current);
+        }
+    } catch (e) {
+
+        // var errorMsg = 'Catch Houve um erro na criação de cliente.\n\n' + (e.message || '');
+        var errorMsg = 'Catch Houve um erro na criação de cliente.\n\n';
+
+        if (typeof auxObj !== 'undefined' && auxObj.code && auxObj.description && auxObj.message) {
+            errorMsg += '\n Código: ' + auxObj.code + '\n Descrição: ' + auxObj.description + '\n Mensagem: ' + auxObj.message;
+        } else {
+            errorMsg += e.message || 'Erro desconhecido';
+        }
+
+        current.work_notes = errorMsg;
+        // current.update();
+        // action.setRedirectURL(current);
+        gs.addErrorMessage('Houve um erro na criação de cliente. Consulte as notas para mais detalhes.');
+    }
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-11-18 12:38:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04a914cc3b0616104a3b3537f4e45a4a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ART: Criar Cliente</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_script_04a914cc3b0616104a3b3537f4e45a4a</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-11-21 12:50:23</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=04a914cc3b0616104a3b3537f4e45a4a"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>04a914cc3b0616104a3b3537f4e45a4a</documentkey>
+        <fieldname>message</fieldname>
+        <language>pb</language>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-11-18 13:04:50</sys_created_on>
+        <sys_id>b020288c3b4616104a3b3537f4e45a53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:04:50</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>

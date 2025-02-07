@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="SAP - Token ">c8cc919987291e10f538edf80cbb35f3</basic_auth_profile>
+        <basic_auth_user/>
+        <content>{&#13;
+  "Building": "Alameda",&#13;
+  "AdditionalData": {&#13;
+    "Piso": "",&#13;
+    "Floor": "Sub-solo 2",&#13;
+    "LocationFloor": "h",&#13;
+    "FloorTo": "Sub-solo 1",&#13;
+    "SaleRentable": "LOCA"&#13;
+  },&#13;
+  "Measurements": [&#13;
+    {&#13;
+      "MeasValidTo": "2040-12-31",&#13;
+      "MeasType": "ZF02",&#13;
+      "MeasValue": "1",&#13;
+      "MeasValidFrom": "2024-12-10"&#13;
+    },&#13;
+    {&#13;
+      "MeasValidTo": "2040-12-31",&#13;
+      "MeasType": "ZF01",&#13;
+      "MeasValue": "2",&#13;
+      "MeasValidFrom": "2024-12-10"&#13;
+    },&#13;
+    {&#13;
+      "MeasValidTo": "2040-12-31",&#13;
+      "MeasType": "ZD01",&#13;
+      "MeasValue": "3",&#13;
+      "MeasValidFrom": "2024-12-10"&#13;
+    }&#13;
+  ],&#13;
+  "Counters": [&#13;
+    {&#13;
+      "NameCharacteristic": "Z_MEDIDOR_ENERGIA"&#13;
+    }&#13;
+  ],&#13;
+  "ClassTypeOfUse": "Âncora",&#13;
+  "BusinessEntity": "Entity",&#13;
+  "UsageType": "1001",&#13;
+  "CPIBudgetType": "CG",&#13;
+  "LucType": "RU",&#13;
+  "ExistingULNo": "abc1",&#13;
+  "ValidTo": "2025-01-01",&#13;
+  "ValidFrom": "2024-12-10",&#13;
+  "CPICompanyType": "CPI1",&#13;
+  "FirstPostingFrom": "2024-12-10",&#13;
+  "Luc": "abc1",&#13;
+  "LucText": "abc1 - teste modifica",&#13;
+  "CompanyCode": "3000"&#13;
+}&#13;
+</content>
+        <function_name>criarLuc</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile display_value="SAP - Bearer Token default_profile">cb2e2d6d87699e10f538edf80cbb3506</oauth2_profile>
+        <protocol_name/>
+        <qualified_name>SAP - ServiceNow [ criarLuc ]</qualified_name>
+        <rest_endpoint>https://allos-integration-dev.it-cpi008-rt.cfapps.br10.hana.ondemand.com/http/crm/luc</rest_endpoint>
+        <rest_message display_value="SAP - ServiceNow">2e1c915987291e10f538edf80cbb3528</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2024-10-29 13:52:34</sys_created_on>
+        <sys_id>3cfa212987699e10f538edf80cbb3560</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>criarLuc</sys_name>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_3cfa212987699e10f538edf80cbb3560</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2024-12-10 17:38:07</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>
