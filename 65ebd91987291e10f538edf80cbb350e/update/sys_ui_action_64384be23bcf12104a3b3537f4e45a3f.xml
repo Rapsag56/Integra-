@@ -26,8 +26,8 @@
         }
     });
 }]]></client_script_v2>
-        <comments/>
-        <condition>current.request_item.cat_item == '922255dc1ba0029068724112fa4bcb43' &amp;&amp; current.assigned_to != '' &amp;&amp; current.order == '22' &amp;&amp; current.variables.tipo_de_desconto == 'padrao' &amp;&amp; current.u_flag_contrato == false;</condition>
+        <comments>current.request_item.cat_item == '922255dc1ba0029068724112fa4bcb43' &amp;&amp; current.assigned_to != '' &amp;&amp; current.order == '22' &amp;&amp; current.variables.tipo_de_desconto == 'padrao' &amp;&amp; current.u_flag_contrato == false;</comments>
+        <condition>new SAPintegraUtils().descontoUIAction(current);</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>true</form_button_v2>
@@ -91,7 +91,7 @@ function integrateContract() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>64384be23bcf12104a3b3537f4e45a3f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Cadastrar Desconto</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
@@ -99,7 +99,7 @@ function integrateContract() {
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_ui_action_64384be23bcf12104a3b3537f4e45a3f</sys_update_name>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 18:07:52</sys_updated_on>
+        <sys_updated_on>2025-02-13 17:51:06</sys_updated_on>
         <table>x_asscs_allos_o2c_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

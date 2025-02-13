@@ -561,6 +561,11 @@ SAPintegraUtils.prototype = {
                 var registered_brand = currentRecord.variables.registered_brand.getValue();
                 var tipo_Operador = currentRecord.variables.tipo_operador.getValue();
                 var indiceCorrecao = currentRecord.variables.indice_de_correcao.getDisplayValue();
+                var fimdaVigencia = '';
+
+                if (periodoVigenciaInderterminado == 'No') {
+                    fimdaVigencia = currentRecord.variables.fim_da_vigencia.getValue();
+                }
 
                 gs.info('Indice Correção: ' + indiceCorrecao);
 
@@ -753,7 +758,7 @@ SAPintegraUtils.prototype = {
                     var dataInicioFormatada = new SAPintegraUtils().formatDateToDDMMYYYY(dataInicio);
 
                     var dataFim = mrvsAluguel.getRow(e).getCell('data_fim').getCellDisplayValue();
-                    var dataFimFormatada =  new SAPintegraUtils().formatDateToDDMMYYYY(dataFim);
+                    var dataFimFormatada = new SAPintegraUtils().formatDateToDDMMYYYY(dataFim);
 
                     var aluguelMinimo = mrvsAluguel.getRow(e).getCell('aluguel_minimo').getCellDisplayValue();
                     var aluguelMinimoFormatado = aluguelMinimo.replace("R$", "").replace(",", ".").trim();
@@ -833,7 +838,6 @@ SAPintegraUtils.prototype = {
 
                 if (possuiCondicaoEspecialAluguel == 'Yes') {
 
-
                     var mrvs = current.variables.aluguel_percentual_vendas;
                     var totalRows = mrvs.getRowCount();
                     var additionalRentNotificationRules = [];
@@ -854,18 +858,19 @@ SAPintegraUtils.prototype = {
                     var termNumber = 10;
 
                     for (var i = 0; i < totalRows; i++) {
-                        var itemVenda = mrvs.getRow(i).getCell('item_de_venda').getCellDisplayValue();
+                        var itemVenda = mrvs.getRow(i).getCell('item_de_venda_rf').getCellDisplayValue(); //ou item_de_venda
                         var inicioPeriodo = mrvs.getRow(i).getCell('periodo_vs').getCellDisplayValue();
                         var tipoVenda = mrvs.getRow(i).getCell('tipo_de_venda').getCellDisplayValue();
+                        var codItemdeVenda = mrvs.getRow(i).getCell('codigo_do_item_de_venda').getCellDisplayValue();
 
                         var grossNetSalesValue = tipoVenda === "Bruta" ? "G" : (tipoVenda === "Líquida" ? "" : null);
 
 
-                        var formattedStartDate = new SAPintegraUtils().formatDateToDDMMYYYY(inicioPeriodo);
+                        var formattedStartDate = formatDateToDDMMYYYY(inicioPeriodo);
                         var rentRule = {
                             "TermNumber": termNumber.toString(),
-                            "TermText": "VENDA INFORMADA",
-                            "Assortment": itemVenda,
+                            "TermText": itemVenda,
+                            "Assortment": codItemdeVenda,
                             "ValidFrom": novaDataVigenciaRentRule,
                             "FrequencyStartDate": formattedStartDate,
                             "Frequency": "10",
@@ -879,10 +884,92 @@ SAPintegraUtils.prototype = {
                         // Incrementar termNumber de 10 em 10
                         termNumber += 10;
                     }
-                    // gs.info(JSON.stringify(additionalRentNotificationRules));
+
+                }
+
+                var possuiFPPIncremental = currentRecord.variables.possui_cobranca_de_fpp.getValue();
+                var promotionFunds = [];
+
+                /* [{
+                    "PromoFundCode": '', //verificar com a Jessica (possui cobrança de FPP) *
+                    "FromDate": '',
+                    "EndDate": '',
+                    "ConditionType": ''
+                }];*/
+                gs.info("possuiFPPIncremental: " + possuiFPPIncremental);
+
+                if (possuiFPPIncremental == 'Yes') {
+                    var promoCode = '';
+                    var tipoFPP = currentRecord.variables.tipo_de_fpp.getValue();
+
+                    if (tipoFPP == 'aluguel' || tipoFPP == 'fixo') {
+                        promoCode = "FPR";
+                    } else if (tipoFPP == 'tabela') {
+                        promoCode = "TAB";
+                    }
+
+                    var possuirafPPIncremental = currentRecord.variables.possuira_fpp_incremental.getValue();
+
+                    if (possuirafPPIncremental == 'Yes') {
+
+                        var fPPIncremental = JSON.parse(currentRecord.variables.art_fpp_incremental);
+
+                        for (var p = 0; p < fPPIncremental.length; p++) {
+                            var objPromotios = {
+                                "PromoFundCode": promoCode,
+                                "FromDate": inicioVigencia,
+                                "EndDate": fimdaVigencia,
+                                "ConditionType": "Z091"
+                            };
+                            promotionFunds.push(objPromotios);
+
+                        }
+                    }
                 }
 
 
+                var haveraLancamentoVenda = currentRecord.variables.condicoes_especial_para_a.getValue();
+                gs.info("Special condition for sales launch: " + haveraLancamentoVenda);
+
+                if (haveraLancamentoVenda == 'Yes') {
+                    var objPercentual = {};
+                    var mrvsPercentual = JSON.parse(currentRecord.variables.aluguel_percentual_vendas);
+                    //gs.info(JSON.stringify(mrvsPercentual))
+                    var additionalRentBillingRules = [];
+                    var termNumber_Percentual = 10;
+                    for (var j = 0; j < mrvsPercentual.length; j++) {
+                        objPercentual = {
+                            "TermNumber": termNumber_Percentual,
+                            "TermText": mrvsPercentual[j].item_de_venda,
+                            "PercSalesAsRent": mrvsPercentual[j].aluguel_perc_vs,
+                            "TermNumReportRule": "10",
+                            "GradingItemNo": "001",
+                            "UsePeriodPostingForPost": true,
+                            "SalesForCalculation": "X",
+                            "MinMonetarySales": 0,
+                            "MaxMonetarySales": 0,
+                            "MinQuantitativeSales": 0,
+                            "MaxQuantitativeSales": 0,
+                            "UnitPriceGrossNet": "G",
+                            "GradingQuanSalesFrom": 0,
+                            "GradingQuanSalesTo": 0,
+                            "PricePerUnit": 0,
+                            "MinRentSalesGrading": 0,
+                            "MinMonetarySalesBCA": 0,
+                            "MaxMonetarySalesBCA": 0,
+                            "MinRentSalesGradingBCA": 0,
+                            "ValidFrom": mrvsPercentual[j].fim_periodo_vs,
+                            "ValidTo": mrvsPercentual[j].periodo_vs
+                        };
+                        termNumber_Percentual += 10;
+
+                        additionalRentBillingRules.push(objPercentual);
+                    }
+                    gs.info("PERCENTUAL " + JSON.stringify(objPercentual));
+
+                } else {
+                    objPercentual = {};
+                }
                 var myObj = {
                     "CompanyCode": companyCode,
                     "ContractType": contractType,
@@ -920,91 +1007,26 @@ SAPintegraUtils.prototype = {
                     "BusinessPartners": businessPartners,
                     "TermPayments": termPayments,
 
-                    // "PromotionFunds": [{
-                    //     "PromoFundCode": "FPR", //verificar com a Jessica (possui cobrança de FPP)
-                    //     "FromDate": "2022-01-01",
-                    //     "EndDate": "9999-12-31",
-                    //     "ConditionType": "Z091"
-                    // }],
-                    // "Adjustments": [{
-                    //     "TermNumber": "10", // fixo
-                    //     "IndexSerie": indiceCorrecao,
-                    //     "FirstIndexDate": mesBaseReajuste,
-                    //     "FirstReadjDate": novaDataReajuste,
-                    //     "IndexSeriesBaseYear": "1993", // não tem no mapeamento (fixo?)
-                    //     "AdjustmentRule": "INDXCN", // não tem no mapeamento
-                    //     "ElementaryAdjRule": "INDXCN" // não tem no mapeamento
-                    // }],
-                     "Conditions":conditionObj,
-					// [{
-                    //         "ConditionType": "Z010",
-                    //         "ValidFrom": "2022-01-01",
-                    //         "UnitPrice": 10000.00,
-                    //         "CalcNorm": "A",
-                    //         "TermNoAdjustment": "10",
-                    //         "TermNoSalesRule": "10",
-                    //         "ExternalPurpose": "A",
-                    //         "Degrau": false,
-                    //         "LucKey": "1050/PAS/NOW00010",
-                    //         "DistRule": "A"
-                    //     },
-                    //     {
-                    //         "ConditionType": "Z016",
-                    //         "ValidFrom": "2022-01-01",
-                    //         "UnitPrice": 10000.00,
-                    //         "CalcNorm": "U",
-                    //         "CalcRuleParameter": "",
-                    //         "TermNoRhythm": "",
-                    //         "TermNoAdjustment": "",
-                    //         "TermNoPayment": "",
-                    //         "TermNoSalesRule": "10",
-                    //         "ExternalPurpose": "A",
-                    //         "Degrau": false,
-                    //         "LucKey": "1050/PAS/NOW00010",
-                    //         "DistRule": "A"
-                    //     }
-                    // ],
+                    "PromotionFunds": promotionFunds,
+
+                    "Adjustments": [{
+                        "TermNumber": "10", // fixo
+                        "IndexSerie": indiceCorrecao,
+                        "FirstIndexDate": mesBaseReajuste,
+                        "FirstReadjDate": novaDataReajuste,
+                        "IndexSeriesBaseYear": "1993", // não tem no mapeamento (fixo?)
+                        "AdjustmentRule": "INDXCN", // não tem no mapeamento
+                        "ElementaryAdjRule": "INDXCN" // não tem no mapeamento
+                    }],
+                    "Conditions": conditionObj,
                     "AdditionalTexts": [{
                         "TextCode": "10",
                         "Text": "Solicitar nova locação - " + number + " - " + update
                     }],
 
-                    "TermRhythms": [{
-                        "TermText": "SEM PRO-RATA",
-                        "Frequency": "10", //padrao
-                        "FrequencyUnit": "0", //padrão
-                        "ProRataMethod": "4",
-                        "ProRataMethodCalculation": "1",
-                        "PaymentForm": "0",
-                        "DueDateCorrDay": 0,
-                        "DueDateCorrMonth": 0,
-                        "DueDateCorrYear": 0,
-                        "DueDateCorrUnit": "00"
-                    }],
+                    //"TermRhythms": termRhythms, FALTA FAZER ESSA BAGAÇA
                     "AdditionalRentNotificationRules": additionalRentNotificationRules,
-                    // "AdditionalRentBillingRules": [{
-                    //     "TermNumber": "10",
-                    //     "TermText": "REGRA DE FATURAMENTO",
-                    //     "PercSalesAsRent": 5,
-                    //     "TermNumReportRule": "10",
-                    //     "GradingItemNo": "001",
-                    //     "UsePeriodPostingForPost": true,
-                    //     "SalesForCalculation": "X",
-                    //     "MinMonetarySales": 0,
-                    //     "MaxMonetarySales": 0,
-                    //     "MinQuantitativeSales": 0,
-                    //     "MaxQuantitativeSales": 0,
-                    //     "UnitPriceGrossNet": "G",
-                    //     "GradingQuanSalesFrom": 0,
-                    //     "GradingQuanSalesTo": 0,
-                    //     "PricePerUnit": 0,
-                    //     "MinRentSalesGrading": 0,
-                    //     "MinMonetarySalesBCA": 0,
-                    //     "MaxMonetarySalesBCA": 0,
-                    //     "MinRentSalesGradingBCA": 0,
-                    //     "ValidFrom": "2022-01-01"
-                    // }],
-
+                    "AdditionalRentBillingRules": additionalRentBillingRules,
                     "TermSaleRulesRhythm": termSaleRulesRhythm
                 };
 
@@ -1030,7 +1052,7 @@ SAPintegraUtils.prototype = {
             var brandParentID = grBrandParent.sys_id;
 
             var grBrandTask = new GlideRecord('x_asscs_allos_o2c_task');
-            grBrandTask.addEncodedQuery('parent=' + brandParentID + '^order=3'); // parent=6044310d3b839e104a3b3537f4e45a0e^order=3
+            grBrandTask.addEncodedQuery('parent=' + brandParentID + '^order=3');
             grBrandTask.query();
 
             if (grBrandTask.next()) {
@@ -1672,6 +1694,13 @@ SAPintegraUtils.prototype = {
         return year + '-' + month + '-' + day;
     },
 
+	descontoUIAction: function(current){
+		if((current.request_item.cat_item == '922255dc1ba0029068724112fa4bcb43' && current.assigned_to != '' && current.order == '22' && current.u_flag_contrato == false) && (current.variables.tipo_de_desconto == 'padrao' || current.variables.tipo_de_desconto == 'carencia' || current.variables.tipo_de_desconto == 'extensao')){
+			return true;
+		}else {
+			return false;
+		}
+	},
 
 
     type: 'SAPintegraUtils'
@@ -1680,13 +1709,13 @@ SAPintegraUtils.prototype = {
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-10-28 19:40:32</sys_created_on>
         <sys_id>4cdf95dd87291e10f538edf80cbb35cf</sys_id>
-        <sys_mod_count>150</sys_mod_count>
+        <sys_mod_count>161</sys_mod_count>
         <sys_name>SAPintegraUtils</sys_name>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_script_include_4cdf95dd87291e10f538edf80cbb35cf</sys_update_name>
-        <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:55:29</sys_updated_on>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-13 17:49:47</sys_updated_on>
     </sys_script_include>
 </record_update>

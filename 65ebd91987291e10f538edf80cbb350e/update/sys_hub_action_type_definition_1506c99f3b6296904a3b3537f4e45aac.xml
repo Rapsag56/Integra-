@@ -621,7 +621,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -704,7 +704,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -787,7 +787,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -871,7 +871,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadBasic</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -977,7 +977,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadObjects</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1060,7 +1060,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1238,7 +1238,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>current</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1345,7 +1345,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>objConvertidoForEach</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1429,7 +1429,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadMRVSAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1626,7 +1626,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>answerObject</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1713,7 +1713,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>answer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1800,7 +1800,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>answer2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1910,7 +1910,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2931,7 +2931,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadMRVSatualizado</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3014,7 +3014,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>current_record</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3097,7 +3097,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>objLucForEach</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3204,7 +3204,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadObjects</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3287,7 +3287,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadBasic</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3370,7 +3370,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3548,7 +3548,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>current</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3632,7 +3632,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadMRVSAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3739,7 +3739,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>objConvertidoForEach</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3849,7 +3849,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>answerObject</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3936,7 +3936,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>answer2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4110,7 +4110,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>answer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4197,7 +4197,7 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

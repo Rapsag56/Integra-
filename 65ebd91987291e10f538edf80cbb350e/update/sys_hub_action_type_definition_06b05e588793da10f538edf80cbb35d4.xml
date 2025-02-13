@@ -450,7 +450,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -533,7 +533,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -617,7 +617,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>companyCodeAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -700,7 +700,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ErrorOutput</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -783,7 +783,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>returnCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -866,7 +866,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>contractNumberAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -949,7 +949,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatus</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1032,7 +1032,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>messageDescription</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1256,7 +1256,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1340,7 +1340,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Token</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1427,7 +1427,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatus</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1514,7 +1514,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Erros</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1601,7 +1601,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Contrato Criado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1688,7 +1688,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mensagem</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1775,7 +1775,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Integração</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1862,7 +1862,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Empresa</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2059,7 +2059,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2121,7 +2121,7 @@
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=6eb09e588793da10f538edf80cbb3561^sys_idNOT IN26b09e588793da10f538edf80cbb3562,7015a61c8717da10f538edf80cbb3555"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 20/01/2025 16:13:41">6eb09e588793da10f538edf80cbb3561</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 20/01/2025 16:13:41">6eb09e588793da10f538edf80cbb3561</action_status_metadata_id>
         <condition>{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].httpstatus}}=500</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -2135,7 +2135,7 @@
         <sys_updated_on>2025-01-20 19:13:41</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 20/01/2025 16:13:41">6eb09e588793da10f538edf80cbb3561</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 20/01/2025 16:13:41">6eb09e588793da10f538edf80cbb3561</action_status_metadata_id>
         <condition>{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].httpstatus}}=400</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -2845,7 +2845,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>token</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2928,7 +2928,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3012,7 +3012,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>returnCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3095,7 +3095,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>companyCodeAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3178,7 +3178,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ErrorOutput</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3261,7 +3261,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>contractNumberAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3344,7 +3344,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>messageDescription</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3427,7 +3427,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatus</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3651,7 +3651,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Token</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3735,7 +3735,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3822,7 +3822,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Erros</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3909,7 +3909,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Integração</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3996,7 +3996,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Contrato Criado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4083,7 +4083,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatus</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4257,7 +4257,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mensagem</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4344,7 +4344,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -4431,7 +4431,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Empresa</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4493,7 +4493,7 @@
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=c5f056988793da10f538edf80cbb3528^sys_idNOT IN4669aa148757da10f538edf80cbb3502,ce69aa148757da10f538edf80cbb3501"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 20/01/2025 16:14:41">c5f056988793da10f538edf80cbb3528</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 20/01/2025 16:14:41">c5f056988793da10f538edf80cbb3528</action_status_metadata_id>
         <condition>{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].httpstatus}}=400</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -4507,7 +4507,7 @@
         <sys_updated_on>2025-01-20 21:01:31</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 20/01/2025 16:14:41">c5f056988793da10f538edf80cbb3528</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 20/01/2025 16:14:41">c5f056988793da10f538edf80cbb3528</action_status_metadata_id>
         <condition>{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].httpstatus}}=500</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
