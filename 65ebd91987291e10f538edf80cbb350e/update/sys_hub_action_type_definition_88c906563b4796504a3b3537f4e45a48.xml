@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>88c906563b4796504a3b3537f4e45a48</sys_id>
-        <sys_mod_count>117</sys_mod_count>
+        <sys_mod_count>125</sys_mod_count>
         <sys_name>Contrato - Desconto - Payload</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_88c906563b4796504a3b3537f4e45a48</sys_update_name>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:42</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:04</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -167,10 +167,10 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-14 14:11:43</sys_created_on>
         <sys_id>601212163b8796504a3b3537f4e45a41</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:40</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:01</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=601212163b8796504a3b3537f4e45a41"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -195,9 +195,9 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-14 14:11:43</sys_created_on>
         <sys_id>601212163b8796504a3b3537f4e45a8b</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:40</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:01</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
     var currentRecord = inputs.currentRecord;&#13;
@@ -294,13 +294,16 @@ for (var i = 0; i &lt; totalRows; i++) {&#13;
     var opcaoDesconto = mrvs.getRow(i).getCell('opcoes_de_desconto').getCellValue();&#13;
     //var percentualValor = mrvs.getRow(i).getCell('valor_desc_readonly').getCellValue();não utlizará mais&#13;
     var percentualValor = mrvs.getRow(i).getCell('valor_percentual').getCellValue();&#13;
-    var percentualValorAnswer = '';&#13;
+    &#13;
+   // var fixoValor = mrvs.getRow(i).getCell('valor_de_desconto').getCellValue();&#13;
+   var fixoValorFinal = mrvs.getRow(i).getCell('valor_percentual_readonly').getCellValue();&#13;
+   var percentualValorAnswer = '';&#13;
     if(percentualValor){&#13;
         percentualValorAnswer = percentualValor&#13;
     }else {&#13;
-        percentualValorAnswer = 'Valor FIXO selecionado';&#13;
+        var percentualValorAnswer = convertCurrencyToNumber(fixoValorFinal);&#13;
     }&#13;
-    var fixoValor = mrvs.getRow(i).getCell('valor_de_desconto').getCellValue();&#13;
+    &#13;
 &#13;
     var descontoEm = mrvs.getRow(i).getCell('desconto_em').getCellValue();&#13;
     gs.info('DESCONTO PK: ' + descontoEm);&#13;
@@ -326,7 +329,7 @@ for (var i = 0; i &lt; totalRows; i++) {&#13;
     if (opcaoDesconto === 'percentual') {&#13;
         unitPrice = percentualValor;&#13;
     } else if (opcaoDesconto === 'fixo') {&#13;
-        unitPrice = fixoValor;&#13;
+        unitPrice = fixoValorFinal.replace('%', '');&#13;
     }&#13;
 &#13;
     var regraFaturamento = '';&#13;
@@ -361,12 +364,14 @@ for (var i = 0; i &lt; totalRows; i++) {&#13;
             "ValidFrom": dataInicioFormatada,&#13;
             "ValidTo": dataFimFormatada,&#13;
             "UnitPrice": unitPriceFloat,&#13;
-            "CalcNorm": "A",&#13;
+            "CalcNorm": "E1",&#13;
             "Degrau": false,&#13;
             "ExternalPurpose": "A",&#13;
             "LucKey": lucKey,&#13;
             "DistRule": "A",&#13;
-            "TermNoSalesRule": regraFaturamento&#13;
+            "TermNoSalesRule": regraFaturamento,&#13;
+            "PercentageOfParticipation": percentualValorAnswer,&#13;
+            "CalcRuleParameter": "[A   ]"+"[Z010]"+"[IM" + companyCode + unitCode + "     " + resultadoLuc + "]"&#13;
         };&#13;
     }&#13;
    &#13;
@@ -1256,14 +1261,14 @@ function convertCurrencyToNumber(currency) {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-14 14:11:43</sys_created_on>
         <sys_id>a01212163b8796504a3b3537f4e45a98</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:40</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1510,17 +1515,17 @@ function convertCurrencyToNumber(currency) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Contrato - Desconto - Payload">88c906563b4796504a3b3537f4e45a48</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"411252163b8796504a3b3537f4e45a4b","name":"plan","plan_signature":null}}</plan>
-        <snapshot>46a631c887ffda50f538edf80cbb351f</snapshot>
+        <snapshot>c36aca4087b31e50f538edf80cbb3562</snapshot>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-14 14:11:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>411252163b8796504a3b3537f4e45a4b</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:43</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:05</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1686,10 +1691,10 @@ function convertCurrencyToNumber(currency) {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-14 14:11:44</sys_created_on>
         <sys_id>f81212163b8796504a3b3537f4e45ae9</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:42</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:04</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f81212163b8796504a3b3537f4e45ae9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1700,9 +1705,9 @@ function convertCurrencyToNumber(currency) {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-14 14:11:44</sys_created_on>
         <sys_id>7c1212163b8796504a3b3537f4e45afb</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:42</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:04</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
     var currentRecord = inputs.currentRecord;&#13;
@@ -1799,13 +1804,16 @@ for (var i = 0; i &lt; totalRows; i++) {&#13;
     var opcaoDesconto = mrvs.getRow(i).getCell('opcoes_de_desconto').getCellValue();&#13;
     //var percentualValor = mrvs.getRow(i).getCell('valor_desc_readonly').getCellValue();não utlizará mais&#13;
     var percentualValor = mrvs.getRow(i).getCell('valor_percentual').getCellValue();&#13;
-    var percentualValorAnswer = '';&#13;
+    &#13;
+   // var fixoValor = mrvs.getRow(i).getCell('valor_de_desconto').getCellValue();&#13;
+   var fixoValorFinal = mrvs.getRow(i).getCell('valor_percentual_readonly').getCellValue();&#13;
+   var percentualValorAnswer = '';&#13;
     if(percentualValor){&#13;
         percentualValorAnswer = percentualValor&#13;
     }else {&#13;
-        percentualValorAnswer = 'Valor FIXO selecionado';&#13;
+        var percentualValorAnswer = convertCurrencyToNumber(fixoValorFinal);&#13;
     }&#13;
-    var fixoValor = mrvs.getRow(i).getCell('valor_de_desconto').getCellValue();&#13;
+    &#13;
 &#13;
     var descontoEm = mrvs.getRow(i).getCell('desconto_em').getCellValue();&#13;
     gs.info('DESCONTO PK: ' + descontoEm);&#13;
@@ -1831,7 +1839,7 @@ for (var i = 0; i &lt; totalRows; i++) {&#13;
     if (opcaoDesconto === 'percentual') {&#13;
         unitPrice = percentualValor;&#13;
     } else if (opcaoDesconto === 'fixo') {&#13;
-        unitPrice = fixoValor;&#13;
+        unitPrice = fixoValorFinal.replace('%', '');&#13;
     }&#13;
 &#13;
     var regraFaturamento = '';&#13;
@@ -1866,12 +1874,14 @@ for (var i = 0; i &lt; totalRows; i++) {&#13;
             "ValidFrom": dataInicioFormatada,&#13;
             "ValidTo": dataFimFormatada,&#13;
             "UnitPrice": unitPriceFloat,&#13;
-            "CalcNorm": "A",&#13;
+            "CalcNorm": "E1",&#13;
             "Degrau": false,&#13;
             "ExternalPurpose": "A",&#13;
             "LucKey": lucKey,&#13;
             "DistRule": "A",&#13;
-            "TermNoSalesRule": regraFaturamento&#13;
+            "TermNoSalesRule": regraFaturamento,&#13;
+            "PercentageOfParticipation": percentualValorAnswer,&#13;
+            "CalcRuleParameter": "[A   ]"+"[Z010]"+"[IM" + companyCode + unitCode + "     " + resultadoLuc + "]"&#13;
         };&#13;
     }&#13;
    &#13;
@@ -2688,14 +2698,14 @@ function convertCurrencyToNumber(currency) {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-14 14:11:44</sys_created_on>
         <sys_id>3c1252163b8796504a3b3537f4e45a07</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:42</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2808,21 +2818,7 @@ function convertCurrencyToNumber(currency) {&#13;
         <sys_updated_by>patrick.almeida</sys_updated_by>
         <sys_updated_on>2025-01-14 14:11:44</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=491252163b8796504a3b3537f4e45a13^sys_idNOT IN0aa631c887ffda50f538edf80cbb351e,82a631c887ffda50f538edf80cbb351e"/>
-    <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Criação 14/01/2025 11:11:44">491252163b8796504a3b3537f4e45a13</action_status_metadata_id>
-        <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].errorcontractnumber}}=Campo vazio</condition>
-        <dont_treat_as_error>true</dont_treat_as_error>
-        <label/>
-        <order>2</order>
-        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Número do Contrato vazio no campo \"Número do contrato\". Nome interno: local_luc"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>patrick.almeida</sys_created_by>
-        <sys_created_on>2025-02-13 19:12:42</sys_created_on>
-        <sys_id>0aa631c887ffda50f538edf80cbb351e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:42</sys_updated_on>
-    </sys_hub_status_condition>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=491252163b8796504a3b3537f4e45a13^sys_idNOT IN036aca4087b31e50f538edf80cbb3561,876aca4087b31e50f538edf80cbb3561"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Criação 14/01/2025 11:11:44">491252163b8796504a3b3537f4e45a13</action_status_metadata_id>
         <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].datainconsistente}}=true</condition>
@@ -2831,11 +2827,25 @@ function convertCurrencyToNumber(currency) {&#13;
         <order>1</order>
         <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Execução interrompida devido a datas inconsistentes"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>patrick.almeida</sys_created_by>
-        <sys_created_on>2025-02-13 19:12:42</sys_created_on>
-        <sys_id>82a631c887ffda50f538edf80cbb351e</sys_id>
+        <sys_created_on>2025-02-13 20:39:04</sys_created_on>
+        <sys_id>036aca4087b31e50f538edf80cbb3561</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-02-13 19:12:42</sys_updated_on>
+        <sys_updated_on>2025-02-13 20:39:04</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Criação 14/01/2025 11:11:44">491252163b8796504a3b3537f4e45a13</action_status_metadata_id>
+        <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].errorcontractnumber}}=Campo vazio</condition>
+        <dont_treat_as_error>true</dont_treat_as_error>
+        <label/>
+        <order>2</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"400"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Número do Contrato vazio no campo \"Número do contrato\". Nome interno: local_luc"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-13 20:39:04</sys_created_on>
+        <sys_id>876aca4087b31e50f538edf80cbb3561</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-13 20:39:04</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fc1212163b8796504a3b3537f4e45ac2^sys_idNOT IN0b41d48f874f9210f538edf80cbb35a8,7c1212163b8796504a3b3537f4e45ae4"/>
     <sys_documentation action="INSERT_OR_UPDATE">
