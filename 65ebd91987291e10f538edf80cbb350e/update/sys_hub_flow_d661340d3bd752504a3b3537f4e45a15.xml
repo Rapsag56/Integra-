@@ -65,8 +65,8 @@
     <sys_variable_value action="delete_multiple" query="document_key=d661340d3bd752504a3b3537f4e45a15"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_asscs_allos_o2c_task">cat_item=69248e173baa96904a3b3537f4e45acf^state=-6<item display_table="sc_cat_item" display_value="Copy of Request lease addendum" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="69248e173baa96904a3b3537f4e45acf"/>
-            <item display_value="-6" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-6"/>
+        <condition table="x_asscs_allos_o2c_task">cat_item=69248e173baa96904a3b3537f4e45acf^state=-6<item display_table="sc_cat_item" display_value="Solicitar aditivo de locação (Novo)" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="69248e173baa96904a3b3537f4e45acf"/>
+            <item display_value="Aguardando calendário" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-6"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -178,7 +178,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Campos alterados</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -410,7 +410,7 @@
         <sys_scope/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
         <sys_updated_on>2025-01-23 02:16:02</sys_updated_on>
-        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_definition display_value="Atualizado em">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
@@ -737,7 +737,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Campos alterados</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -969,7 +969,7 @@
         <sys_scope/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
         <sys_updated_on>2025-01-23 02:16:04</sys_updated_on>
-        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_definition display_value="Atualizado em">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
@@ -1020,8 +1020,8 @@
         <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
-        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <action_type display_value="Obter variáveis de catálogo">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Obter variáveis de catálogo">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>

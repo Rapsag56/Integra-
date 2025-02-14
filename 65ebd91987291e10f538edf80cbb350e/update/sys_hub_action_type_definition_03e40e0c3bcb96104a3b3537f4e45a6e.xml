@@ -346,7 +346,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -429,7 +429,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -513,7 +513,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>responseBodyAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -596,7 +596,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>errorMsg</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -679,7 +679,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatusAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -762,7 +762,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>contractNumber</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -940,7 +940,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1024,7 +1024,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>token</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1111,7 +1111,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ErrorMsg</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1198,7 +1198,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatusError</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1285,7 +1285,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1372,7 +1372,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ResponseBodyAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1459,7 +1459,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ContractNumber</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2154,7 +2154,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>token</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2237,7 +2237,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2321,7 +2321,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>responseBodyAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2404,7 +2404,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatusAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2487,7 +2487,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>contractNumber</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2570,7 +2570,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>errorMsg</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2748,7 +2748,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>token</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2832,7 +2832,7 @@ catch(ex) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2919,7 +2919,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ErrorMsg</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3093,7 +3093,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>HttpStatusError</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3180,7 +3180,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ContractNumber</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3267,7 +3267,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ResponseBodyAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3354,7 +3354,7 @@ catch(ex) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

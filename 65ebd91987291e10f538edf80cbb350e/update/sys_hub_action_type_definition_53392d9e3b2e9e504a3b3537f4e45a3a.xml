@@ -432,7 +432,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -516,7 +516,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>string</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -599,7 +599,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -705,7 +705,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>obj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -811,7 +811,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>arrayObj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1058,7 +1058,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>String</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1255,7 +1255,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>obj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1342,7 +1342,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1429,7 +1429,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1516,7 +1516,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>string</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1626,7 +1626,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>arrayObj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2435,7 +2435,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>stringConverter</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2519,7 +2519,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2625,7 +2625,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>obj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2731,7 +2731,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>arrayObj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2814,7 +2814,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>string</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3061,7 +3061,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>String</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3171,7 +3171,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>obj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3258,7 +3258,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3345,7 +3345,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>string</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3455,7 +3455,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>arrayObj</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3542,7 +3542,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

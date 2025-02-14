@@ -319,7 +319,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -403,7 +403,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -486,7 +486,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -641,7 +641,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>sysIdTask</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -815,7 +815,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -902,7 +902,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadContrato</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -964,7 +964,7 @@
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=05fc3b9587eb5a10f538edf80cbb357d^sys_idNOT IN68aa060a87639e10f538edf80cbb3501"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 05/02/2025 12:56:10">05fc3b9587eb5a10f538edf80cbb357d</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 05/02/2025 12:56:10">05fc3b9587eb5a10f538edf80cbb357d</action_status_metadata_id>
         <condition>{{step[08656286-99e0-4165-b8f1-22efbd06b766].error}}=false</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -1410,7 +1410,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>sysIdTask</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1494,7 +1494,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1577,7 +1577,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1709,7 +1709,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>sysIdTask</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1796,7 +1796,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1970,7 +1970,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payloadContrato</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2032,7 +2032,7 @@
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=506b0e4a87639e10f538edf80cbb35b2^sys_idNOT IN186b0e4a87639e10f538edf80cbb35b2"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 07/02/2025 12:35:24">506b0e4a87639e10f538edf80cbb35b2</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 07/02/2025 12:35:24">506b0e4a87639e10f538edf80cbb35b2</action_status_metadata_id>
         <condition>{{step[08656286-99e0-4165-b8f1-22efbd06b766].error}}=false</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>

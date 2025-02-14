@@ -153,7 +153,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_679357c73b1f5e104a3b3537f4e45a2b^id=679357c73b1f5e104a3b3537f4e45a2b"/>
     <sys_hub_step_instance action="delete_multiple" query="action=679357c73b1f5e104a3b3537f4e45a2b^sys_idNOT IN279357c73b1f5e104a3b3537f4e45a5f"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</action>
+        <action display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</action>
         <cid>4c15a3ca-edd2-479f-83eb-97ea3cd1de41</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -365,7 +365,7 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -448,7 +448,7 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -531,7 +531,7 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -618,11 +618,11 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>sysID MRVS</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</model>
+        <model display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</model>
         <model_id>679357c73b1f5e104a3b3537f4e45a2b</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_679357c73b1f5e104a3b3537f4e45a2b</name>
@@ -706,7 +706,7 @@ while (grSMRQA.next()) {&#13;
         <label>related</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</model>
+        <model display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</model>
         <model_id>679357c73b1f5e104a3b3537f4e45a2b</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_679357c73b1f5e104a3b3537f4e45a2b</name>
@@ -790,7 +790,7 @@ while (grSMRQA.next()) {&#13;
         <label>parent</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</model>
+        <model display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</model>
         <model_id>679357c73b1f5e104a3b3537f4e45a2b</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_679357c73b1f5e104a3b3537f4e45a2b</name>
@@ -877,7 +877,7 @@ while (grSMRQA.next()) {&#13;
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</model>
+        <model display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</model>
         <model_id>679357c73b1f5e104a3b3537f4e45a2b</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_679357c73b1f5e104a3b3537f4e45a2b</name>
@@ -983,11 +983,11 @@ while (grSMRQA.next()) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</model>
+        <model display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</model>
         <model_id>679357c73b1f5e104a3b3537f4e45a2b</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_679357c73b1f5e104a3b3537f4e45a2b</name>
@@ -1035,7 +1035,7 @@ while (grSMRQA.next()) {&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=679357c73b1f5e104a3b3537f4e45a2b"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=679357c73b1f5e104a3b3537f4e45a2b^sys_idNOT IN3b9357c73b1f5e104a3b3537f4e45a8a"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</action_type_id>
+        <action_type_id display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</action_type_id>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-29 13:09:16</sys_created_on>
         <sys_id>3b9357c73b1f5e104a3b3537f4e45a8a</sys_id>
@@ -1280,7 +1280,7 @@ while (grSMRQA.next()) {&#13;
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_679357c73b1f5e104a3b3537f4e45a2b"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=679357c73b1f5e104a3b3537f4e45a2b^sys_idNOT IN4a44934b3b1f5e104a3b3537f4e45a75"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</action_id>
+        <action_id display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4a44934b3b1f5e104a3b3537f4e45a75","name":"plan","plan_signature":null}}</plan>
         <snapshot>3c6fb91b3b53de104a3b3537f4e45ab2</snapshot>
         <sys_created_by>patrick.almeida</sys_created_by>
@@ -1314,7 +1314,7 @@ while (grSMRQA.next()) {&#13;
         <name>Copiar Dados da MRVS e Criar em outro Registro</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Copiar Dados da MRVS e Criar em outro Registro">679357c73b1f5e104a3b3537f4e45a2b</parent_action>
+        <parent_action display_value="Create MRVS LUC">679357c73b1f5e104a3b3537f4e45a2b</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-29 13:12:07</sys_created_on>
@@ -1405,7 +1405,7 @@ while (grSMRQA.next()) {&#13;
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_e544534b3b1f5e104a3b3537f4e45aaa^id=e544534b3b1f5e104a3b3537f4e45aaa"/>
     <sys_hub_step_instance action="delete_multiple" query="action=e544534b3b1f5e104a3b3537f4e45aaa^sys_idNOT IN3544534b3b1f5e104a3b3537f4e45af2"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Copiar Dados da MRVS e Criar em outro Registro">e544534b3b1f5e104a3b3537f4e45aaa</action>
+        <action display_value="Create MRVS LUC">e544534b3b1f5e104a3b3537f4e45aaa</action>
         <cid>4c15a3ca-edd2-479f-83eb-97ea3cd1de41</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1617,7 +1617,7 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>sysID26</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1700,7 +1700,7 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>mrvsID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1783,7 +1783,7 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>sysID27</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1874,7 +1874,7 @@ while (grSMRQA.next()) {&#13;
         <label>parent</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">e544534b3b1f5e104a3b3537f4e45aaa</model>
+        <model display_value="Create MRVS LUC">e544534b3b1f5e104a3b3537f4e45aaa</model>
         <model_id>e544534b3b1f5e104a3b3537f4e45aaa</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_e544534b3b1f5e104a3b3537f4e45aaa</name>
@@ -1958,7 +1958,7 @@ while (grSMRQA.next()) {&#13;
         <label>related</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">e544534b3b1f5e104a3b3537f4e45aaa</model>
+        <model display_value="Create MRVS LUC">e544534b3b1f5e104a3b3537f4e45aaa</model>
         <model_id>e544534b3b1f5e104a3b3537f4e45aaa</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_e544534b3b1f5e104a3b3537f4e45aaa</name>
@@ -2038,11 +2038,11 @@ while (grSMRQA.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>sysID MRVS</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">e544534b3b1f5e104a3b3537f4e45aaa</model>
+        <model display_value="Create MRVS LUC">e544534b3b1f5e104a3b3537f4e45aaa</model>
         <model_id>e544534b3b1f5e104a3b3537f4e45aaa</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_e544534b3b1f5e104a3b3537f4e45aaa</name>
@@ -2129,7 +2129,7 @@ while (grSMRQA.next()) {&#13;
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">e544534b3b1f5e104a3b3537f4e45aaa</model>
+        <model display_value="Create MRVS LUC">e544534b3b1f5e104a3b3537f4e45aaa</model>
         <model_id>e544534b3b1f5e104a3b3537f4e45aaa</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_e544534b3b1f5e104a3b3537f4e45aaa</name>
@@ -2212,11 +2212,11 @@ while (grSMRQA.next()) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Copiar Dados da MRVS e Criar em outro Registro">e544534b3b1f5e104a3b3537f4e45aaa</model>
+        <model display_value="Create MRVS LUC">e544534b3b1f5e104a3b3537f4e45aaa</model>
         <model_id>e544534b3b1f5e104a3b3537f4e45aaa</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_e544534b3b1f5e104a3b3537f4e45aaa</name>
@@ -2264,7 +2264,7 @@ while (grSMRQA.next()) {&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=e544534b3b1f5e104a3b3537f4e45aaa"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e544534b3b1f5e104a3b3537f4e45aaa^sys_idNOT INbd44934b3b1f5e104a3b3537f4e45a3d"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Copiar Dados da MRVS e Criar em outro Registro">e544534b3b1f5e104a3b3537f4e45aaa</action_type_id>
+        <action_type_id display_value="Create MRVS LUC">e544534b3b1f5e104a3b3537f4e45aaa</action_type_id>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-29 13:12:08</sys_created_on>
         <sys_id>bd44934b3b1f5e104a3b3537f4e45a3d</sys_id>

@@ -423,7 +423,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -506,7 +506,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -590,7 +590,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>returnCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -673,7 +673,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>messageDescription</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -756,7 +756,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>contractNumberAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -839,7 +839,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>companyCodeAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -922,7 +922,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>messageText</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1123,7 +1123,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1207,7 +1207,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Token</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1294,7 +1294,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Contrato Criado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1404,7 +1404,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1491,7 +1491,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Integração</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1578,7 +1578,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Empresa</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1752,7 +1752,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mensagem</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1839,7 +1839,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mensagem Erro</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1901,7 +1901,7 @@ function getEndpoint() {&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=ea9630038783d210f538edf80cbb3559^sys_idNOT IN054872cb878fd210f538edf80cbb3553"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 16/01/2025 12:27:31">ea9630038783d210f538edf80cbb3559</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 16/01/2025 12:27:31">ea9630038783d210f538edf80cbb3559</action_status_metadata_id>
         <condition>{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKENão foi possível modificar a instância ^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKE\"RE: rescindir contrato\" não é permitido ^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKEMensagens para os dados de parâmetro^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKETipo de contrato  não existe^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKEA data 'rescisão em' deve situar-se entre o início e o fim do contrato</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -2561,7 +2561,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>payload</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2644,7 +2644,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>token</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2728,7 +2728,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>companyCodeAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2811,7 +2811,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>messageText</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2894,7 +2894,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>returnCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2977,7 +2977,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>contractNumberAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3060,7 +3060,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>messageDescription</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3261,7 +3261,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Token</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3345,7 +3345,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3432,7 +3432,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mensagem Erro</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3519,7 +3519,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Integração</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3606,7 +3606,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Contrato Criado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3780,7 +3780,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3867,7 +3867,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mensagem</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3954,7 +3954,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Código Empresa</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4016,7 +4016,7 @@ function getEndpoint() {&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=7e1838838783d210f538edf80cbb35f5^sys_idNOT IN3363834f87cfd210f538edf80cbb350d"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 16/01/2025 12:34:05">7e1838838783d210f538edf80cbb35f5</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 16/01/2025 12:34:05">7e1838838783d210f538edf80cbb35f5</action_status_metadata_id>
         <condition>{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKENão foi possível modificar a instância ^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKE\"RE: rescindir contrato\" não é permitido ^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKEMensagens para os dados de parâmetro^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKETipo de contrato  não existe^NQ{{step[aea66e93-affc-4b92-a2f0-54be6cc56352].messagetext}}LIKEA data 'rescisão em' deve situar-se entre o início e o fim do contrato</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>

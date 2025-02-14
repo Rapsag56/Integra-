@@ -357,7 +357,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -441,7 +441,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ErrorCampoVazio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -524,7 +524,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>fields</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -607,7 +607,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>errorAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -690,7 +690,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>myObj</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -868,7 +868,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>current</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -955,7 +955,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1152,7 +1152,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1214,7 +1214,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=8575308f8743d210f538edf80cbb354d^sys_idNOT IN21933f913baf1a104a3b3537f4e45ac4,f8b33d7587e31e10f538edf80cbb35c3"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 16/01/2025 12:22:30">8575308f8743d210f538edf80cbb354d</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 16/01/2025 12:22:30">8575308f8743d210f538edf80cbb354d</action_status_metadata_id>
         <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].erroranswer}}LIKEvazio detectado</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -1228,7 +1228,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <sys_updated_on>2025-02-06 19:13:28</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 16/01/2025 12:22:30">8575308f8743d210f538edf80cbb354d</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 16/01/2025 12:22:30">8575308f8743d210f538edf80cbb354d</action_status_metadata_id>
         <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].errorcampovazio}}=Campo Vazio</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -1707,7 +1707,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>currentRecord</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1791,7 +1791,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ErrorCampoVazio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1874,7 +1874,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>myObj</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1957,7 +1957,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>fields</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2040,7 +2040,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>errorAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2218,7 +2218,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>current</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2305,7 +2305,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2479,7 +2479,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2541,7 +2541,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a1f57c8f8743d210f538edf80cbb3565^sys_idNOT IN1db37d7587e31e10f538edf80cbb35a6,9db37d7587e31e10f538edf80cbb35a6"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 16/01/2025 12:24:43">a1f57c8f8743d210f538edf80cbb3565</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 16/01/2025 12:24:43">a1f57c8f8743d210f538edf80cbb3565</action_status_metadata_id>
         <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].erroranswer}}LIKEvazio detectado</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -2555,7 +2555,7 @@ function formatDateToYYYYMMDD(dateString) {&#13;
         <sys_updated_on>2025-02-06 19:13:30</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 16/01/2025 12:24:43">a1f57c8f8743d210f538edf80cbb3565</action_status_metadata_id>
+        <action_status_metadata_id display_value="Criação 16/01/2025 12:24:43">a1f57c8f8743d210f538edf80cbb3565</action_status_metadata_id>
         <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].errorcampovazio}}=Campo Vazio</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
