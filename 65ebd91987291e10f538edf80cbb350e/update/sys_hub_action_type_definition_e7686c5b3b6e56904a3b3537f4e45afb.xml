@@ -500,7 +500,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -583,7 +583,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -667,7 +667,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>code</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -750,7 +750,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>http</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -833,7 +833,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -939,7 +939,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadLucKey</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1022,7 +1022,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1105,7 +1105,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>responseBodyAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1188,7 +1188,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer_script</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1271,7 +1271,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>lucKey</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1702,7 +1702,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>token</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1786,7 +1786,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payload</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1873,7 +1873,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1983,7 +1983,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2070,7 +2070,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>http</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2157,7 +2157,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2267,7 +2267,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2354,7 +2354,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>lucKey</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2441,7 +2441,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer_integração</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2528,7 +2528,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>responseBody</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2615,7 +2615,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>LucPayloadFim</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2789,7 +2789,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>code</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3942,7 +3942,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payload</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4025,7 +4025,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>token</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4109,7 +4109,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>code</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4192,7 +4192,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4275,7 +4275,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>http</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4358,7 +4358,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4441,7 +4441,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>lucKey</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4524,7 +4524,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer_script</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4607,7 +4607,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>responseBodyAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4713,7 +4713,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadLucKey</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -5144,7 +5144,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>token</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5228,7 +5228,7 @@ function getEndpoint() {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payload</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5315,7 +5315,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>responseBody</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5402,7 +5402,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -5512,7 +5512,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -5599,7 +5599,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>lucKey</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5686,7 +5686,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>code</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5773,7 +5773,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>LucPayloadFim</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5860,7 +5860,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer_integração</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5947,7 +5947,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -6121,7 +6121,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>http</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -6208,7 +6208,7 @@ function getEndpoint() {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>

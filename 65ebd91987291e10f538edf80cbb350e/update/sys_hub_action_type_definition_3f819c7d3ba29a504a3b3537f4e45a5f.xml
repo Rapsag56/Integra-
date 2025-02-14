@@ -422,7 +422,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -505,7 +505,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -589,7 +589,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string1</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -672,7 +672,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>outputMRVSmodificar</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -755,7 +755,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -838,7 +838,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>outputMRVSatual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1085,7 +1085,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>DadosDaLucAtual</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1192,7 +1192,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>DadosDaLucModificar</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1279,7 +1279,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>saidaDadosAtualAtualizado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1366,7 +1366,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1453,7 +1453,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>saidaDadosModificarAtualizado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1627,7 +1627,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string1</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1714,7 +1714,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2508,7 +2508,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dadosLucAtual</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2591,7 +2591,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dadosModificar</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2675,7 +2675,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>outputMRVSmodificar</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2758,7 +2758,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>outputMRVSatual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2841,7 +2841,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2924,7 +2924,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string1</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3171,7 +3171,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>DadosDaLucModificar</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3278,7 +3278,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>DadosDaLucAtual</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -3365,7 +3365,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>saidaDadosAtualAtualizado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3539,7 +3539,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>saidaDadosModificarAtualizado</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3626,7 +3626,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string1</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3713,7 +3713,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>string2</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3800,7 +3800,7 @@ outputs.string2 = JSON.stringify(multirow2);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

@@ -420,7 +420,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -587,7 +587,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>myObj</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -742,7 +742,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -939,7 +939,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1026,7 +1026,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1088,7 +1088,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=ff8330013b1b52504a3b3537f4e45a5f^sys_idNOT INfce146c987dfde10f538edf80cbb3525"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Criação 22/01/2025 17:22:04">ff8330013b1b52504a3b3537f4e45a5f</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 22/01/2025 17:22:04">ff8330013b1b52504a3b3537f4e45a5f</action_status_metadata_id>
         <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].bpnaoselecionado}}=true</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>
@@ -1722,7 +1722,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>currentRecord</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1806,7 +1806,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>myObj</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2044,7 +2044,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2131,7 +2131,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2305,7 +2305,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2367,7 +2367,7 @@ gs.info('***Contratos Output: ' + JSON.stringify(conditionObj));&#13;
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=67a334013b1b52504a3b3537f4e45ae9^sys_idNOT IN04cd3ed987939250f538edf80cbb3512"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Criação 22/01/2025 17:22:36">67a334013b1b52504a3b3537f4e45ae9</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 22/01/2025 17:22:36">67a334013b1b52504a3b3537f4e45ae9</action_status_metadata_id>
         <condition>{{step[53ee38f3-221a-4f4a-9111-082b0e0aa1ed].bpnaoselecionado}}=true</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label/>

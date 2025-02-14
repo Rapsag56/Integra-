@@ -65,7 +65,7 @@
     <sys_variable_value action="delete_multiple" query="document_key=16d1c6843bcb96104a3b3537f4e45ab2"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_asscs_allos_o2c_task">cat_item=bdf25c70871a71d01ee364640cbb35ac<item display_table="sc_cat_item" display_value="Solicitar nova locação" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="bdf25c70871a71d01ee364640cbb35ac"/>
+        <condition table="x_asscs_allos_o2c_task">cat_item=bdf25c70871a71d01ee364640cbb35ac<item display_table="sc_cat_item" display_value="Request New Lease" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="bdf25c70871a71d01ee364640cbb35ac"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -345,7 +345,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -409,7 +409,7 @@
         <sys_scope/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
         <sys_updated_on>2025-01-09 13:00:15</sys_updated_on>
-        <trigger_definition display_value="Atualizado em">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
@@ -460,8 +460,8 @@
         <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -504,8 +504,8 @@
         <values>H4sIAAAAAAAA/+1VXW/TMBT9L36uI6d2kmZvaNMkJGASg71MqLrxx2rhOlnibCtV/zvXTdKNbaANxAviLT6+H+ce36NcbolV5IjoeVGKnC14xUyZp0wAr3jGCyO0yCCryIx4WGuMbGDjalAI3IDrI7LdinkhtGZAC1bmVOjCUGBZRoVaZDkHU6giS8ZEWfvQQqh3OyyhbNc42Fz8eSW5sk612pOjyy8zJNki26BbcrR9dPXScR1U2v0w7xMBwqaJQBda66/G87sx7XwC61ZFGumM6LugvdLY34Dr9IyswSvk324OSKtBnXl3D6ysD1iNxOC7zn7DfgvGWIw0GmeSerg9HJejpANsTiAAUull6NsxVK5qK3U3qKG0gd6F44fYEHDWBFv7ISVA5abs2vVr/2GQghwKTC+ISN8hCd3EUSP3cRBzvqpvP04sT63fqzJeulqCO5wgoHZVHyKfLentp0cyD8gTobXTa+y4XEPTILJs2vrG7rsg6XVy5fCQGFffIrvOXvkEZJwwwSeA5BTxkz18Aa2N477HMpgc23329rrXb+PiGJkWrOIVTVMJuJWloCUTKWUqNRpXNjeQkd2MdJvu2EHX3QuFL7S87uOYg2yjQMtB45giW9uEN0jqRh+0GMCow7R2+PlM5G63m41Whl/uds7uNznUX9EVD42cVXkq84rTnHFDRSYZLUshKU+NEXwhjMrmyT5tCb671e3zLv69Mq+z8AvGnCw8zflo7NfYd/7fvv+Cfcs5T7lIC8oKqPD3wgytSlZQXvLczJnCv4v+O/Ydlu6n5v3yHfq0Xz+JBwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -537,7 +537,7 @@
         <flow display_value="Integra+ - Contrato">16d1c6843bcb96104a3b3537f4e45ab2</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Término">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>5</order>
         <outputs_assigned/>
         <parent_ui_id>00669af2-804c-425d-a51b-b63d045109d0</parent_ui_id>
@@ -563,7 +563,7 @@
         <flow display_value="Integra+ - Contrato">16d1c6843bcb96104a3b3537f4e45ab2</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -589,7 +589,7 @@
         <flow display_value="Integra+ - Contrato">16d1c6843bcb96104a3b3537f4e45ab2</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Outro">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
         <order>6</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -883,7 +883,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -1031,7 +1031,7 @@
         <sys_scope/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
         <sys_updated_on>2025-01-09 13:00:16</sys_updated_on>
-        <trigger_definition display_value="Atualizado em">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
@@ -1060,8 +1060,8 @@
         <values>H4sIAAAAAAAA/41Sy27bMBD8F55tQZIl1fatSBAgQNoAzeMSBMKKXNlEKErhw4kr+N+7NGWnSHvIcYezuzOzfBqZFGzN0rRqUixg+a1arDBL23KxRNEuU940izLP2Ixp6JCYdm+lcGBfCNqB8gEbx4dBgENRZwn3xqB2CfFqKQ4HoglpBwX7x6+x+VYqQSBbPz3P2ACG9jo0bD1+evqqcAUNqqj8WtxH5f8x4/bDEXJG6s1U30ytdyewNyJIyWYM3x1qgaShBWVxxjrQ5Ko3+zNiEMStVh/AVmpH01ggv1v5m/Yt0zQNzBbJF8f4ei7rKboIt5fggKR47ryZqHzbS442JiKwBa/cxd9YJNwOTvY6tjho1Km7V77TP2MY7DzgdClCvCUROASrQftkpL3b9m+/TiqvpD6mMj2qnoM6V+Aou8a7oGdkXt5/ijki/wSNCjvaWHcwDITUg+l38riFRHfJRlGRtKp/I3VWbnQCPDhM6ASQXBF+eYQfwchg9weNoeaw7kHLV4/X4fPk6arJq9VijkUu5kVVZXMQGcyXvCzKAooyzXN2mIVvcqHA2o+g6EL1qw82Y2xTQHXMOLRwIwf3nUTtcMri8PwH5MIaI24DAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -1126,8 +1126,8 @@
         <values>H4sIAAAAAAAA/+1VXW/TMBT9L36uI6d2kmZvaNMkJGASg71MqLrxx2rhOlnibCtV/zvXTdKNbaANxAviLT6+H+ce36NcbolV5IjoeVGKnC14xUyZp0wAr3jGCyO0yCCryIx4WGuMbGDjalAI3IDrI7LdinkhtGZAC1bmVOjCUGBZRoVaZDkHU6giS8ZEWfvQQqh3OyyhbNc42Fz8eSW5sk612pOjyy8zJNki26BbcrR9dPXScR1U2v0w7xMBwqaJQBda66/G87sx7XwC61ZFGumM6LugvdLY34Dr9IyswSvk324OSKtBnXl3D6ysD1iNxOC7zn7DfgvGWIw0GmeSerg9HJejpANsTiAAUull6NsxVK5qK3U3qKG0gd6F44fYEHDWBFv7ISVA5abs2vVr/2GQghwKTC+ISN8hCd3EUSP3cRBzvqpvP04sT63fqzJeulqCO5wgoHZVHyKfLentp0cyD8gTobXTa+y4XEPTILJs2vrG7rsg6XVy5fCQGFffIrvOXvkEZJwwwSeA5BTxkz18Aa2N477HMpgc23329rrXb+PiGJkWrOIVTVMJuJWloCUTKWUqNRpXNjeQkd2MdJvu2EHX3QuFL7S87uOYg2yjQMtB45giW9uEN0jqRh+0GMCow7R2+PlM5G63m41Whl/uds7uNznUX9EVD42cVXkq84rTnHFDRSYZLUshKU+NEXwhjMrmyT5tCb671e3zLv69Mq+z8AvGnCw8zflo7NfYd/7fvv+Cfcs5T7lIC8oKqPD3wgytSlZQXvLczJnCv4v+O/Ydlu6n5v3yHfq0Xz+JBwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -1159,7 +1159,7 @@
         <flow display_value="Integra+ - Contrato">49c1d8f43bc3da104a3b3537f4e45ae4</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Outro">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
         <order>6</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -1185,7 +1185,7 @@
         <flow display_value="Integra+ - Contrato">49c1d8f43bc3da104a3b3537f4e45ae4</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Término">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>5</order>
         <outputs_assigned/>
         <parent_ui_id>00669af2-804c-425d-a51b-b63d045109d0</parent_ui_id>
@@ -1211,7 +1211,7 @@
         <flow display_value="Integra+ - Contrato">49c1d8f43bc3da104a3b3537f4e45ae4</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>

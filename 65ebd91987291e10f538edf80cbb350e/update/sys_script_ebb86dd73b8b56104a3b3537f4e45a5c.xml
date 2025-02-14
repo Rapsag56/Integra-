@@ -15,9 +15,9 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_asscs_allos_o2c_task">cat_item=173567c3873775501ee364640cbb3572^stateCHANGESFROM2^stateCHANGESTO6^u_flag_contrato=false^order=2^EQ<item display_table="sc_cat_item" display_value="Criar, alterar ou inativar objeto de locação (LUC)" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="173567c3873775501ee364640cbb3572"/>
-            <item display_value="Em Atendimento" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="2"/>
-            <item display_value="Resolvido" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="6"/>
+        <filter_condition table="x_asscs_allos_o2c_task">cat_item=173567c3873775501ee364640cbb3572^stateCHANGESFROM2^stateCHANGESTO6^u_flag_contrato=false^order=2^EQ<item display_table="sc_cat_item" display_value="Register, change or deactivate rental object (LUC)" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="173567c3873775501ee364640cbb3572"/>
+            <item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="2"/>
+            <item display_value="Resolved" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="6"/>
             <item endquery="false" field="u_flag_contrato" goto="false" newquery="false" operator="=" or="false" value="false"/>
             <item endquery="false" field="order" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>

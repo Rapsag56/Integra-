@@ -639,7 +639,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -722,7 +722,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -805,7 +805,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -888,7 +888,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -971,7 +971,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1054,7 +1054,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1137,7 +1137,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1220,7 +1220,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1303,7 +1303,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1386,7 +1386,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1469,7 +1469,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1553,7 +1553,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadBasic</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1685,7 +1685,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarFrom</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1769,7 +1769,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dataInicio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1853,7 +1853,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>novaLucCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1937,7 +1937,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>categorizaçãoEspaço</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2021,7 +2021,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>areaTotalLuc</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2105,7 +2105,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>corredorAsset</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2189,7 +2189,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>salesRentable</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2273,7 +2273,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarAte</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2357,7 +2357,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>parteEdificio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2441,7 +2441,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadMRVSAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2525,7 +2525,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2612,7 +2612,7 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2809,7 +2809,7 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -4131,7 +4131,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>salesRentableMRVS</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4214,7 +4214,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current_record</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4297,7 +4297,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>novaLuc</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4380,7 +4380,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadMRVSatualizado</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4463,7 +4463,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>corredorAssetMRVS</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4546,7 +4546,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>categorizacaoEspaco</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4629,7 +4629,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarFrom</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4712,7 +4712,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>areaTotalLuc</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4795,7 +4795,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dataInicio</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4878,7 +4878,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarAte</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4961,7 +4961,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>parteEdificioMRVS</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5045,7 +5045,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadBasic</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5177,7 +5177,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>categorizaçãoEspaço</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5261,7 +5261,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarFrom</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5345,7 +5345,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>corredorAsset</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5429,7 +5429,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dataInicio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5513,7 +5513,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>salesRentable</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5597,7 +5597,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5681,7 +5681,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>novaLucCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5765,7 +5765,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarAte</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5849,7 +5849,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>areaTotalLuc</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5933,7 +5933,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadMRVSAnswer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -6017,7 +6017,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>parteEdificio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -6104,7 +6104,7 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -6191,7 +6191,7 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

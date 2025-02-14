@@ -114,7 +114,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_7c14fd1b3bdf9e104a3b3537f4e45a42^id=7c14fd1b3bdf9e104a3b3537f4e45a42"/>
     <sys_hub_step_instance action="delete_multiple" query="action=7c14fd1b3bdf9e104a3b3537f4e45a42^sys_idNOT IN6315f5533b13de104a3b3537f4e45a84"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</action>
+        <action display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</action>
         <cid>86fc779b-8b6d-48b2-b4c0-93661ca9fc1f</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -302,7 +302,7 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -385,7 +385,7 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -472,11 +472,11 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>lucKey</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
+        <model display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
         <model_id>7c14fd1b3bdf9e104a3b3537f4e45a42</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_7c14fd1b3bdf9e104a3b3537f4e45a42</name>
@@ -556,11 +556,11 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
+        <model display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
         <model_id>7c14fd1b3bdf9e104a3b3537f4e45a42</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_7c14fd1b3bdf9e104a3b3537f4e45a42</name>
@@ -647,7 +647,7 @@ if (gr.get(inputs.id)) { &#13;
         <label>Não tratar como erro</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
+        <model display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
         <model_id>7c14fd1b3bdf9e104a3b3537f4e45a42</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_7c14fd1b3bdf9e104a3b3537f4e45a42</name>
@@ -730,11 +730,11 @@ if (gr.get(inputs.id)) { &#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
+        <model display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</model>
         <model_id>7c14fd1b3bdf9e104a3b3537f4e45a42</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_7c14fd1b3bdf9e104a3b3537f4e45a42</name>
@@ -782,7 +782,7 @@ if (gr.get(inputs.id)) { &#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=7c14fd1b3bdf9e104a3b3537f4e45a42"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7c14fd1b3bdf9e104a3b3537f4e45a42^sys_idNOT IN7715f5533b13de104a3b3537f4e45ac7"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</action_type_id>
+        <action_type_id display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</action_type_id>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-30 00:54:52</sys_created_on>
         <sys_id>7715f5533b13de104a3b3537f4e45ac7</sys_id>
@@ -889,7 +889,7 @@ if (gr.get(inputs.id)) { &#13;
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7c14fd1b3bdf9e104a3b3537f4e45a42"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=7c14fd1b3bdf9e104a3b3537f4e45a42^sys_idNOT IN402539533b13de104a3b3537f4e45a50"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</action_id>
+        <action_id display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"402539533b13de104a3b3537f4e45a50","name":"plan","plan_signature":null}}</plan>
         <snapshot>42487d1b3b13de104a3b3537f4e45ad5</snapshot>
         <sys_created_by>patrick.almeida</sys_created_by>
@@ -923,7 +923,7 @@ if (gr.get(inputs.id)) { &#13;
         <name>Concat LucKey</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Concat LucKey">7c14fd1b3bdf9e104a3b3537f4e45a42</parent_action>
+        <parent_action display_value="Concat LucKey Inativo">7c14fd1b3bdf9e104a3b3537f4e45a42</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-30 00:54:52</sys_created_on>
@@ -1202,7 +1202,7 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>lucKey</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1285,7 +1285,7 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1372,7 +1372,7 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1456,7 +1456,7 @@ if (gr.get(inputs.id)) { &#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>lucKey</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1630,7 +1630,7 @@ if (gr.get(inputs.id)) { &#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

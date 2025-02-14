@@ -15,11 +15,11 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_asscs_allos_o2c_task">cat_item=693c3e601b8dd25075adb8481b4bcb35^assigned_toISNOTEMPTY^assignment_groupISNOTEMPTY^order=3^u_cadastro_manual_integracoesCHANGESTOsim^EQ<item display_table="sc_cat_item" display_value="Cadastrar e Alterar Marca" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="693c3e601b8dd25075adb8481b4bcb35"/>
+        <filter_condition table="x_asscs_allos_o2c_task">cat_item=693c3e601b8dd25075adb8481b4bcb35^assigned_toISNOTEMPTY^assignment_groupISNOTEMPTY^order=3^u_cadastro_manual_integracoesCHANGESTOsim^EQ<item display_table="sc_cat_item" display_value="Cadastrar e alterar marca" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="693c3e601b8dd25075adb8481b4bcb35"/>
             <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="assignment_group" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="order" goto="false" newquery="false" operator="=" or="false" value="3"/>
-            <item display_value="Sim" endquery="false" field="u_cadastro_manual_integracoes" goto="false" newquery="false" operator="CHANGESTO" or="false" value="sim"/>
+            <item display_value="sim" endquery="false" field="u_cadastro_manual_integracoes" goto="false" newquery="false" operator="CHANGESTO" or="false" value="sim"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>

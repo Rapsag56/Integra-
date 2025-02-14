@@ -153,7 +153,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=7ef24ea53bf2d6d04a3b3537f4e45ae9^sys_idNOT IN76f28ea53bf2d6d04a3b3537f4e45a02"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Integra+ - Sala - Luc - Cadastrar - Action">7ef24ea53bf2d6d04a3b3537f4e45ae9</action>
+        <action display_value="Inativo">7ef24ea53bf2d6d04a3b3537f4e45ae9</action>
         <cid>5cdc1ecf-71db-4966-9fe3-67b1ece8f890</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -569,7 +569,7 @@ gs.info('***PK MyObj: ' + JSON.stringify(myObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -653,7 +653,7 @@ gs.info('***PK MyObj: ' + JSON.stringify(myObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadBasic</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -762,11 +762,11 @@ gs.info('***PK MyObj: ' + JSON.stringify(myObj));&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Sala - Luc - Cadastrar - Action">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
+        <model display_value="Inativo">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
         <model_id>7ef24ea53bf2d6d04a3b3537f4e45ae9</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_7ef24ea53bf2d6d04a3b3537f4e45ae9</name>
@@ -853,7 +853,7 @@ gs.info('***PK MyObj: ' + JSON.stringify(myObj));&#13;
         <label>Não tratar como erro</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Integra+ - Sala - Luc - Cadastrar - Action">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
+        <model display_value="Inativo">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
         <model_id>7ef24ea53bf2d6d04a3b3537f4e45ae9</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_7ef24ea53bf2d6d04a3b3537f4e45ae9</name>
@@ -936,11 +936,11 @@ gs.info('***PK MyObj: ' + JSON.stringify(myObj));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Sala - Luc - Cadastrar - Action">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
+        <model display_value="Inativo">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
         <model_id>7ef24ea53bf2d6d04a3b3537f4e45ae9</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_7ef24ea53bf2d6d04a3b3537f4e45ae9</name>
@@ -1046,11 +1046,11 @@ gs.info('***PK MyObj: ' + JSON.stringify(myObj));&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Integra+ - Sala - Luc - Cadastrar - Action">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
+        <model display_value="Inativo">7ef24ea53bf2d6d04a3b3537f4e45ae9</model>
         <model_id>7ef24ea53bf2d6d04a3b3537f4e45ae9</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_7ef24ea53bf2d6d04a3b3537f4e45ae9</name>
@@ -1098,7 +1098,7 @@ gs.info('***PK MyObj: ' + JSON.stringify(myObj));&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=7ef24ea53bf2d6d04a3b3537f4e45ae9"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7ef24ea53bf2d6d04a3b3537f4e45ae9^sys_idNOT IN87f28ea53bf2d6d04a3b3537f4e45a6b"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Integra+ - Sala - Luc - Cadastrar - Action">7ef24ea53bf2d6d04a3b3537f4e45ae9</action_type_id>
+        <action_type_id display_value="Inativo">7ef24ea53bf2d6d04a3b3537f4e45ae9</action_type_id>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-30 18:54:40</sys_created_on>
         <sys_id>87f28ea53bf2d6d04a3b3537f4e45a6b</sys_id>

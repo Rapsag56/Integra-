@@ -400,7 +400,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>resultMarca</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -532,7 +532,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Marca Cadastrada</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -619,7 +619,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -706,7 +706,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>marca Cadastrada</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1432,7 +1432,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>resultMarca</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1564,7 +1564,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Marca Cadastrada</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1651,7 +1651,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1825,7 +1825,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>marca Cadastrada</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>

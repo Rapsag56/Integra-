@@ -326,7 +326,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -410,7 +410,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>myObj</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -519,7 +519,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -606,7 +606,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -803,7 +803,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1299,7 +1299,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>currentRecord</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1383,7 +1383,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>myObj</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1492,7 +1492,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1579,7 +1579,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Payload</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1753,7 +1753,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

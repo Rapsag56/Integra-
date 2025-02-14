@@ -151,7 +151,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=002639c03ba29e104a3b3537f4e45a10^sys_idNOT IN482639c03ba29e104a3b3537f4e45a39"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</action>
+        <action display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</action>
         <cid>5cdc1ecf-71db-4966-9fe3-67b1ece8f890</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -767,7 +767,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -850,7 +850,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -933,7 +933,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1016,7 +1016,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1099,7 +1099,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1182,7 +1182,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1265,7 +1265,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1348,7 +1348,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1431,7 +1431,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1514,7 +1514,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1597,7 +1597,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1680,7 +1680,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1763,7 +1763,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1847,7 +1847,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadBasic</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1979,11 +1979,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>parteEdificio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2063,11 +2063,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>propriedadeManual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2147,11 +2147,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>areaTotalLuc</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2231,11 +2231,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>corredorAsset</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2315,11 +2315,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>categorizaçãoEspaço</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2399,11 +2399,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarAte</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2483,11 +2483,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarFrom</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2567,11 +2567,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dataInicio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2651,11 +2651,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>classificacaoManual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2735,11 +2735,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2819,11 +2819,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>salesRentable</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2903,11 +2903,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>novaLucCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -2987,11 +2987,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>classificacao_de_propriedade_sala_lucAtual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_002639c03ba29e104a3b3537f4e45a10</name>
@@ -3097,11 +3097,11 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_002639c03ba29e104a3b3537f4e45a10</name>
@@ -3188,7 +3188,7 @@ var myObj = {&#13;
         <label>Não tratar como erro</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_002639c03ba29e104a3b3537f4e45a10</name>
@@ -3271,11 +3271,11 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</model>
         <model_id>002639c03ba29e104a3b3537f4e45a10</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_002639c03ba29e104a3b3537f4e45a10</name>
@@ -3323,7 +3323,7 @@ var myObj = {&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=002639c03ba29e104a3b3537f4e45a10"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=002639c03ba29e104a3b3537f4e45a10^sys_idNOT IN142639c03ba29e104a3b3537f4e45a74"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</action_type_id>
+        <action_type_id display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</action_type_id>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 15:51:55</sys_created_on>
         <sys_id>142639c03ba29e104a3b3537f4e45a74</sys_id>
@@ -4005,7 +4005,7 @@ var myObj = {&#13;
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_002639c03ba29e104a3b3537f4e45a10"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=002639c03ba29e104a3b3537f4e45a10^sys_idNOT IN1db8f9483ba29e104a3b3537f4e45ade"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</action_id>
+        <action_id display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1db8f9483ba29e104a3b3537f4e45ade","name":"plan","plan_signature":null}}</plan>
         <snapshot>e229145a3b13d6104a3b3537f4e45a50</snapshot>
         <sys_created_by>patrick.almeida</sys_created_by>
@@ -4040,7 +4040,7 @@ var myObj = {&#13;
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</parent_action>
+        <parent_action display_value="Integra+ - Luc - Alterar - Action.">002639c03ba29e104a3b3537f4e45a10</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 16:03:08</sys_created_on>
@@ -4167,7 +4167,7 @@ var myObj = {&#13;
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=a0b8b9483ba29e104a3b3537f4e45af9^sys_idNOT IN3cb8f9483ba29e104a3b3537f4e45a4a"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</action>
+        <action display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</action>
         <cid>5cdc1ecf-71db-4966-9fe3-67b1ece8f890</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -4783,7 +4783,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>categorizacaoEspaco</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4866,7 +4866,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>corredorAssetMRVS</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4949,7 +4949,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarAte</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5032,7 +5032,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>classificacaoPropriedadeExtra</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5115,7 +5115,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>novaLuc</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5198,7 +5198,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current_record</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5281,7 +5281,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>areaTotalLuc</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5364,7 +5364,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dataInicio</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5447,7 +5447,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarFrom</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5530,7 +5530,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>propriedadeMRVS</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5613,7 +5613,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>parteEdificioMRVS</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5696,7 +5696,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>salesRentableMRVS</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5779,7 +5779,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>classificacaoManual</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5863,7 +5863,7 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>payloadBasic</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5995,11 +5995,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>parteEdificio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6079,11 +6079,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>classificacao_de_propriedade_sala_lucAtual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6163,11 +6163,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>dataInicio</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6247,11 +6247,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>current</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6331,11 +6331,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>novaLucCode</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6415,11 +6415,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarAte</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6499,11 +6499,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>andarFrom</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6583,11 +6583,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>categorizaçãoEspaço</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6667,11 +6667,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>propriedadeManual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6751,11 +6751,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>corredorAsset</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6835,11 +6835,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>salesRentable</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -6919,11 +6919,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>areaTotalLuc</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -7003,11 +7003,11 @@ var myObj = {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>classificacaoManual</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -7094,7 +7094,7 @@ var myObj = {&#13;
         <label>Não tratar como erro</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -7177,11 +7177,11 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>answer</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -7264,11 +7264,11 @@ var myObj = {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Status da ação</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</model>
+        <model display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</model>
         <model_id>a0b8b9483ba29e104a3b3537f4e45af9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a0b8b9483ba29e104a3b3537f4e45af9</name>
@@ -7316,7 +7316,7 @@ var myObj = {&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=a0b8b9483ba29e104a3b3537f4e45af9"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=a0b8b9483ba29e104a3b3537f4e45af9^sys_idNOT IN49b8f9483ba29e104a3b3537f4e45a82"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Integra+ - Luc - Alterar - Action">a0b8b9483ba29e104a3b3537f4e45af9</action_type_id>
+        <action_type_id display_value="Integra+ - Luc - Alterar - Action.">a0b8b9483ba29e104a3b3537f4e45af9</action_type_id>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 16:03:10</sys_created_on>
         <sys_id>49b8f9483ba29e104a3b3537f4e45a82</sys_id>
