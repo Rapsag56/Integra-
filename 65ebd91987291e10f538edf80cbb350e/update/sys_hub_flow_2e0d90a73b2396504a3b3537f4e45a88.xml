@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=8494000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
@@ -36,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2e0d90a73b2396504a3b3537f4e45a88</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>O2C.04 -  Integração Cliente V2</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_hub_flow_2e0d90a73b2396504a3b3537f4e45a88</sys_update_name>
-        <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-12 01:45:52</sys_updated_on>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 18:49:34</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -95,16 +95,16 @@
         <table>x_asscs_allos_o2c_task</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>2e0d90a73b2396504a3b3537f4e45a88</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-12 01:45:52</sys_created_on>
         <sys_id>ed7df8ef3be396504a3b3537f4e45a5f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-12 01:45:52</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 18:49:36</sys_updated_on>
         <trigger display_value="">2c759efc3baf16104a3b3537f4e45acb</trigger>
     </sys_trigger_runner_mapping>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=2e0d90a73b2396504a3b3537f4e45a88^sys_idNOT INed7df8ef3be396504a3b3537f4e45a5f"/>

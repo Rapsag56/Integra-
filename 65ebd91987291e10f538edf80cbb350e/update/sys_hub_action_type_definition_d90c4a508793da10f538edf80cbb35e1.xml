@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d90c4a508793da10f538edf80cbb35e1</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Contrato - Vigencia- Payload</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_d90c4a508793da10f538edf80cbb35e1</sys_update_name>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:30</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -167,10 +167,10 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-20 18:53:08</sys_created_on>
         <sys_id>110c8a508793da10f538edf80cbb3523</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:28</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:42</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=110c8a508793da10f538edf80cbb3523"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -195,16 +195,16 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-20 18:53:08</sys_created_on>
         <sys_id>e90c8a508793da10f538edf80cbb353b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:28</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:42</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
     var currentRecord = inputs.currentRecord;&#13;
 &#13;
 var companyCode = currentRecord.variables.company_code.getDisplayValue();&#13;
 var contractNumber = currentRecord.variables.numero_da_solicitacao_original.getDisplayValue();&#13;
-var endDate = currentRecord.variables.nova_data_de_inicio_do_contrato.getDisplayValue();&#13;
+var endDate = currentRecord.variables.nova_data_fim_do_contrato.getDisplayValue();&#13;
 &#13;
 gs.info(companyCode);&#13;
 gs.info(contractNumber);&#13;
@@ -458,7 +458,30 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=110c8a508793da10f538edf80cbb3523"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_110c8a508793da10f538edf80cbb3523^sys_idNOT IN650c8a508793da10f538edf80cbb3530"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_110c8a508793da10f538edf80cbb3523^sys_idNOT IN113726e13b33da104a3b3537f4e45ab1,650c8a508793da10f538edf80cbb3530"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>myobj</element>
+        <help/>
+        <hint/>
+        <label>myObj</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_110c8a508793da10f538edf80cbb3523</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:42</sys_created_on>
+        <sys_id>113726e13b33da104a3b3537f4e45ab1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>myobj</element>
         <help/>
@@ -720,14 +743,14 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-20 18:53:08</sys_created_on>
         <sys_id>a10c8a508793da10f538edf80cbb354a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:28</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -754,7 +777,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e90c8a508793da10f538edf80cbb353f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -762,7 +785,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:28</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:42</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -864,7 +887,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_updated_on>2025-01-20 18:53:09</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=ad0c8a508793da10f538edf80cbb3557"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_d90c4a508793da10f538edf80cbb35e1^sys_idNOT IN910c4a508793da10f538edf80cbb35f9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_d90c4a508793da10f538edf80cbb35e1^sys_idNOT IN910c4a508793da10f538edf80cbb35f9,953726e13b33da104a3b3537f4e45a76"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
         <help/>
@@ -888,8 +911,77 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>current</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d90c4a508793da10f538edf80cbb35e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:42</sys_created_on>
+        <sys_id>953726e13b33da104a3b3537f4e45a76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_d90c4a508793da10f538edf80cbb35e1"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_d90c4a508793da10f538edf80cbb35e1^sys_idNOT IN210c8a508793da10f538edf80cbb3550,290c8a508793da10f538edf80cbb3545,650c8a508793da10f538edf80cbb3549"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_d90c4a508793da10f538edf80cbb35e1^sys_idNOT IN113726e13b33da104a3b3537f4e45ac0,193726e13b33da104a3b3537f4e45ad4,210c8a508793da10f538edf80cbb3550,290c8a508793da10f538edf80cbb3545,593726e13b33da104a3b3537f4e45abe,650c8a508793da10f538edf80cbb3549"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>payload</element>
+        <help/>
+        <hint/>
+        <label>Payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d90c4a508793da10f538edf80cbb35e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:42</sys_created_on>
+        <sys_id>113726e13b33da104a3b3537f4e45ac0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Não tratar como erro</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d90c4a508793da10f538edf80cbb35e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:43</sys_created_on>
+        <sys_id>193726e13b33da104a3b3537f4e45ad4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -937,6 +1029,29 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Status da ação</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d90c4a508793da10f538edf80cbb35e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:42</sys_created_on>
+        <sys_id>593726e13b33da104a3b3537f4e45abe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>payload</element>
         <help/>
         <hint/>
@@ -964,17 +1079,17 @@ outputs.myobj = JSON.stringify(condition);&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Contrato - Vigencia- Payload">d90c4a508793da10f538edf80cbb35e1</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"616eca548793da10f538edf80cbb35c4","name":"plan","plan_signature":null}}</plan>
-        <snapshot>156eca548793da10f538edf80cbb354e</snapshot>
+        <snapshot>ed3766e13b33da104a3b3537f4e45a49</snapshot>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-20 19:03:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>616eca548793da10f538edf80cbb35c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:31</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1140,10 +1255,10 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-20 19:03:29</sys_created_on>
         <sys_id>856eca548793da10f538edf80cbb3515</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:29</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=856eca548793da10f538edf80cbb3515"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1154,16 +1269,16 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-20 19:03:30</sys_created_on>
         <sys_id>056eca548793da10f538edf80cbb3529</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:30</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
     var currentRecord = inputs.currentRecord;&#13;
 &#13;
 var companyCode = currentRecord.variables.company_code.getDisplayValue();&#13;
 var contractNumber = currentRecord.variables.numero_da_solicitacao_original.getDisplayValue();&#13;
-var endDate = currentRecord.variables.nova_data_de_inicio_do_contrato.getDisplayValue();&#13;
+var endDate = currentRecord.variables.nova_data_fim_do_contrato.getDisplayValue();&#13;
 &#13;
 gs.info(companyCode);&#13;
 gs.info(contractNumber);&#13;
@@ -1431,7 +1546,30 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=856eca548793da10f538edf80cbb3515"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_856eca548793da10f538edf80cbb3515^sys_idNOT INcd6eca548793da10f538edf80cbb3521"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_856eca548793da10f538edf80cbb3515^sys_idNOT IN213766e13b33da104a3b3537f4e45a27,cd6eca548793da10f538edf80cbb3521"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>myobj</element>
+        <help/>
+        <hint/>
+        <label>myObj</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_856eca548793da10f538edf80cbb3515</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:44</sys_created_on>
+        <sys_id>213766e13b33da104a3b3537f4e45a27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>myobj</element>
         <help/>
@@ -1693,14 +1831,14 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-20 19:03:30</sys_created_on>
         <sys_id>996eca548793da10f538edf80cbb3535</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:03:30</sys_updated_on>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1814,7 +1952,7 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_updated_on>2025-01-20 19:03:30</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=5d6eca548793da10f538edf80cbb354d"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_416eca548793da10f538edf80cbb3506^sys_idNOT IN096eca548793da10f538edf80cbb3510"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_416eca548793da10f538edf80cbb3506^sys_idNOT IN096eca548793da10f538edf80cbb3510,a93766e13b33da104a3b3537f4e45a19"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
         <help/>
@@ -1838,8 +1976,31 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>current</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_416eca548793da10f538edf80cbb3506</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:43</sys_created_on>
+        <sys_id>a93766e13b33da104a3b3537f4e45a19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_416eca548793da10f538edf80cbb3506"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_416eca548793da10f538edf80cbb3506^sys_idNOT IN116eca548793da10f538edf80cbb3531,5d6eca548793da10f538edf80cbb3534,956eca548793da10f538edf80cbb353a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_416eca548793da10f538edf80cbb3506^sys_idNOT IN116eca548793da10f538edf80cbb3531,213766e13b33da104a3b3537f4e45a44,5d6eca548793da10f538edf80cbb3534,613766e13b33da104a3b3537f4e45a3f,956eca548793da10f538edf80cbb353a,a93766e13b33da104a3b3537f4e45a3d"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
@@ -1860,6 +2021,29 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <sys_update_name/>
         <sys_updated_by>patrick.almeida</sys_updated_by>
         <sys_updated_on>2025-01-20 19:03:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Não tratar como erro</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_416eca548793da10f538edf80cbb3506</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:44</sys_created_on>
+        <sys_id>213766e13b33da104a3b3537f4e45a44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1887,6 +2071,29 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>payload</element>
+        <help/>
+        <hint/>
+        <label>Payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_416eca548793da10f538edf80cbb3506</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:44</sys_created_on>
+        <sys_id>613766e13b33da104a3b3537f4e45a3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
         <hint/>
@@ -1909,10 +2116,33 @@ outputs.myobj = JSON.stringify(condition);&#13;
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Status da ação</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_416eca548793da10f538edf80cbb3506</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-18 14:35:44</sys_created_on>
+        <sys_id>a93766e13b33da104a3b3537f4e45a3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-18 14:35:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_416eca548793da10f538edf80cbb3506"/>
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>d90c4a508793da10f538edf80cbb35e1</sys_id>
         <latest_snapshot>416eca548793da10f538edf80cbb3506</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch4a-12-16-2024_01-07-2025_0947.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
