@@ -31,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1506c99f3b6296904a3b3537f4e45aac</sys_id>
-        <sys_mod_count>176</sys_mod_count>
+        <sys_mod_count>180</sys_mod_count>
         <sys_name>Integra+ ATT - Luc - Junção - Alterar- Action</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1506c99f3b6296904a3b3537f4e45aac</sys_update_name>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:10</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:09</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -106,10 +106,10 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:42:01</sys_created_on>
         <sys_id>f1060d9f3b6296904a3b3537f4e45a73</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-06 15:09:37</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDf1060d9f11629690ddbdd49e35255d60":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDf1060d9f11629690ddbdd49e35255d60.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Status da ação\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"94479697-3ffe-4dbd-851f-c8ba92386564\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf1060d9f11629690ddbdd49e35255d60\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDf1060d9f11629690ddbdd49e35255d60":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDf1060d9f11629690ddbdd49e35255d60.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Status da ação\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"94479697-3ffe-4dbd-851f-c8ba92386564\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf1060d9f11629690ddbdd49e35255d60\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Status da ação">b1060d9f3b6296904a3b3537f4e45a66</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=1506c99f3b6296904a3b3537f4e45aac"/>
@@ -191,10 +191,10 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:42:00</sys_created_on>
         <sys_id>a106c99f3b6296904a3b3537f4e45af7</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:07</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a106c99f3b6296904a3b3537f4e45af7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -219,9 +219,9 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:42:01</sys_created_on>
         <sys_id>b9060d9f3b6296904a3b3537f4e45a4d</sys_id>
-        <sys_mod_count>37</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:07</sys_updated_on>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
  &#13;
 var data = inputs.objLucForEach;&#13;
@@ -250,6 +250,15 @@ function getMeasurements(currentRecordFields, areaTotal) {&#13;
       if (currentRecordFields.variables.u_desired_action_luc2.getValue() == 'unificacao') {&#13;
             payload.Measurements.push({&#13;
                 "MeasType": "ZA03", //Área Bruta Locável&#13;
+                "MeasValue": areaTotal.replace(/\./g, "").replace(",", ".") || 'não há', // Valor do tamanho do AC&#13;
+                "MeasValidFrom": getMeasValidFrom(&#13;
+                    currentRecordFields.variables.inicio_vigencia,&#13;
+                    currentRecordFields.variables.data_de_inicio_de_criacao_da_luc&#13;
+                ),&#13;
+               // "MeasValidTo": "2040-12-31"&#13;
+            },&#13;
+            {&#13;
+                "MeasType": "ZD05", //Área Bruta Locável&#13;
                 "MeasValue": areaTotal.replace(/\./g, "").replace(",", ".") || 'não há', // Valor do tamanho do AC&#13;
                 "MeasValidFrom": getMeasValidFrom(&#13;
                     currentRecordFields.variables.inicio_vigencia,&#13;
@@ -930,15 +939,15 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2c054e5b87e61250f538edf80cbb354e</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:07</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1298,15 +1307,15 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1c15dd73be296904a3b3537f4e45a4e</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:07</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -1543,14 +1552,14 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:42:01</sys_created_on>
         <sys_id>31060d9f3b6296904a3b3537f4e45a6a</sys_id>
-        <sys_mod_count>95</sys_mod_count>
+        <sys_mod_count>97</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:07</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1577,15 +1586,15 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>20054e5b87e61250f538edf80cbb355c</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:07</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -1861,15 +1870,15 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b5060d9f3b6296904a3b3537f4e45a60</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:07</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:06</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -2301,17 +2310,17 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Integra+ ATT - Luc - Junção - Alterar- Action">1506c99f3b6296904a3b3537f4e45aac</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"bf99c1973ba296904a3b3537f4e45ac6","name":"plan","plan_signature":null}}</plan>
-        <snapshot>240ad35887835a10f538edf80cbb3507</snapshot>
+        <snapshot>4483c69287b7da90f538edf80cbb3532</snapshot>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:57:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf99c1973ba296904a3b3537f4e45ac6</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:11</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:11</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2402,10 +2411,10 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:57:42</sys_created_on>
         <sys_id>a799c1973ba296904a3b3537f4e45a53</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-06 15:09:39</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:09</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Status da ação">d799c1973ba296904a3b3537f4e45a47</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2501,10 +2510,10 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:57:40</sys_created_on>
         <sys_id>9b9981973ba296904a3b3537f4e45af0</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:09</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:09</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9b9981973ba296904a3b3537f4e45af0"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2529,9 +2538,9 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:57:41</sys_created_on>
         <sys_id>df99c1973ba296904a3b3537f4e45a2f</sys_id>
-        <sys_mod_count>36</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:09</sys_updated_on>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:09</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
  &#13;
 var data = inputs.objLucForEach;&#13;
@@ -2560,6 +2569,15 @@ function getMeasurements(currentRecordFields, areaTotal) {&#13;
       if (currentRecordFields.variables.u_desired_action_luc2.getValue() == 'unificacao') {&#13;
             payload.Measurements.push({&#13;
                 "MeasType": "ZA03", //Área Bruta Locável&#13;
+                "MeasValue": areaTotal.replace(/\./g, "").replace(",", ".") || 'não há', // Valor do tamanho do AC&#13;
+                "MeasValidFrom": getMeasValidFrom(&#13;
+                    currentRecordFields.variables.inicio_vigencia,&#13;
+                    currentRecordFields.variables.data_de_inicio_de_criacao_da_luc&#13;
+                ),&#13;
+               // "MeasValidTo": "2040-12-31"&#13;
+            },&#13;
+            {&#13;
+                "MeasType": "ZD05", //Área Bruta Locável&#13;
                 "MeasValue": areaTotal.replace(/\./g, "").replace(",", ".") || 'não há', // Valor do tamanho do AC&#13;
                 "MeasValidFrom": getMeasValidFrom(&#13;
                     currentRecordFields.variables.inicio_vigencia,&#13;
@@ -3157,15 +3175,15 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0d058e5b87e61250f538edf80cbb353f</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:09</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:08</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -3692,15 +3710,15 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b5c15dd73be296904a3b3537f4e45ac7</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:09</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:08</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
@@ -3800,15 +3818,15 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>15058e5b87e61250f538edf80cbb3558</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:09</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:09</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -4050,14 +4068,14 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-23 14:57:41</sys_created_on>
         <sys_id>6799c1973ba296904a3b3537f4e45a4b</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-08 14:18:10</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:55:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4587,6 +4605,6 @@ gs.info('final PAYLOAD ' + JSON.stringify(finalPayloads));&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>1506c99f3b6296904a3b3537f4e45aac</sys_id>
         <latest_snapshot>cf9981973ba296904a3b3537f4e45aa4</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch4a-12-16-2024_01-07-2025_0947.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

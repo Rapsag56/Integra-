@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2687095000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3826610000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,14 +15,14 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>integra__contrato</internal_name>
-        <label_cache>[{"name":"582f58b8-5b14-48ad-b368-5098401949ab.responsebodyanswer","label":"7 - Contrato com Faturamento➛ResponseBodyAnswer","reference_display":"ResponseBodyAnswer","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ca41c9b9-0214-462d-bcef-2e75102d0ca1"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.payloadcontrato","label":"2 - Integra + - Payload Contrato com Faturamento➛payloadContrato","reference_display":"payloadContrato","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8d33bed5-3e5c-4004-b7e0-5cfa3317a876"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.message","label":"2 - Payload Contrato com Faturamento➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["comments"]},"attributes":{}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛O2C Task Record","reference":"x_asscs_allos_o2c_task","reference_display":"O2C Task","type":"reference","base_type":"reference","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["record"],"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["record"]},"attributes":{}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.code","label":"2 - Payload Contrato com Faturamento➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"00669af2-804c-425d-a51b-b63d045109d0":["condition"]},"attributes":{}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛O2C Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_asscs_allos_o2c_task","column_name":"sys_id","usedInstances":{"4274ee0a-7096-4e7f-a055-4d8563af7d75":["sysidtask"]}},{"name":"5b61c6b3-603f-45c0-994c-31ff4384fd52.token_answer","label":"1 - Integra+ Get Token SAP➛token_answer","reference_display":"token_answer","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["token"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ca8928f-8a84-471f-8ce5-5dd0aaebd3aa"}}]</label_cache>
+        <label_cache>[{"name":"582f58b8-5b14-48ad-b368-5098401949ab.httpstatuserror","label":"7 - Contrato com Faturamento➛HttpStatusError","reference_display":"HttpStatusError","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cf334ca3-0b7a-41c0-a0db-2b675d1dfe6a"}},{"name":"582f58b8-5b14-48ad-b368-5098401949ab.errormsg","label":"7 - Contrato com Faturamento➛ErrorMsg","reference_display":"ErrorMsg","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"989f299d-50f7-437d-8409-13cc13e83a64"}},{"name":"582f58b8-5b14-48ad-b368-5098401949ab.contractnumber","label":"7 - Contrato com Faturamento➛ContractNumber","reference_display":"ContractNumber","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"775fdd76-126e-4cd9-8ac8-8dde4a200763"}},{"name":"582f58b8-5b14-48ad-b368-5098401949ab.responsebodyanswer","label":"7 - Contrato com Faturamento➛ResponseBodyAnswer","reference_display":"ResponseBodyAnswer","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ca41c9b9-0214-462d-bcef-2e75102d0ca1"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.payloadcontrato","label":"2 - Integra + - Payload Contrato com Faturamento➛payloadContrato","reference_display":"payloadContrato","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["payload"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8d33bed5-3e5c-4004-b7e0-5cfa3317a876"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.message","label":"2 - Payload Contrato com Faturamento➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["comments"]},"attributes":{}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛O2C Task Record","reference":"x_asscs_allos_o2c_task","reference_display":"Tarefa de Faturamento (O2C)","type":"reference","base_type":"reference","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["record"],"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["record"]},"attributes":{}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.code","label":"2 - Payload Contrato com Faturamento➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"00669af2-804c-425d-a51b-b63d045109d0":["condition"]},"attributes":{}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛O2C Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_asscs_allos_o2c_task","column_name":"sys_id","usedInstances":{"4274ee0a-7096-4e7f-a055-4d8563af7d75":["sysidtask"]}},{"name":"5b61c6b3-603f-45c0-994c-31ff4384fd52.token_answer","label":"1 - Integra+ Get Token SAP➛token_answer","reference_display":"token_answer","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["token"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ca8928f-8a84-471f-8ce5-5dd0aaebd3aa"}}]</label_cache>
         <master_snapshot>49c1d8f43bc3da104a3b3537f4e45ae4</master_snapshot>
         <master_snapshot_digest/>
         <name>Integra+ - Contrato</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>cdc11cf43bc3da104a3b3537f4e45a22</remote_trigger_id>
+        <remote_trigger_id>0a37c69a87b7da90f538edf80cbb35ea</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>16d1c6843bcb96104a3b3537f4e45ab2</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Integra+ - Contrato</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_hub_flow_16d1c6843bcb96104a3b3537f4e45ab2</sys_update_name>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:28</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:24</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -65,7 +65,9 @@
     <sys_variable_value action="delete_multiple" query="document_key=16d1c6843bcb96104a3b3537f4e45ab2"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_asscs_allos_o2c_task">cat_item=bdf25c70871a71d01ee364640cbb35ac<item display_table="sc_cat_item" display_value="Solicitar nova locação" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="bdf25c70871a71d01ee364640cbb35ac"/>
+        <condition table="x_asscs_allos_o2c_task">cat_item=bdf25c70871a71d01ee364640cbb35ac^order=25^numero_do_contrato_criadoISEMPTY<item display_table="sc_cat_item" display_value="Solicitar nova locação" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="bdf25c70871a71d01ee364640cbb35ac"/>
+            <item endquery="false" field="order" goto="false" newquery="false" operator="=" or="false" value="25"/>
+            <item endquery="false" field="numero_do_contrato_criado" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -78,15 +80,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>renan.gaspar</sys_created_by>
-        <sys_created_on>2025-01-09 13:00:16</sys_created_on>
+        <sys_created_on>2025-02-20 20:11:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>cdc11cf43bc3da104a3b3537f4e45a22</sys_id>
+        <sys_id>0a37c69a87b7da90f538edf80cbb35ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-01-09 13:00:16</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:24</sys_updated_on>
         <table>x_asscs_allos_o2c_task</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -95,14 +97,14 @@
         <identifier>16d1c6843bcb96104a3b3537f4e45ab2</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>renan.gaspar</sys_created_by>
-        <sys_created_on>2025-02-07 15:39:28</sys_created_on>
-        <sys_id>ff4c4aca87639e10f538edf80cbb3537</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-02-20 20:11:24</sys_created_on>
+        <sys_id>4637c69a87b7da90f538edf80cbb35eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:28</sys_updated_on>
-        <trigger display_value="">cdc11cf43bc3da104a3b3537f4e45a22</trigger>
+        <sys_updated_on>2025-02-20 20:11:24</sys_updated_on>
+        <trigger display_value="">0a37c69a87b7da90f538edf80cbb35ea</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=16d1c6843bcb96104a3b3537f4e45ab2^sys_idNOT INff4c4aca87639e10f538edf80cbb3537"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=16d1c6843bcb96104a3b3537f4e45ab2^sys_idNOT IN4637c69a87b7da90f538edf80cbb35eb"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=16d1c6843bcb96104a3b3537f4e45ab2"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=16d1c6843bcb96104a3b3537f4e45ab2^sys_idNOT IN9ad1c6843bcb96104a3b3537f4e45ab4"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -155,7 +157,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">document_id</internal_type>
-        <label>Record</label>
+        <label>Registro</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
         <model display_value="Integra+ - Contrato">16d1c6843bcb96104a3b3537f4e45ab2</model>
@@ -181,14 +183,14 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:07</sys_created_on>
         <sys_id>8bb198f43bc3da104a3b3537f4e45a41</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-01-09 13:00:07</sys_updated_on>
+        <sys_updated_on>2025-02-19 21:38:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -239,7 +241,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">table_name</internal_type>
-        <label>Table Name</label>
+        <label>Nome da tabela</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
         <model display_value="Integra+ - Contrato">16d1c6843bcb96104a3b3537f4e45ab2</model>
@@ -265,14 +267,14 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:08</sys_created_on>
         <sys_id>8fb198f43bc3da104a3b3537f4e45a5a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-01-09 13:00:08</sys_updated_on>
+        <sys_updated_on>2025-02-19 21:38:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -346,7 +348,7 @@
         <help/>
         <hint/>
         <internal_type display_value="Cadeia de caracteres">string</internal_type>
-        <label>Changed Fields</label>
+        <label>Campos alterados</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
         <model display_value="Integra+ - Contrato">16d1c6843bcb96104a3b3537f4e45ab2</model>
@@ -372,14 +374,14 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:08</sys_created_on>
         <sys_id>cbb198f43bc3da104a3b3537f4e45a57</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-01-09 13:00:08</sys_updated_on>
+        <sys_updated_on>2025-02-19 21:38:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -400,17 +402,17 @@
         <comment/>
         <display_text/>
         <flow display_value="Integra+ - Contrato">16d1c6843bcb96104a3b3537f4e45ab2</flow>
-        <name>Updated</name>
+        <name>Atualizado em</name>
         <remote_sys_id/>
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:08</sys_created_on>
         <sys_id>1bb198f43bc3da104a3b3537f4e45aa9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-01-09 13:00:15</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:19</sys_updated_on>
         <trigger_definition display_value="Atualizado em">bb695e60c31322002841b63b12d3aea5</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/9Va23LbNhD9FQ6f2hm1w4skSu6TK9uNZxx7RlbShzTDAQFQwoQCFQKko2by713wIlG8yLrQtfNiWwCIPbt79ixg6tN3PUAeDfQLfYa8gOo9nXFJI46C2XpFYViqYZejpZpbIk6QDKO1fiGjmPb0MCI00i/Mnp6gIKaPa3FL4CFYmj6RP67n0/D5m4uEwMJFQRAKN7SwK5H4AgsIE6sArT/m6x6siTbLZvCCBSSiXL/49Lmnr1AEO0tl9XtliinTJiHItKiBbdO2LMOwRn3TG9qeaREbUTSCDaseV6DKBse3ftJvknJCwZSPAkEbYhJRRB54sC6t+CbYv7DnyFCzPgXEmGZh2nx08wBkw3gRMkwfVpKFPBvJ0GWTYRAv+X2GWoWO+igOZBE6GIkF7EdXCiiXGxz+4yJ8mhYGbxhPfcongxCjYPMJSRkxL5ZUqDD7LICAu1lERBhHKfrp9eRheuX+fTmbvLueutPrx9n0djK7vtJ/pH65X2O1Y4Ywx+Jm7vzY5PuG0UCljcdLD9D0dIEjtpKXWLKE5nB+9LYsnYScsDQqNabiYkrsMjV3qUihYbSSFZc2LwiLkXSZpMt/YsOwiUd8a4AdY+SYyDGJYVJqD/vDvoE9zx4gfDRdPW+MCEUtdB06JbqWXW8ALBuiUPZ5H3HzkXbm9g3jlbib1dTJ1F2GhAZX2+10mJzPgcyMr2KpYlTExQ1XNFLxgOf0j5d3k3eX939dP/6R/76ZPrwv/p49wHNPiEvhytBFhLilqCsT4MtzNZDFpF4Iz5dAFHPYwt3ks14IaQI2mbhjAhz/BGVcRDndEub9u3zLacy1EBIPPzQcRxBkqRVy6N8u0TzPjf9IA4pliUT+B1H+9J4Jwfi8hHpjNI1KzebGHJBRK1zKbIszjX8+UQXq8U0qcav0qqOLfoiJ2fecoeGokjcN2/NNwzEGyCe2YYztUtHXwbSilJXsd1j8x5W+SNkWHMCtamBzyEaZ7gfxJNklWeG64kCuMJNuoJkdQbMUtIpS2kdJ5YaM2fDVLif3udbx6QCRBMET5FDlUwsOkDg/CJ9ApU+QNw/hL/MojDmp6o3aU2Nc267Qfsnj92uHUueHEd0PYHfFK4ncNsIFRxFfdyBvfYqJA6ciA1TNBkHzBuOxh5Hl+87QoQapyNsWRiO2Nyxrz9ApaeJjm8Q1MiNpItQR4nYGwJrQHQ3wfInL6dgocNnczyFlTwvKXYAauYESq5qizQNGaDF3cjnXrCTbAj63pG1/RAYDx4Grj2FBSft96iGzbw3Q2BnadFgp6RqUfTBlQxBe8OIi1iI131LuH7Kpt3UBf0leCiqlaijH91kO58/0GZQZKfU6lQwtVY0w0u5D/tvtdp32SKGFpXfWrhruIShUYrWXheGFclHr+GD6TxjfMa1Oii1Rec1bT4UPya5bZx8LRvZ4QHy7WUMcq0lDtmDaYb7RA8KBJZC0FlPTSeFQRieNhdHa2k/gaIUc5Z6/51DSVVDMzoNivVxQ7LMPQkUFtl71TgH7E/Wo9LhwTqNSNqkb+mV1vgo1mNDAiMZ8Lf+/INzcvbUmFxRCGsCJFwxqyvq5slxuE3UoGwb/v0CyM3StXcGwlp+QXrUTVbLe7SUV+2OPjO2WE+2g/UTb3pIq02+0Lx1N+6SpivY2p+P2re7Z2J5KnNzlwYGNp1Ovm7vPeV439p/nvD6/s+y7YjegePs9Q4GeZWk4oVOEHFduELjLdyAxZ19j6uIF4vPs/UZh6AbiTBFeaNkSLVvSpdYHT2gt9GrTAdKqusj/RQwDUCE806+uLNOERuuar2pQi1cgeud6ub/P7PlqQv4mUMgIQMzXO8WJu3jPg83xwLLJCNvm2K5/F8Es9Zhd2rYjbG0qz3w1oa2pLFj6VrRkPk+NZEuaStjm1aa2RBIvqOhpkL/03UKqcCwSMl39u97h3QnTejqaek5r3SRtJdeq4XtKIakWUZNoN9A6qZRAWbb33pL2uG924r7Vhfv2ae73z+5aRX02tq08et22qlM70+f/AGuTEaFiJQAA</trigger_inputs>
+        <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
     </sys_hub_trigger_instance_v2>
@@ -430,12 +432,12 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:17</sys_created_on>
         <sys_id>114cc6ca87639e10f538edf80cbb353a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-02-10 13:52:03</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 20:11:20</sys_updated_on>
         <ui_id>4274ee0a-7096-4e7f-a055-4d8563af7d75</ui_id>
-        <values>H4sIAAAAAAAA/41Sy27bMBD8F55tQZIl1fatSBAgQNoAzeMSBMKKXNlEKErhw4kr+N+7NGWnSHvIcYezuzOzfBqZFGzN0rRqUixg+a1arDBL23KxRNEuU940izLP2Ixp6JCYdm+lcGBfCNqB8gEbx4dBgENRZwn3xqB2CfFqKQ4HoglpBwX7x6+x+VYqQSBbPz3P2ACG9jo0bD1+evqqcAUNqqj8WtxH5f8x4/bDEXJG6s1U30ytdyewNyJIyWYM3x1qgaShBWVxxjrQ5Ko3+zNiEMStVh/AVmpH01ggv1v5m/Yt0zQNzBbJF8f4ei7rKboIt5fggKR47ryZqHzbS442JiKwBa/cxd9YJNwOTvY6tjho1Km7V77TP2MY7DzgdClCvCUROASrQftkpL3b9m+/TiqvpD6mMj2qnoM6V+Aou8a7oGdkXt5/ijki/wSNCjvaWHcwDITUg+l38riFRHfJRlGRtKp/I3VWbnQCPDhM6ASQXBF+eYQfwchg9weNoeaw7kHLV4/X4fPk6arJq9VijkUu5kVVZXMQGcyXvCzKAooyzXN2mIVvcqHA2o+g6EL1qw82Y2xTQHXMOLRwIwf3nUTtcMri8PwH5MIaI24DAAA=</values>
+        <values>H4sIAAAAAAAA/41RTWvjMBD9LzonRnZs18ltoRQK3S3061KKGUvjRFSWVUlOmw357zuKnSyEHnrU05t5H/O6Z0qyFeO8bDjmUF2ViyWmvC0WFcq24qJpFkWWshkz0CEx/c4rGcC/E7QFPURsv3+2EgLKOk3E4ByakBCvVvJwIJpU3mrYvfyMLTZKSwLZ6vVtxiw40g3o2Gp/8RV2FmsNDWpa+hicMmsa/2mc0yAp38qnMc83EaNIhE7reyejl3TG8CugkUhyLWiPM9aBoVi9250RhyDvjf4PbJQJtI1F8pdXf2l1xTmPzBYpmMDx9/ysp+5GWGx6JfDeBtWbEQnQ6GlG9HrozJ8xQmwdWxh0OLVOyOBpH9roOtqYPLWPm/7z4SR4o8wx4PSpewH6/IJANTRDQB+vMaini3JG5O7yJKixI8W6A2sJqa3rt+qoQqa7ZK3pkbS6/yR3Xq1NAiImTKhNSG4Ivz7CL+BUjPub1tBwlHs26mPA23jyjC+brFwu5phncp6XZToHmcK8EkVe5JAXPMvY4Vht/THEUGNJUx312CgRvHDKhl9kYYtT8sPbP7InswQoAwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Integra+ Get Token SAP">e559fadb3b925a104a3b3537f4e45a79</action_type>
@@ -474,12 +476,12 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:17</sys_created_on>
         <sys_id>194cc6ca87639e10f538edf80cbb353d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-02-10 13:52:03</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 20:11:20</sys_updated_on>
         <ui_id>584adca6-b063-439c-a7c1-d1f5a1b6066c</ui_id>
-        <values>H4sIAAAAAAAA/+VVy04bMRT9lcjrZDSvJJBdlQipEgUJKJsWWTf2nWDV86jtAdJR/r13ZpyHgFKQ6AI1m8j35XNO7om/NUxJNmMpyjA6jiYiiZIkDsP4KI2Wk2QZxTIBxIgNWQE5UqVBURpJ5zvQdRtomq+VBIeSR4GojcHCbTaUl8pWGtbXvowi4lZpSXk2+3YzZBUYmujQsFnzKPVaSBqWqKn0AlfKOlM+g9Ktq/YsS1HnhIyrbfDU9y58ZvB5QRlqagFF4ZDhg8NCIkHJQFscshwK4lmaNZs5U1PAIMjzQq93FbeqcD3VHB6s+kU3p2FblyFxE16G3ZF7ifpwtgAHlzRZuNrsFCuVQNurIjGDWrv5YawvOK+cKou+xcFSb7tLXefFWa8I2w04+EVqSyCwanm2yHta2eVteX+xBXmiik4ST1GXAvTuBM4ZtaxdC6dhqLHTOIeqUsWKV6a8U10zQcmDlaZDkOnynu60alUEIFrcAakKwQnFF134GoxqSXyhMdS8GTK7tnMN1u6pkIb8Z90i6Yl5CrxToZOAd5vQNgujKveJrrpDD3wz9Gu/HL+0Y+J4v1AHM/er/8AJlLActC4tL2PBHdgfT3f/PJ4PrvrM2zzwCnxbD1y13/AHwN4FT2Kn+2aNg7M+4T0wfjcPHH0kD3gaH94Ef1v9MH7x7xX3m9Rtuz1Ye+LRUrTf6zBMZNOk8TRFDGE0DY8noxSn2QjC8XiUyqPxJIFsKqfjgPOeKLcOXG05D3K0Flb43GPxD254m/Feoc7WeHPIq9I+I9fWdJgTNYe8l++R8XxycO2Tuwfo3dwXTcLu84E8+N+8Qze/AYxL4OuACQAA</values>
+        <values>H4sIAAAAAAAA/+1UW0/bMBT+K1We2yi3ttC3CYS0h4HEGC8MWaf2SbHmxJntFLqq/33HiXthYwwhpmnS8nbu33f85dysIymiWVSgSNLjdMLzNM+zJMmOinQ+yedpJnJATKNhVEOFlGmQayPIXoJqvWO9/tQIcChYGvPWGKzdZkNxIW2jYHUd0sjD76QSFI9mN7fDqAFDHR2aaLb+IeRWDTIFc1RUeKp5W1HTwftT6vFStNvqS1xI64x+goCfQrYI/Zn0Tgp5RGkyjPDBYS2QBpagLA6jCmoiqs0qmjnTksMgiItarXYZd7J2PdcKHqz8Rv2LxOeVSOR42MPOZGFH2/VoyfGicVLXvcfBXG13p1Vb1ec9Bb9dLKFV7mC7raV+2HjIHkSPsPx4p+8vt/POZN2xC2iV5qB2Fjhn5Lx1aP2DoMJuKRU0jawXrDF6KbtiglLFC0VGXCp9TzOtXNQxcI87pgVBfEb+0859DUZ6Eh+oDRVvOvLsa+vn9jQCYNZx7giz7qEo1XIjG/eOGi8xwNwMg2Dn4+ckwI/3733Qcy/aBwbWcstAKW2ZzjhzYL/8rNqL7GRw1Udep94rP31w3k9/KfKDYlTwCypBvo98Qb3jN1Pv0V9Sb0D0j8n3d6JNsmfvFu5futOpPRAsofaE7Oc2SXKxXhfZtEBMYDRNjiejAqflCJLxeFSIo/Ekh3IqpuOYsZ4Wsw5caxmLK7QWFvjUgf4DE175y2BFuBwOemTDF+9u2+AEqkbbJ5a5/WXCALYMA3ZH/83+m3SSdN//2/+Gt//2O7B9HwOuCAAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Contrato com Faturamento">ee7946083b0f96104a3b3537f4e45a4a</action_type>
@@ -496,12 +498,12 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2025-01-08 15:23:24</sys_created_on>
         <sys_id>50f8639887075a10f538edf80cbb35a0</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-02-10 13:52:03</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 20:11:20</sys_updated_on>
         <ui_id>582f58b8-5b14-48ad-b368-5098401949ab</ui_id>
-        <values>H4sIAAAAAAAA/+1VXW/TMBT9L36uI6d2kmZvaNMkJGASg71MqLrxx2rhOlnibCtV/zvXTdKNbaANxAviLT6+H+ce36NcbolV5IjoeVGKnC14xUyZp0wAr3jGCyO0yCCryIx4WGuMbGDjalAI3IDrI7LdinkhtGZAC1bmVOjCUGBZRoVaZDkHU6giS8ZEWfvQQqh3OyyhbNc42Fz8eSW5sk612pOjyy8zJNki26BbcrR9dPXScR1U2v0w7xMBwqaJQBda66/G87sx7XwC61ZFGumM6LugvdLY34Dr9IyswSvk324OSKtBnXl3D6ysD1iNxOC7zn7DfgvGWIw0GmeSerg9HJejpANsTiAAUull6NsxVK5qK3U3qKG0gd6F44fYEHDWBFv7ISVA5abs2vVr/2GQghwKTC+ISN8hCd3EUSP3cRBzvqpvP04sT63fqzJeulqCO5wgoHZVHyKfLentp0cyD8gTobXTa+y4XEPTILJs2vrG7rsg6XVy5fCQGFffIrvOXvkEZJwwwSeA5BTxkz18Aa2N477HMpgc23329rrXb+PiGJkWrOIVTVMJuJWloCUTKWUqNRpXNjeQkd2MdJvu2EHX3QuFL7S87uOYg2yjQMtB45giW9uEN0jqRh+0GMCow7R2+PlM5G63m41Whl/uds7uNznUX9EVD42cVXkq84rTnHFDRSYZLUshKU+NEXwhjMrmyT5tCb671e3zLv69Mq+z8AvGnCw8zflo7NfYd/7fvv+Cfcs5T7lIC8oKqPD3wgytSlZQXvLczJnCv4v+O/Ydlu6n5v3yHfq0Xz+JBwAA</values>
+        <values>H4sIAAAAAAAA/+1UTW+cMBD9L5zXyKwNLLlVqiJVahupaXOJKjSYcdaq1xAwSbar/e8dL7CptkkVtTn00Bt+nq/3PI/rXWTq6CzCZV7IjK9ExXWRJVyCqEQqci1RppBW0SJysEGKbGFrG6gJuAM7BGS3k8tcInJgOS8yJjHXDHiaMlmv0kyAzus8jadE1TjfgW/2eypRm761sL36+0pqbWzdoYvOrr8uaMiOpvXYRWe7kyu/bbG0UKGlhpe+M+6G0l8qwpz4qMIvsoQGBPRz6aarwxzJIsIHj65GaqXB9riINuBqItBtj0iHUF84+wisjfNULQrBD735TqVXnPMQqZFIKRxvj8dy0nSE1boxCi9abxo3Ih4qO+Woxg4b93EkEF4DNQzWz69ByNBTPWzD1GGMaSZ9uW7uP80Nz407EJwubaPAHk/gSYZq8NiHlxjM5xNxRuT96XOgxQ11LDfQtoSUbdfcmUMXGnoT31g6xNo29zRdb25cDCowjElNiM8Jf3uAr6Azge4HKkPJod0XZ24HfBeeW6sk55WoWJIooA0rJCu4TBivE420fpmGNNofpC1vh0BqFGmSoxwVpYBedab1b2iEOzwyH8HAel4N+nwicr/fLyYTwm/3L+OP2+abb7TPP1swrbJEZZVgGReayVRxVhRSMZFoLcVK6jpdxoe0Elx/j93T/vuzMq9hvheQnxNn9idiPGO85X/j/WPGK5YiETLJGc+hop8816wqeM5EITK95DX94/E1jDcuxrO2+/oDG4SKZ/0GAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
@@ -518,12 +520,12 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:17</sys_created_on>
         <sys_id>dd4cc6ca87639e10f538edf80cbb353f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-02-10 13:52:03</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 20:11:20</sys_updated_on>
         <ui_id>8e1e90fd-dfac-4c63-8d25-bd3b06e02975</ui_id>
-        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1WeS5SvVmnfplZIkxhIwHhhKLqxb4o1J85sB+ii/vfdJO6HgLEi8YLWl8r3y+ec3lPftp7g3txLkAfhLJyyOIzjKAiiNAnzaZyHEY8BMfTGXgUlUqVGpjSn8wPIpgu07feag0WehT5rtMbKbjaU58LUEtY3rowi7F5ITnlvfns39mrQNNGi9ubts9SxkCTkKKn0ElfCWK1eQWnXdXfmijUlIcvENnjmepcuM/q6pAw1dYDCYOzhk8WKI0EpQBoceyVUxFPptTe3uqGARuAXlVzvKu5FZQeqJTwZ8ZtuToKurkDixpwMu2PmJBrCxRIsXNFkZhu9U0wJhmZQhWMBjbSLw9hQcFFboaqhxUIut91KNmV1Piji7QYc/CKNIRBYdzw75AOt4upePV5uQZ6KqpfEUZSKgdydwFot8sZ2cFoPJfYal1DXolpltVYPom8mKKW/knTwC6ke6U4jVpUPrMPtk6rgn1J82YdvQIuOxDcaQ82bsWfWZiHBmD0V0jD71XRIBmKOQtar0EuQ9ZvQNTMtavuFrnpAB3wzdmufT97aMTbbL9TBzP3qP2UEipkMpFQmUxHLLJifL3f/IlqMrofM+zxwBL6tB667b/gLYOeCF7GzfbPE0fmQcB6YfJgH0s/kAUfj05vgX6sfRG/+veJ+k/ptNwdrTzw6iuZHEwQxb9tJGhWTNE9PJnmYnCQp8JM8ntIxmKUJXZLMIPc1mlpVBnPF11CZR9SvvRIfOfp9VjtCj63VFlDWyrwi0NZmWBIni9kg2DOrueToxiV3T86H+S2cBv3nE7nuv3l57v4AqFcA53IJAAA=</values>
+        <values>H4sIAAAAAAAA/+1VUU/bMBD+K1WeS5akaZX2bQIh7WEgMcYLY9HFvrbWHDuznUJX5b/vnKSlG4wVhDRNIm939t193+cv9vUmEDyYBSnyKJ7GEzaKR6MkipIsjYvJqIgTPgLEOBgGCkqknQaZNpziFcjaJzabzxUHhzyPQ1Ybg8o1Da1zYSsJ66t+G2XYUkhO68Hs+mYYVGCoo0MTzDa/Lbl1hbmEAiUVnmhWl9R08OGEehyKdlt9gQthndGPEPBTKOZ9/1z4JC15RHE0DPDOoeJIA+cgLQ6DEhQR1WYdzJypKWEQ+LmS692OpVCu41rCnRU/qH8a+X1zJHKs12EX5r1GW3m0YHheOaFVl3FQyK12WtalOusoeHVxDrV0e+rWlvph5SF7EB3C+aelvr3YzjsVqmXXo5WagdxF4JwRRe3Q+gNBia0oJVSVUIu8Mnol2mKCUoYLSUE4l/qWZlqxUCEwjzskgSA8pfxJm74CIzyJj9SGipuWfP699nM7Gj3gvOXcEs7bg6KtlhlRuffUeIU9zGbYG7YYP2UBNr0/772e96a9y8FaZnOQUttcJyx3YL89dO15cjy47FZe5t5LP31w1k0/FPleMUr4A5Xevr/keveOX8292T9yb4/oP7Pv30wbJU/eW3h/0q1P7Z5hCbUnZL/UUTTim804S+bjrMiOxkWcHqUZ8KNiNKEwmmYpDUmnUIQGbaWVxULzNSh7i6ZpBu/UF3VgPdPKGVJG1WXx3Fo0RpvSLp5XtXSusg4c2cHXN83XjvDDP/NNkBdeSFiSjA4HnZDDg525bXAMZaXtI1bdXkj9gHzVD9g9qa92K8WTqP3eXtZXfFlvfgLJqc0NDAoAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=16d1c6843bcb96104a3b3537f4e45ab2"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=16d1c6843bcb96104a3b3537f4e45ab2^sys_idNOT IN154cc6ca87639e10f538edf80cbb353e,5d4cc6ca87639e10f538edf80cbb353b,9d4cc6ca87639e10f538edf80cbb353e"/>
@@ -545,10 +547,10 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:17</sys_created_on>
         <sys_id>154cc6ca87639e10f538edf80cbb353e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:24</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:20</sys_updated_on>
         <ui_id>8d885c28-28c6-4685-8505-4ef851505a91</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -571,12 +573,12 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:17</sys_created_on>
         <sys_id>5d4cc6ca87639e10f538edf80cbb353b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:24</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:20</sys_updated_on>
         <ui_id>00669af2-804c-425d-a51b-b63d045109d0</ui_id>
-        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnW6Beduxb0CJAgbYBmiCXNiBWJGUTpUiVpOy4hv+9Sz1sI3HQosixN3Go3Z0Z7WgfmdY3rXf35to5udLR8tvjJJI6YPi8jzTUIlpGzGguvTSadsAk2oBqwwU+cukaBbuHE8LWUnErhm4NWKzxwkbL/bMrv2sEVVAKhYV33kq9wnLJ8VQRqJIFS1iWzrKUkPQqT8pZViYpz0BAhu+Nhe9Hcu8+dcjkVdZhHuJunGQsD7QSMonEkxeaCxxdgXJiEtWgOXhjd0fECuC3Wp2AtdS+V1zDk5O/sHdaFOHFSqBGNthxPNLBqtElI5m4bQLBHvFQqtFCo9paf+l1BJNFBa3yZya3DvuJJpAOLAZK1d3abL+OA2+k7gQOl8owUMcTeLShbL1w4cMIJWpsRGtoGjSHNtZsZFeMXOp4pfAQV8pscWjYlBhYIB6jRxDfIP6hgx/AyqDiM7bB4p5mCU4y2m0VtvMWJRw6W+jPNhDqBQ5SaO8GvuCYlY2/xjkbMbA+TF6u5Nk27vd5Os+FIDCdk8Vsmot5NQVSFNOcXxWzDKo5nxcxpT156jz41lEaM8PF4fC9JSTjOSEvt/oNO79FOhZQVEVCisvpyGeX0nEhF69HIv1DJMJH/MtEEEL+R+I8EtLRfrUHbd3wf07EY1j/foLr94YLJh0SuQ/Yx/FfHi52uACSnUNbY38ECSfs8BvfYagsFQYAAA==</values>
+        <values>H4sIAAAAAAAA/+1US27bMBC9SqC1LdD62LF3QYsAXbQBkiCbNiBGJGUTpUiVpOy4hk/TRQ/QI+RiGepjG03TFkWW3YlvODPvPc5oF5nG1413t+bCObnU0eLj/SiSOmD4vYs0VCJaRMxoLr00mrbAKFqDakIAP7l0tYLt3RFhK6m4FX21GizmeGGjxe6nkN/WgioohMLEG2+lXmK65HgqCZSTOZuwNJmmCSHJeTYppmkxSXgKAlK8NyReP/7wjTJnHM5ano/fH78ZjL/EPXRF3A39jOWB3ISMIvHgheYCCZSgnBhFFWgO3tjtAbEC+JVWR2Alte90V/Dg5FesneR5uFgKVMp6Uw5H2hs2eGUkE1d1INghHgo1GGlUU+kPnY5gtSihUf7E6sZhPVEH0oFFT6m8WZnN9dDwUupWYB9UhoE6nMCjDUXjhQvPI5SosBCtoK7RHFpbs5ZtMnKp4qXCQ1wqs8GmYV5iYIF4jB5BfIn42xa+AyuDivdYBpM7mgU4yWg7W1jOW5Swb22hX5pAqBPYS6GdG3jBMStrf4F91qJnvR89H8yTmdztsmSWCUFgPCPz6TgTs3IMJM/HGT/PpymUMz7LY0o78tR58I2jNGaGi/3+U0NIyjNCns/2K1Z+jR2ZQ17mE5L/ekey6cmOvPndYry8E8kfdiK84l+uBCHk/06c7oR0tJvtXlvb/J9X4j7Mf9fBdYPDBZMOidwG7N3wSw+BLQ6AZKfQxtjPQcIR2z8BiyfUghwGAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -597,17 +599,40 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:17</sys_created_on>
         <sys_id>9d4cc6ca87639e10f538edf80cbb353e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:24</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:20</sys_updated_on>
         <ui_id>620c68d1-ae7e-499c-ac6c-c4ba9398544b</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=16d1c6843bcb96104a3b3537f4e45ab2"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=16d1c6843bcb96104a3b3537f4e45ab2"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_16d1c6843bcb96104a3b3537f4e45ab2^sys_idNOT IN43b198f43bc3da104a3b3537f4e45a5a,4bb198f43bc3da104a3b3537f4e45a56,5fb198f43bc3da104a3b3537f4e45a75"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_16d1c6843bcb96104a3b3537f4e45ab2^sys_idNOT IN2a8111423b739e104a3b3537f4e45ac7,43b198f43bc3da104a3b3537f4e45a5a,4bb198f43bc3da104a3b3537f4e45a56,5fb198f43bc3da104a3b3537f4e45a75,a68111423b739e104a3b3537f4e45ac4,aa8111423b739e104a3b3537f4e45aca"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Campos alterados</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_16d1c6843bcb96104a3b3537f4e45ab2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-02-19 21:38:23</sys_created_on>
+        <sys_id>2a8111423b739e104a3b3537f4e45ac7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-19 21:38:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>changed_fields</element>
         <help/>
@@ -677,6 +702,52 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Registro</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_16d1c6843bcb96104a3b3537f4e45ab2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-02-19 21:38:23</sys_created_on>
+        <sys_id>a68111423b739e104a3b3537f4e45ac4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-19 21:38:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Nome da tabela</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_16d1c6843bcb96104a3b3537f4e45ab2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-02-19 21:38:23</sys_created_on>
+        <sys_id>aa8111423b739e104a3b3537f4e45aca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-19 21:38:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_16d1c6843bcb96104a3b3537f4e45ab2"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_16d1c6843bcb96104a3b3537f4e45ab2"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_16d1c6843bcb96104a3b3537f4e45ab2"/>
@@ -694,7 +765,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>integra__contrato</internal_name>
-        <label_cache>[{"name":"582f58b8-5b14-48ad-b368-5098401949ab.responsebodyanswer","label":"7 - Contrato com Faturamento➛ResponseBodyAnswer","reference_display":"ResponseBodyAnswer","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ca41c9b9-0214-462d-bcef-2e75102d0ca1"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.payloadcontrato","label":"2 - Integra + - Payload Contrato com Faturamento➛payloadContrato","reference_display":"payloadContrato","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8d33bed5-3e5c-4004-b7e0-5cfa3317a876"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.message","label":"2 - Payload Contrato com Faturamento➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["comments"]},"attributes":{}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛O2C Task Record","reference":"x_asscs_allos_o2c_task","reference_display":"O2C Task","type":"reference","base_type":"reference","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["record"],"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["record"]},"attributes":{}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.code","label":"2 - Payload Contrato com Faturamento➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"00669af2-804c-425d-a51b-b63d045109d0":["condition"]},"attributes":{}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛O2C Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_asscs_allos_o2c_task","column_name":"sys_id","usedInstances":{"4274ee0a-7096-4e7f-a055-4d8563af7d75":["sysidtask"]}},{"name":"5b61c6b3-603f-45c0-994c-31ff4384fd52.token_answer","label":"1 - Integra+ Get Token SAP➛token_answer","reference_display":"token_answer","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["token"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ca8928f-8a84-471f-8ce5-5dd0aaebd3aa"}}]</label_cache>
+        <label_cache>[{"name":"582f58b8-5b14-48ad-b368-5098401949ab.httpstatuserror","label":"7 - Contrato com Faturamento➛HttpStatusError","reference_display":"HttpStatusError","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cf334ca3-0b7a-41c0-a0db-2b675d1dfe6a"}},{"name":"582f58b8-5b14-48ad-b368-5098401949ab.errormsg","label":"7 - Contrato com Faturamento➛ErrorMsg","reference_display":"ErrorMsg","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"989f299d-50f7-437d-8409-13cc13e83a64"}},{"name":"582f58b8-5b14-48ad-b368-5098401949ab.contractnumber","label":"7 - Contrato com Faturamento➛ContractNumber","reference_display":"ContractNumber","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"775fdd76-126e-4cd9-8ac8-8dde4a200763"}},{"name":"582f58b8-5b14-48ad-b368-5098401949ab.responsebodyanswer","label":"7 - Contrato com Faturamento➛ResponseBodyAnswer","reference_display":"ResponseBodyAnswer","type":"string","base_type":"string","usedInstances":{"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ca41c9b9-0214-462d-bcef-2e75102d0ca1"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.payloadcontrato","label":"2 - Integra + - Payload Contrato com Faturamento➛payloadContrato","reference_display":"payloadContrato","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["payload"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8d33bed5-3e5c-4004-b7e0-5cfa3317a876"}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.message","label":"2 - Payload Contrato com Faturamento➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["comments"]},"attributes":{}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛O2C Task Record","reference":"x_asscs_allos_o2c_task","reference_display":"Tarefa de Faturamento (O2C)","type":"reference","base_type":"reference","usedInstances":{"584adca6-b063-439c-a7c1-d1f5a1b6066c":["record"],"8e1e90fd-dfac-4c63-8d25-bd3b06e02975":["record"]},"attributes":{}},{"name":"4274ee0a-7096-4e7f-a055-4d8563af7d75.__action_status__.code","label":"2 - Payload Contrato com Faturamento➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"00669af2-804c-425d-a51b-b63d045109d0":["condition"]},"attributes":{}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛O2C Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_asscs_allos_o2c_task","column_name":"sys_id","usedInstances":{"4274ee0a-7096-4e7f-a055-4d8563af7d75":["sysidtask"]}},{"name":"5b61c6b3-603f-45c0-994c-31ff4384fd52.token_answer","label":"1 - Integra+ Get Token SAP➛token_answer","reference_display":"token_answer","type":"string","base_type":"string","usedInstances":{"582f58b8-5b14-48ad-b368-5098401949ab":["token"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ca8928f-8a84-471f-8ce5-5dd0aaebd3aa"}}]</label_cache>
         <master>true</master>
         <name>Integra+ - Contrato</name>
         <natlang/>
@@ -711,7 +782,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>49c1d8f43bc3da104a3b3537f4e45ae4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -719,11 +790,24 @@
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:27</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:23</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=49c1d8f43bc3da104a3b3537f4e45ae4"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>49c1d8f43bc3da104a3b3537f4e45ae4</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>pb</language>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-02-19 21:38:25</sys_created_on>
+        <sys_id>0f8151423b739e104a3b3537f4e45a9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-19 21:38:25</sys_updated_on>
+        <tablename>sys_hub_flow_snapshot</tablename>
+        <value/>
+    </sys_translated_text>
     <sys_variable_value action="delete_multiple" query="document_key=49c1d8f43bc3da104a3b3537f4e45ae4"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=49c1d8f43bc3da104a3b3537f4e45ae4"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=49c1d8f43bc3da104a3b3537f4e45ae4^sys_idNOT IN0dc1d8f43bc3da104a3b3537f4e45ae5"/>
@@ -777,7 +861,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">document_id</internal_type>
-        <label>Record</label>
+        <label>Registro</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
         <model display_value="Integra+ - Contrato">49c1d8f43bc3da104a3b3537f4e45ae4</model>
@@ -803,14 +887,14 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:15</sys_created_on>
         <sys_id>41c1d8f43bc3da104a3b3537f4e45ae7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:26</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -884,7 +968,7 @@
         <help/>
         <hint/>
         <internal_type display_value="Cadeia de caracteres">string</internal_type>
-        <label>Changed Fields</label>
+        <label>Campos alterados</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
         <model display_value="Integra+ - Contrato">49c1d8f43bc3da104a3b3537f4e45ae4</model>
@@ -910,14 +994,14 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:15</sys_created_on>
         <sys_id>81c1d8f43bc3da104a3b3537f4e45af2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:26</sys_updated_on>
+        <sys_updated_on>2025-02-19 21:38:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -968,7 +1052,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">table_name</internal_type>
-        <label>Table Name</label>
+        <label>Nome da tabela</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
         <model display_value="Integra+ - Contrato">49c1d8f43bc3da104a3b3537f4e45ae4</model>
@@ -994,14 +1078,14 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:15</sys_created_on>
         <sys_id>c5c11cf43bc3da104a3b3537f4e45a05</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:26</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1022,17 +1106,17 @@
         <comment/>
         <display_text/>
         <flow display_value="Integra+ - Contrato">49c1d8f43bc3da104a3b3537f4e45ae4</flow>
-        <name>Updated</name>
+        <name>Atualizado em</name>
         <remote_sys_id/>
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:16</sys_created_on>
         <sys_id>45c11cf43bc3da104a3b3537f4e45a12</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-01-09 13:00:16</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:22</sys_updated_on>
         <trigger_definition display_value="Atualizado em">bb695e60c31322002841b63b12d3aea5</trigger_definition>
-        <trigger_inputs>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</trigger_inputs>
+        <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
     </sys_hub_trigger_instance_v2>
@@ -1074,12 +1158,12 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:26</sys_created_on>
         <sys_id>634c0aca87639e10f538edf80cbb35af</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:26</sys_updated_on>
+        <sys_updated_on>2025-02-19 21:38:25</sys_updated_on>
         <ui_id>584adca6-b063-439c-a7c1-d1f5a1b6066c</ui_id>
-        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wf2yhfbaFvExXSJAYSMF4Ysm7tm2LN+ZjtAF3U/76bxCkVIAYSe0Dr2/2yzzm5p75umJJswVKUYXQYzUQSJUkchvFBGq1mySqKZQKIERuzAnKkToOiNJLiO9B1m2ia75UEh5JHgaiNwcJtt1SXylYaNle+jTLiVmlJdba4vhmzCgyd6NCwRfOk9FZIGlaoqfV8wPQUo9tUbSxLUeeEi6sheeInl74y+rqkCg21cKJwzPDBYSGRgGSgLY5ZDgWxLM2GLZypKWEQ5FmhN7uOW1W4nmgOD1b9ppvTsO3LkJgJL8Iu5F6gPp0twcEFnSxcbXZ6lUqg7TWRmEGt3dF+rm84q5wqi37EwUoP06Wu8+K0V4TtDtj7HrUlEFi1PFvkPa3s4ra8Px9AHquik8RT1KUAvYvAOaNWtWvhNAw1dhrnUFWqWPPKlHeqGyYoebDWFASZLu/pTqvWRQCixR2QqhAcU37Zpa/AqJbENzqGhrdjZjf2SIO1j1RIQ/6rbpH0xDwF3qnQScC7TWiHhVGV+0JX3aEHvh37pV9NX9swcfi4UHtnPi7+AydQwnLQurS8jAV3YH8+3/yz+Gh02Vfe54A34BsccNl995fxehM8y53sz45O+4K3wPTDLHDwmSzgaXx6D/xt88P41f/WvU3qlt3ubT3xaCnaH3UYJrJp0nieIoYwmYeHs0mK82wC4XQ6SeXBdJZANpfzacB5T5RbB662nAc5WgtrfOml+Ac3vM93b1Bn8N2xQi3tC3INpsOcqDnkvXxPjOeLoytf3L0/H+a+aBZ2v0/kwf/mGbr5A9JTEXN9CQAA</values>
+        <values>H4sIAAAAAAAA/+VVy04bMRT9lcjrZDSvJJBdlQipEgUJKJsWWTf2nWDV86jtAdJR/r13ZpyHgFKQ6AI1m8j35XNO7om/NUxJNmMpyjA6jiYiiZIkDsP4KI2Wk2QZxTIBxIgNWQE5UqVBURpJ5zvQdRtomq+VBIeSR4GojcHCbTaUl8pWGtbXvowi4lZpSXk2+3YzZBUYmujQsFnzKPVaSBqWqKn0AlfKOlM+g9Ktq/YsS1HnhIyrbfDU9y58ZvB5QRlqagFF4ZDhg8NCIkHJQFscshwK4lmaNZs5U1PAIMjzQq93FbeqcD3VHB6s+kU3p2FblyFxE16G3ZF7ifpwtgAHlzRZuNrsFCuVQNurIjGDWrv5YawvOK+cKou+xcFSb7tLXefFWa8I2w04+EVqSyCwanm2yHta2eVteX+xBXmiik4ST1GXAvTuBM4ZtaxdC6dhqLHTOIeqUsWKV6a8U10zQcmDlaZDkOnynu60alUEIFrcAakKwQnFF134GoxqSXyhMdS8GTK7tnMN1u6pkIb8Z90i6Yl5CrxToZOAd5vQNgujKveJrrpDD3wz9Gu/HL+0Y+J4v1AHM/er/8AJlLActC4tL2PBHdgfT3f/PJ4PrvrM2zzwCnxbD1y13/AHwN4FT2Kn+2aNg7M+4T0wfjcPHH0kD3gaH94Ef1v9MH7x7xX3m9Rtuz1Ye+LRUrTf6zBMZNOk8TRFDGE0DY8noxSn2QjC8XiUyqPxJIFsKqfjgPOeKLcOXG05D3K0Flb43GPxD254m/Feoc7WeHPIq9I+I9fWdJgTNYe8l++R8XxycO2Tuwfo3dwXTcLu84E8+N+8Qze/AYxL4OuACQAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Integra+ Get Token SAP">e559fadb3b925a104a3b3537f4e45a79</action_type>
@@ -1140,12 +1224,12 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:26</sys_created_on>
         <sys_id>eb4c0aca87639e10f538edf80cbb35af</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:26</sys_updated_on>
+        <sys_updated_on>2025-02-19 21:38:25</sys_updated_on>
         <ui_id>8e1e90fd-dfac-4c63-8d25-bd3b06e02975</ui_id>
-        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPJcpXq7Q3RIW0EgsSsFxYFE3sCVjrxFnbAbpV//tOEqdUgFiQuKDtbb7s917m1dcbJgVbshRFGC2iOU+iJInDMM7SqJgnRRSLBBAjNmU1VEidBrk2guJ7UG2X2Gx+NAIcijwKeGsM1m67pbqQtlGwvvJtlOF3Ugmqs+X1zZQ1YOhEh4YtN89K74WkoEBFrecjpucY3brpYqF5WxGuXI7JEz+58pXJtxVVaKiDE4VTho8Oa4EEpARlccoqqImlNmu2dKalhEEQZ7Va7zruZO0GohU8WvmHbk7Drq9EYsa9CLsw9wIN6XIFDi7oZO5as9NLS4520ERgCa1yR/u5oeGscVLXw4iDQo3TWrVVfToownYH7H2P1hIIbDqeHfKBVnlxpx/OR5DHsu4l8RSV5qB2EThnZNG6Ds6GocJe4wqaRta3eWP0veyHCUoV3CoKglLpB7rTyts6AN7hDkhVCI4pv+rTV2BkR+I7HUPD2ymza3ukwNonKqRh/rvtkAzEPIW8V6GXIO83oRvmRjbukK66Rw98O/VLX8ze2jC+eFqovTOfFv8xJ1Dc5qCUtrmOee7A/nq5+Wfx0eRyqHzMAe/ANzrgsv/ur+P1JniRO9mfnZwOBW+B2adZIPtKFvA0vrwH/rX5Yfzmf+veJvXLbve2nnh0FO3PNgwTsdnMsricZUV2MCui9CDNQBwUyZzCcJGldEm6gCIwaBtdWyy0WENtH9C89kR85tEfc9o79BiddixRCfuKQKPNsCJODvNBsGdW88XJlS/uXpxP81s0D/vfF3Ldf/Pw3PwFgn1F6m8JAAA=</values>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FUNnx5XkB2zfChsBCqQJkKS5JKmwItc2UYpUSSqJK+jfu5LoB5I0tYFcglYXgbtccmY0u7otA8GDaTBAHkaTaMT6Ub8fh2E8HkTpqJ9GMe8DYhR0AwUZ0k6DTBtO6weQRR0oy285B4c8iXqsMAaVqyrKc2FzCesbv40ibCUkp3wwvb3vBjkYOtGhCabls9ShkCSkKGnrJS6FdUa/gtKt83rNNSsyQpaITfDM1859pvNlThkqqgFFYTfAJ4eKI0FZgLTYDTJQxFObdTB1pqCAQeAXSq63O1ZCuZZqBk9W/KKbB2G9b4HEjXkZtsvES9SGF3NwcEUnM1eYrWJaMLStKhwXUEg324+1Gy5yJ7RqSxykclOtZZGp81aRYHvA3hcpLIHAvOZZI29pLa5W+vFyA/JUqEYST1FqBnK7AueMSAtXwykDlNhonEGeC7VMcqMfRFNMULLeUtKit5D6ke60Yql6wGrcPVIVeqcUnzfhGzCiJvGVjqHiqhvYtZ1JsHZHhTRMfhY1kpaYp5A0KjQSJI0T6mJmRO4+01UP6IFXXW/7dPiWx9hkZ6i9M3fWf0oIFLMJSKltomOWOLA/Xnr/Ip51rtvMcT1wAL5ND1zXb/gDYN8FL2Jnu2KJnfM24Xtg+G49MP5IPeBpfPgm+Jv1w/jN8Yo7JzVut3u2Jx41RXtXhGGfl+VwHC+G43R8MkyjwclgDPwk7Y9oGU7GA7pkMIG0Z9DmWllMNV+Dso9oqqrzSd2pA+uZVs6QVqrI0mNr0RhtMrs8rmrlXG4dODJIXV9V31vCL/v7vyDHjbUDvLcZazPIcm1fMeNmpGFGX8Jh0prz2Vjzyc6NT25/7+8226JR2DwfaML9M3/5+9/G7sG93goAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=49c1d8f43bc3da104a3b3537f4e45ae4"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=49c1d8f43bc3da104a3b3537f4e45ae4^sys_idNOT IN2b4c0aca87639e10f538edf80cbb35b2,2f4c0aca87639e10f538edf80cbb35b1,6b4c0aca87639e10f538edf80cbb35b0"/>
@@ -1167,10 +1251,10 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:26</sys_created_on>
         <sys_id>2b4c0aca87639e10f538edf80cbb35b2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:27</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:23</sys_updated_on>
         <ui_id>620c68d1-ae7e-499c-ac6c-c4ba9398544b</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -1193,10 +1277,10 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:26</sys_created_on>
         <sys_id>2f4c0aca87639e10f538edf80cbb35b1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:27</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:23</sys_updated_on>
         <ui_id>8d885c28-28c6-4685-8505-4ef851505a91</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -1219,17 +1303,17 @@
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-02-07 15:39:26</sys_created_on>
         <sys_id>6b4c0aca87639e10f538edf80cbb35b0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:27</sys_updated_on>
+        <sys_updated_on>2025-02-20 20:11:23</sys_updated_on>
         <ui_id>00669af2-804c-425d-a51b-b63d045109d0</ui_id>
-        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjlH8kTR5KymFQbfCWvqyFXEtyY2YbHmWnDQz+e+7sh0ntBlbWR/3Zh3p3nvOkQ5uiWlc1Th7by6tVU8lWX59DIgqPYbfLSmhkGRJuCmFcsqUrAMCsgHd+A38FMpWGnYPR4SvlRa1HLpVUGONkzVZti+2lMCCnEI+XfApj6NZHFEaXSTTbBZn00jEICHGhhoyqfHo6kDjw02HBL/l53aVx62rVfk0rG+GLncH0NTCs5rSgMhnJ0shkU8O2sqAFFAKcKbejUgtQdyW+gisVel6wQU8W/UTB0Zp6g/mEiXywY1xyQaneji/AgdIpeGuqUfjjOLS9uYImUOj3eoU6w/cVl5qX+Ig04dqo5ui/Nw7QsYGJxfTWCQhK6/UUx905Hdrs/1yYHmtys6VYVMbDnpcgUPvssZ5Pi2RWhbYiBVQVegoq2qzUV0xcinCJ42LMNdmi0P96wqBe+IhGgvhNeJXHfwAtfIqPmEbLO5pZmAVZ91LxHZokyT7gNidXWmw9igS3WU/Gk+xlzyIY70/voTXqnKXOHkjBx374PXDPnnTbZtE80RKCpM5XcwmiZznE6BpOknERTqLIZ+LeRoy1sth1oFrLGMhN0Lu998aSmORUPo6G+/Y+W0ZW0Cap1Oans9YMjuXsTPpemOwoj8Ey9/qX+aKUvo/WP8cLGVZH4dBWzf8HXP16EPUzxy95soitXuPfTz8V/zGDh+X4qfQ1tTfvagjtv8FSywwhqEGAAA=</values>
+        <values>H4sIAAAAAAAA/+1VS27bMBS8SsC1LdD62LF3gYMABdoGSIJs2oB4JimbKCWqImnHNXyaLnqAHsEXy6Mkf9D0FzTL7sQh33szQw60Ica7yjt7Zy6sVfOSTD489IgqA4bfG1JCIcmEcFMK5ZQpWQP0yBK0Dxv4KZStNKzvjwhfKC1q2XWroMYaJ2sy2fywpQQW5BTywZgPeBIPk5jS+DwdzIbJbBCLBCQk2FDDTGo8erP77rw2ZwLOGka7b7uvBvd/xdKtq4BbV6ty3q3fdr1u96CpReA2oD0iH50shURWOWgre6SAUoAz9fqA1BLEdamPwEKVrpVdwKNVX3BgnGXhYC5RKO88OSxZ51cL55fgAKl47nx9sM8oLm1rkZA5eO2mp1h74LoKUtsSBzO9rzbaF+X71hFyaHByPd4iCVkFpYF6pyO/XZjVzZ7llSobV7pNbTjowwocejfzLvDZEKllgY1YAVWFjrKqNkvVFCOXIpprXES5NiscGt5YBDwQj9BYiK4Qv2zge6hVUPEO22BxS3MGVnHWvEdshzZJsu0Ru7ZTDdYeRaK77LMPFFvJnTjW+hNKeK0qd4GTl7LTse09f94nL3uzSeNRKiWF/oiOh/1UjvI+0Czrp+I8GyaQj8Qoixhr5TDrwHnLWMSNkNvtR09pIlJKnyfkFTu/LGljyPJsQLOfJy0dniRt+rt4vTBZ8R+SFa71L4NFKf2frH9OlrKszUOnrRn+isF6CClqZx685soitbuAvdn/XsLGGh+X4qfQytSfgqgjtn0CUWPSDqgGAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=49c1d8f43bc3da104a3b3537f4e45ae4"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=49c1d8f43bc3da104a3b3537f4e45ae4"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_49c1d8f43bc3da104a3b3537f4e45ae4^sys_idNOT IN01c11cf43bc3da104a3b3537f4e45a03,c9c11cf43bc3da104a3b3537f4e45a09,c9c1d8f43bc3da104a3b3537f4e45aef"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_49c1d8f43bc3da104a3b3537f4e45ae4^sys_idNOT IN01c11cf43bc3da104a3b3537f4e45a03,038151423b739e104a3b3537f4e45a6d,728151423b739e104a3b3537f4e45a66,878151423b739e104a3b3537f4e45a74,c9c11cf43bc3da104a3b3537f4e45a09,c9c1d8f43bc3da104a3b3537f4e45aef"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>changed_fields</element>
         <help/>
@@ -1250,6 +1334,75 @@
         <sys_update_name/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
         <sys_updated_on>2025-01-09 13:00:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Campos alterados</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_49c1d8f43bc3da104a3b3537f4e45ae4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-02-19 21:38:25</sys_created_on>
+        <sys_id>038151423b739e104a3b3537f4e45a6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-19 21:38:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Registro</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_49c1d8f43bc3da104a3b3537f4e45ae4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-02-19 21:38:24</sys_created_on>
+        <sys_id>728151423b739e104a3b3537f4e45a66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-19 21:38:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Nome da tabela</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_49c1d8f43bc3da104a3b3537f4e45ae4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>renan.gaspar</sys_created_by>
+        <sys_created_on>2025-02-19 21:38:25</sys_created_on>
+        <sys_id>878151423b739e104a3b3537f4e45a74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-19 21:38:25</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1312,18 +1465,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"41c11cf43bc3da104a3b3537f4e45a25","name":"plan","plan_signature":null}}</plan>
         <plan_id>16d1c6843bcb96104a3b3537f4e45ab2</plan_id>
-        <snapshot>2f709d8b87671650f538edf80cbb3516</snapshot>
+        <snapshot>49c1d8f43bc3da104a3b3537f4e45ae4</snapshot>
         <sys_created_by>renan.gaspar</sys_created_by>
         <sys_created_on>2025-01-09 13:00:16</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>41c11cf43bc3da104a3b3537f4e45a25</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>renan.gaspar</sys_updated_by>
-        <sys_updated_on>2025-02-07 15:39:28</sys_updated_on>
-        <trigger display_value="">cdc11cf43bc3da104a3b3537f4e45a22</trigger>
+        <sys_updated_on>2025-02-20 20:11:24</sys_updated_on>
+        <trigger display_value="">0a37c69a87b7da90f538edf80cbb35ea</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=16d1c6843bcb96104a3b3537f4e45ab2"/>
 </record_update>

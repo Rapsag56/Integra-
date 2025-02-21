@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=30238000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>integra_aditivo__integrao_locatrio</internal_name>
+        <label_cache>[{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.descri_o","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Descrição","reference_display":"Descrição","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fd2337cd-ddab-4c84-9429-3a201c0bcb48"}},{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.c_digo","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Código","reference_display":"Código","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"80009b85-d5ba-404d-9fc0-36fa82dc6d08"}},{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.mensagem","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Mensagem","reference_display":"Mensagem","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"92cc6ca3-c3c9-46cf-aee2-6f03dbd91ed4"}},{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.resposta","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Resposta","reference_display":"Resposta","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9dfe4aa4-958a-4cfc-9e9e-851a0e122c52"}},{"name":"9443daca-817a-4031-adc8-3d76de98ba51.payload","label":"14 - Integra+ - Payload - Aditivo Locatario➛Payload","reference_display":"Payload","type":"string","base_type":"string","usedInstances":{"3e034e5b-528c-468e-82c3-b7a9241ac8e0":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"5c13d3c3-aee2-43ad-90ca-d369b95b17b5"}},{"name":"249b9a0d-3cd0-443e-82dc-5b8f393955e6.Record.u_codigo_bp_sap_integration","label":"13 - Pesquisar registro➛Tarefa de Faturamento (O2C) Record➛Código BP SAP (u_codigo_bp_sap_integration)","reference":"","reference_display":"Código BP SAP (u_codigo_bp_sap_integration)","type":"string","base_type":"string","parent_table_name":"x_asscs_allos_o2c_task","column_name":"u_codigo_bp_sap_integration","usedInstances":{"9443daca-817a-4031-adc8-3d76de98ba51":["bpnumbersubrogado"]}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.cpf_do_locatario_subrogado","label":"1 - Obter variáveis de catálogo➛cpf_do_locatario_subrogado","reference":"","reference_display":"cpf_do_locatario_subrogado","type":"string","base_type":"string","usedInstances":{"249b9a0d-3cd0-443e-82dc-5b8f393955e6":["conditions"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.descri_o","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Descrição","reference_display":"Descrição","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fd2337cd-ddab-4c84-9429-3a201c0bcb48"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.c_digo","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Código","reference_display":"Código","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"80009b85-d5ba-404d-9fc0-36fa82dc6d08"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.mensagem","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Mensagem","reference_display":"Mensagem","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"92cc6ca3-c3c9-46cf-aee2-6f03dbd91ed4"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.resposta","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Resposta","reference_display":"Resposta","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9dfe4aa4-958a-4cfc-9e9e-851a0e122c52"}},{"name":"ea61208b-4ed5-448f-98af-b0421f82be7a.payload","label":"9 - Integra+ - Payload - Aditivo Locatario➛Payload","reference_display":"Payload","type":"string","base_type":"string","usedInstances":{"a625fee6-1de4-4a73-98c7-661703bee57c":["payload"],"3e034e5b-528c-468e-82c3-b7a9241ac8e0":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"5c13d3c3-aee2-43ad-90ca-d369b95b17b5"}},{"name":"6576d22f-8b6a-41dd-a82f-58215fac0519.Record.u_codigo_bp_sap_integration","label":"8 - Pesquisar registro➛Tarefa de Faturamento (O2C) Record➛Código BP SAP (u_codigo_bp_sap_integration)","reference":"","reference_display":"Código BP SAP (u_codigo_bp_sap_integration)","type":"string","base_type":"string","parent_table_name":"x_asscs_allos_o2c_task","column_name":"u_codigo_bp_sap_integration","usedInstances":{"ea61208b-4ed5-448f-98af-b0421f82be7a":["bpnumbersubrogado"],"9443daca-817a-4031-adc8-3d76de98ba51":["bpnumbersubrogado"]}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.cnpj_do_locatario_subrogado","label":"1 - Obter variáveis de catálogo➛cnpj_do_locatario_subrogado","reference":"","reference_display":"cnpj_do_locatario_subrogado","type":"string","base_type":"string","usedInstances":{"6576d22f-8b6a-41dd-a82f-58215fac0519":["conditions"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.tipo_de_pessoa_subrogado","label":"1 - Obter variáveis de catálogo➛tipo_de_pessoa_subrogado","reference":"","reference_display":"tipo_de_pessoa_subrogado","type":"choice","base_type":"choice","choices":[{"label":"-- Nenhum --","value":"","order":100.0},{"label":"Física","value":"fisica","order":100.0},{"label":"Jurídica","value":"juridica","order":100.0}],"usedInstances":{"c21a825c-4f09-43de-b7fe-bfb06b373b1f":["condition"],"b11bdd34-858c-4a47-96ee-457b82401ad9":["condition"]},"attributes":{"catalogType":"5","catalogTypeLabel":"Selecionar Caixa"}},{"name":"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d.payload","label":"4 - Integra+ - Payload - Aditivo Locatario➛Payload","reference_display":"Payload","type":"string","base_type":"string","usedInstances":{"65225a36-80e1-4607-81d1-43f678d34265":["payload"],"a625fee6-1de4-4a73-98c7-661703bee57c":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"5c13d3c3-aee2-43ad-90ca-d369b95b17b5"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.data_de_inicio_do_aditivo","label":"1 - Obter variáveis de catálogo➛data_de_inicio_do_aditivo","reference":"","reference_display":"data_de_inicio_do_aditivo","type":"glide_date","base_type":"glide_date","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["validadedesde"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["validadedesde"],"9443daca-817a-4031-adc8-3d76de98ba51":["validadedesde"]},"attributes":{"catalogType":"9","catalogTypeLabel":"Data"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.subrogado_codigo_sap","label":"1 - Obter variáveis de catálogo➛subrogado_codigo_sap","reference":"","reference_display":"subrogado_codigo_sap","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["bpnumbersubrogado"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.local_luc","label":"1 - Obter variáveis de catálogo➛local_luc","reference":"ast_contract","reference_display":"Contrato","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["contractnumber"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["contractnumber"],"9443daca-817a-4031-adc8-3d76de98ba51":["contractnumber"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.company_code","label":"1 - Obter variáveis de catálogo➛company_code","reference":"core_company","reference_display":"Empresa","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["companycode"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["companycode"],"9443daca-817a-4031-adc8-3d76de98ba51":["companycode"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.subrogado_cliente_possui_cadastro","label":"1 - Obter variáveis de catálogo➛subrogado_cliente_possui_cadastro","reference":"","reference_display":"subrogado_cliente_possui_cadastro","type":"choice","base_type":"choice","choices":[{"label":"-- Nenhum --","value":"","order":100.0},{"label":"Sim","value":"sim","order":100.0},{"label":"Não","value":"nao","order":100.0}],"usedInstances":{},"attributes":{"catalogType":"5","catalogTypeLabel":"Selecionar Caixa"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.subrogante_codigo_bp","label":"1 - Obter variáveis de catálogo➛subrogante_codigo_bp","reference":"","reference_display":"subrogante_codigo_bp","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["bpnumbersubrogante"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["bpnumbersubrogante"],"9443daca-817a-4031-adc8-3d76de98ba51":["bpnumbersubrogante"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"Criado em_1.current","label":"Gatilho - Record Criado em➛Tarefa de Faturamento (O2C) Record","reference":"x_asscs_allos_o2c_task","reference_display":"Tarefa de Faturamento (O2C)","type":"reference","base_type":"reference","usedInstances":{"d611c892-ea90-4b54-97f2-668d2e78c6b7":["requested_item"],"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["current"],"6576d22f-8b6a-41dd-a82f-58215fac0519":["conditions"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["current"],"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["record"],"9443daca-817a-4031-adc8-3d76de98ba51":["current"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["record"],"249b9a0d-3cd0-443e-82dc-5b8f393955e6":["conditions"]},"attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Tarefa de Faturamento (O2C) Record","reference":"x_asscs_allos_o2c_task","reference_display":"Tarefa de Faturamento (O2C)","type":"reference","base_type":"reference","usedInstances":{"a856e2ba-221b-4aa6-a5bb-f7d8788af2ed":["current"]},"attributes":{}},{"name":"c75c6f85-3c7d-4a8c-b7d0-5b5954f4b8fa.token_answer","label":"2 - Integra+ Get Token SAP➛token_answer","reference_display":"token_answer","type":"string","base_type":"string","usedInstances":{"65225a36-80e1-4607-81d1-43f678d34265":["token"],"a625fee6-1de4-4a73-98c7-661703bee57c":["token"],"3e034e5b-528c-468e-82c3-b7a9241ac8e0":["token"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ca8928f-8a84-471f-8ce5-5dd0aaebd3aa"}}]</label_cache>
+        <master_snapshot>ce2209de3b7bde104a3b3537f4e45a20</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Integra+ Aditivo - Integração Locatário</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>2e2209de3b7bde104a3b3537f4e45adc</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:53:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b7efc963b7bde104a3b3537f4e45a8e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Integra+ Aditivo - Integração Locatário</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name>sys_hub_flow_3b7efc963b7bde104a3b3537f4e45a8e</sys_update_name>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:47</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>3b7efc963b7bde104a3b3537f4e45a8e</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>pb</language>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:53:40</sys_created_on>
+        <sys_id>f77efc963b7bde104a3b3537f4e45a8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 14:53:40</sys_updated_on>
+        <tablename>sys_hub_flow</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_asscs_allos_o2c_task">cat_item=69248e173baa96904a3b3537f4e45acf^codigo_bp_fiador=9999999999999999999999999<item display_table="sc_cat_item" display_value="Solicitar aditivo de locação (Novo)" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="69248e173baa96904a3b3537f4e45acf"/>
+            <item endquery="false" field="codigo_bp_fiador" goto="false" newquery="false" operator="=" or="false" value="9999999999999999999999999"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e2209de3b7bde104a3b3537f4e45adc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:41</sys_updated_on>
+        <table>x_asscs_allos_o2c_task</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_on_extended":"false","run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any"}</data>
+        <identifier>3b7efc963b7bde104a3b3537f4e45a8e</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:47</sys_created_on>
+        <sys_id>1ce1b6de3b7712504a3b3537f4e45a8e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-21 14:44:43</sys_updated_on>
+        <trigger display_value="">2e2209de3b7bde104a3b3537f4e45adc</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT IN1ce1b6de3b7712504a3b3537f4e45a8e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT IN337e34d63b7bde104a3b3537f4e45a33"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3b7efc963b7bde104a3b3537f4e45a8e</id>
+        <name>Integra+ Aditivo - Integração Locatário</name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:53:40</sys_created_on>
+        <sys_id>337e34d63b7bde104a3b3537f4e45a33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 14:53:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=337e34d63b7bde104a3b3537f4e45a33"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT IN041f7c1a3b7bde104a3b3537f4e45abf,c01f7c1a3b7bde104a3b3537f4e45abb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Nome da tabela</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</model>
+        <model_id>3b7efc963b7bde104a3b3537f4e45a8e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:56:08</sys_created_on>
+        <sys_id>041f7c1a3b7bde104a3b3537f4e45abf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=041f7c1a3b7bde104a3b3537f4e45abf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Registro</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</model>
+        <model_id>3b7efc963b7bde104a3b3537f4e45a8e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:56:08</sys_created_on>
+        <sys_id>c01f7c1a3b7bde104a3b3537f4e45abb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c01f7c1a3b7bde104a3b3537f4e45abb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT INc81fbc1a3b7bde104a3b3537f4e45aac"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <name>Criado em</name>
+        <remote_sys_id/>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:56:08</sys_created_on>
+        <sys_id>c81fbc1a3b7bde104a3b3537f4e45aac</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:29</sys_updated_on>
+        <trigger_definition display_value="Criado em">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYy27cNhT9FUGrBvBCj3lY3gVjBw2QxoDttAs3Fa7EyzERDjkRKdnTwB9TdNEv6Bf4x0pKmpdGM56Xm9gbQyRFnnt07rmXc/vN5ZAgd8/cG/sf3BOXCY2ZAH4zGaMZ15BwjAWM0MyNQBDQMpu4ZzrL8cSVGcHMPfNP3AJ4jtcT9Z6Yl8zS8o36dbeeNs8PMSiVqhg4lyqWQRprUF/MAsLUmMPk13rdDWRIwSHovAOdZ2YzoaXz02UweGMWp3eMkwyFe3b7+cQdg53XFsi3xhSzaFKaQhSgl4Z+GASeF5x2/KQXJn5AQkDPMxuusNCAr1vImMeODxoFQXMWBa6whacMgVwKPpmtuDM0V0SN4EGxP83up55dR9GAT7Gamz3GNT3VcHonWYqXY82kqEYqnNWk5PlIfKzwW2INjznXU2LNSK7Mfji2kC2IGhG9vpP3V9MD3zFRRldPcpkCnz2B1hlLco3KMk4ZN9zHFTdK5lmJ/upicHl1Hv/29mbw88VVfHVxfXP1fnBzce4+lnHFX3O7Y4WwxhJX4TzO1PCOIbdfUOSjxKA5cVWasbF+m2pWYA3n8WQu4oEUhD398/S3XBVyaucsY2pZyHVM06/peWu1PNthQc8p6JhpHP2ee15IelHQOUW/HyYAUS/yOhAmYTfs0w52upDSP1JJ2FDGyTimDIjMqteidX87S73XAyAIa6Se0AWpL3HVEqFuoW2RpE2ir0e2UX3H876T7qvM3Fv2I0mQn8+3c83kcGgSgYlxri1b9yC0irWMgZB4gUe71GB6Lg+q2FaT4fk0yHJhtohnX2g1F0oiZ4x+YMoEcGtSecpWuaWZpx/qLS8eMM01ZI6S1orREeDo0iwd488mArP2/QiGNdX0GjmmekEd9JNafPqFKcXEcAH87OySnLajBaj6TFUeypSDDiobJCOgDoTweU9XWCW7aJDYKG07J7XvU5ogDby+TWnfCxPqe32vC5SEnpcGC0m9CmYtSt2Qwovk9m6ZrUoR8u0l12S6jsFbTIYd5FMsK3DKiJVG7SaDo+L0j4ozsDgbFhnu5JEzwVbD58u63SLOI3cWQAowb5BtHdMu2MIaKZf3xqX3sMUE0i/DTOaCtBoU5fmDdHDkKByaNdIx9AnTtY6BZKbOvjmiSVKZ4TZIxhkbIctqKN/RIuekT9ULYnIEcwypn0TYQc94YmjsMOlGUZJCQGm/18fAb5jjHEYrttdjiltorWhT7UaLXC+bok13uxrkgZjb7XI/zIebZS3fVqus5l6HG97foYgN1Czm1u9WTHHIGcHp3N7pv3JKMU/4Qy2AnkZp1+/307658BgLMLetBPxO0IWo3wtPuw0LWIGyCaZuIeF/uQWpiSqBrLGHTyp/+itj8of7NeAlVapQa1uO9ijcUt+1FkqrLWNHSj39i8optwUDA2zPJYwnLQ4dsXxXu1YBb7plzeEtQXGMd+ZzBRwLlTA3hL2QNZj6jm1GQyfF8vc/+CaGndNuRMN2p6FRm9PMwayH+Xrajh3zpcH/xuZjN80XrZm0sVPYUrrF2mxY7B226XeOQtYOsexHVvCiZIUHN1rT3N18Kd2R61dU9cp2ZP/SV/WiayqfBfg1x+wlqokUGEu6sYgodCA1mgB7F0Au1QyHcqC8JbDsqPXN0t9E9dGqA2fQXh7SwfWtoYjjXqiR9KHbDdd001HzQt0G6Bm8r6zateXIMuVblbUthVU0s6etDOwl2aItC/YqaVszsrl2HchI8KKMHF63Nv1A8DyfP2iB+vwft+MHfjMgAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT IN00d172de3b7712504a3b3537f4e45a82,00d172de3b7712504a3b3537f4e45a83,00d172de3b7712504a3b3537f4e45a84,08d172de3b7712504a3b3537f4e45a82,2522c5de3b7bde104a3b3537f4e45a47,48d172de3b7712504a3b3537f4e45a7e,881fbc1a3b7bde104a3b3537f4e45aae,c4d172de3b7712504a3b3537f4e45a85,c4d172de3b7712504a3b3537f4e45a86,ccd172de3b7712504a3b3537f4e45a85,ccd172de3b7712504a3b3537f4e45a86,e122c5de3b7bde104a3b3537f4e45a45"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>00d172de3b7712504a3b3537f4e45a82</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:38</sys_updated_on>
+        <ui_id>6576d22f-8b6a-41dd-a82f-58215fac0519</ui_id>
+        <values>H4sIAAAAAAAA/+VY2W7jNhT9FcFPLWC7ki1L9rwVGQQo0CZAZnlJM8QVeZWwQ4sKSWVFPqboQ9EP6Bfkx3qpxfY4TsaTBTODPnK5+7mHVzq87knRe9UTs3CWz2aTaRqG43EYJsmYQ5Rl44RnYQZxr98rYI5000GmkJZnoCq/vmBgLbcMlNKW6RFnDuxHuiCkLRVcvm/vvQWDOQQCg11wlSFlhdPBD/ujnR/pMj+RShgseq8Oj/q9Evy5Q9N7db125C5LZAoyVLVO8iXY8471t45jRRgV3A3MW+iWrGh0ayO8M2G/hxcOC4FkKwdlsd+bQyHAaXO52DEIYr9Qy40TWTjS2POXL6y8IvXT0N/LkeLi2JwtlqzNXLPNT7TkuF86qYtmp3G0OdSqmhd7TQA+55TiSrku57RTWdKHpffZO9F6lL850ecHncFdWdThtYdKc1CLFThnZFY5tL4YqNAXjs2hLGVxzEqjz2QtTL7Mh8eKFsNc6XMyauVxMQTuHR9SimC4S/uv6+33YKSP4jdSQ8LkkFRUbtYk3erK1Fk5Y1xVtj4wUNhGV++mzhU7rbyXTdRtfKxJEV2w3MjS/UwCZ9iGctPvsD55ECOzJSS4LoT0Nu0K4Dk4Jh3Of69IXEQxTkcQkTLO+WgWRojjJE7ikJPCSZR+OGtDtUOchONZDNE0nfIwWb+aQKPw+lokUcSns9EAYRYO4mwSD2ZpPhokyVSMkISTLB3yovyDCc18sRyZ0MxWmdHHIPTNzQeDpxXaxs8hdRPlptO+Q+4IHeCcRUNeGX9EAtaBw+bK+MP+wcoyudvK/8MMPI6fdlbxsy32PhG+/fv2X7T3ILJlqk/2WqaKno2p4jD8SlzlTPXtUdXnyKcJ+DMMFIkHUSCW9bbaONZkboWC7rbkoyG6K1GJT57QLZzrhPcJbAWYoNTmPpdbjObezNprOvruX9NvEqHkkGBNvmWhZFEPM+To80B38iA6smgNB3X5l8Ct98DyuwCGANztP8HV47m2rmwH4i3cXMyBstR+LN1RNMjKXHIg0v1Lbw6ko9zOWAvl8bNBeTz6MigTkA6vF7GsZHFDyrsp1hezk7hqJGBdghC3IhLdHC3aYeexdqMvtzvydtd6dvxFTbuKuObk9b3Ae+ZZ+Z427L9k35+QaGuPNW3MzqU4Rre03t0S2p2D+rjpvMXZorfq8J48d0cPfptlK3O3zNmcKiVL+hgwyAkM9H1pkOW6KgRrPwOWwPF1y6Whaa+5fJddDpAa0b9UVvvMY6CD0sg5SqMDg8fSOqOfiXm2iLITfIPB2e2fNLnahRM2yLXBebDOQVtm5B56ip9xGnwKPe2COoFAQIAOytXWR2PqEWITQ21ZuwfAsCWJbetd9CLePZ3qNrXBRsrb0ufv4tfBU0mJI2TxCJJ0HEVhGIUiDadpGk2TLE8gjfNlCzJmC06sSZpzkIrUsw4YXXXDu8zjrT2eWt4SJf+0W7Nvf2t/O+E9YpAgr0FNjOJ93SqYlkMyrRVCsQTo5KuRyLfy86uSb9dz02z9uqlcL/XKV/JdIU8r/MXDYYrhaBoJPpimUTqIc5EMZgImA5hlk3QskMf54x/uo/8ADZOF/B4WAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Aditivo - Troca de Locatario Integração">880281de3b7bde104a3b3537f4e45a7a</action_type>
+        <action_type_parent display_value="Integra+ Aditivo - Troca de Locatario Integração">6891059e3b7bde104a3b3537f4e45a7d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>00d172de3b7712504a3b3537f4e45a83</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:29</sys_updated_on>
+        <ui_id>a625fee6-1de4-4a73-98c7-661703bee57c</ui_id>
+        <values>H4sIAAAAAAAA/+1TwW7UMBD9l5zXUZJ1Em9vSKgSElCJQi9VFY3tcdfC66SJ03ZZ7b8z3mRbsYBUQEgcOM6LZ+a9N3nXu8Tq5CxRKitErnEpa6kxzzgs5bJc1oYjL6HWySLxsEF6GdrP6Km8BzfGerdTdakqI0q2VLVmHIRistYZK2W5KrnhUhhID20N+OEB+/2e+rUdOgfbqz8co9bW6Z4YnV3fLJIOemIZsE/OdiefwrbDxoFER9suQ2/9LbW/VPyx8aj+xIw4nMrhOLbtdeSQLxJ8DOg10hoDbsBFsgGvIbT99gnpEfSFd8/A2vpA05L4+HGwX2i0yLIsvjRIghROX5/KZjZzgtW6tQovumBbPyEBpJt7VOvGjX8/0Y9nQAOjC8czEDIONA+7yDrSmDmZy3X78OG48Nz6g8D5o2sVuKcKAtkgx4BDvMJoP56YMyFvT0+BDje0sdlA1xHSdH17bw9biPQmvXVUpMa1D8RusLc+BRUVpuQmpOeEvz7AV9DbKPcdjaHmuO6Tt3cjvomnxlrwsqpWrDYrwTiXOROFWbGsAlHBEvIKMdkfrG3uxihqMmm2o5kcpQeD6m0XXhGFe5yV7xcvCpMonv+fDrauBf1NnBCqvMiEZBx1SRSFYSsBhsmMF7kRhcQa0rnxx0n65Ql/P0QH0cfGZ9Xf2fCTIBX/g/SPBakEmeXIFasUZoxLaRgozVleVsVKQklBk78dpJuv4/UmOpcGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>00d172de3b7712504a3b3537f4e45a84</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:29</sys_updated_on>
+        <ui_id>69a11da0-b2a0-4dca-ba59-9f9645de2c3b</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FUGnFrAFyfIj8a1wEKCHJEAa5NIExIpcO0QpUSUpJ67hr+mhH9BPyI91KdOO26apEQQoCkQ3rji7M8MB+XEZSxGP4z6KNDvMhjzP8ryXpr2DflYM8yLriRwQs7gTV1Ai7TTItRG0noNqfGG5nBgJQkdYsizhjTFYudWKdghpawWLy7CRKvxGKkH/4/HH605cg6GeDk08Xv7yyy1qZAoKVAQ80rwpqWn0/oh67Mt3gz7HmbTO6Eck+Cm0FqE/k75IvzyjLO3EeOewEkgDp6AsduISKgFOm0U8dqahgkEQZ5VabHfcyMqttZZwZ+UX6t9P/b4pkjgefNguWfBoY4+WHM9qJ3W1rjgo1MY7rZqyOl1L8O7iFBrldtxtLPXD2lP2JNYMpx9u9O35Zt6xrFp1ga3SHNR2Bc4ZWTQOrT8QVNiaUkJdy2rGaqPnsgUTlTKZKVokU6VvaaaVsyoB7nknZBAkx1Q/asuXQOkgESfUhsCrVjz73Pi5axmBMGs1t4JZe1C01XIja/eOGs8x0Fx1QmSLwVMR4IcP573T8yG2dwys5ZaBUtoy3ePMgf30e2ovgPhCJDA6Btf4wFZOR2/OepO3zw70hScUna4J7StmB4wK/qAuJPqnWgj04MUCffCPAh0Y/WeJ/luO096TVxk+nHQbXbuTYWLtBdmrJk1zcY621tbBOFouYdgbTBGH3Uxgv9uHUd49POCj7nCYjdK8QByMeGICYLW6qk6wsjDDcm9wGQAePLn/LuRM743lzG/3SHKUrLn/dv91f7RoMUw/9sa8OvLcKwlL8tFhtHays3c2Nw0mUJJ1j4R1cyWFAWweBmzf2Re7l7Jh2n6vz+0LPrfXPwB6pU9KIwoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Payload - Aditivo Locatario">cc00c5da3b7bde104a3b3537f4e45a3d</action_type>
+        <action_type_parent display_value="Integra+ - Payload - Aditivo Locatario">165ffc5a3b7bde104a3b3537f4e45a35</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>08d172de3b7712504a3b3537f4e45a82</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:38</sys_updated_on>
+        <ui_id>ea61208b-4ed5-448f-98af-b0421f82be7a</ui_id>
+        <values>H4sIAAAAAAAA/+2YS2/bOBDHv8pCZ1PQgxTF3LotChTYbRfNbi5FIQxfDgFZUvVImw3y3XdoyXGSjew29sEH38Ih5/XX/ELJX+4Cp4OLIKdRpJiGVHKpTRxR/CtlKbfUUAYMgkVQwcrgSTW0ral6NNxAOXjL3d3b1oGufzOrIg6n/ft7PKFd15Rwe7X3oLp2pcZVcPHl6yJooMVcvWmDi7tnW/1tY4oSpCkx3mXfumqJ7j/bwsZx28P/mvIJ0NBtQtet9nXEi8D86E2lDaayUHZmEayg0tDX7e2DpTWgP1Xl1nDtMOhFEPjDPzr3L4bOoyjyJ63BjMqMuw/LYpJsNKvr2inzqeldXY2WHmQ5+ai6HFbVx7EBL7axMJT9Rmy0DB3GM42v2pcx1WQvr+vvnzcJ37tq3eC0WdYKyocV9CiDHHrT+ScxuL+fiTNa/nj+OExpVpixWEHToKVo2vrGrbNg0atwWeIitGX9Havr3LIKQfkOQ1QTwvdof7c2XwFOC7b7J4ZBZ5/un8p9G8wH/7ghVxwg5QQiJgnlMSPC0oREsYi4VpDpRAf3a2mLb4NvahRpkqMYFcUDnWpd07/BEm7M1Pn9YoNFGtksEX6meJywZzMF8tEE1asGqltVa/MEDZ3FscpFQgyIiFDJKBHcJiTLcp0YnqtM8nByLrz3y+C8LsxRsNovwQNWY/63owYvCjODV3LG69TwSjOaZDkQZnlMaBZpkmsjCAUVCQUSJ0EcjBeVO2fLPp6iqm+xj2pYyXWxv0jYWviiHNQBeD2NcQy2fqL/LVujAB83AswJM0NYeibsxAjTViJiPCGWs4xQJTURJpXEKiktZDaN8D/mwYTxXRMm0+0gyWYcoW6Qbb2Eqn/FPbb19XeQW9aFbA4AbjbcUdjbr8zG8fe/RuouH0uzS7YZBumZwRNjkNOUyUgLYg2zhMY0wjFMGcnTJLZZJrgx6nAGd75BST47TLp+gmDGOL7UJpbkMgMsVmsCOS5ZnsTM4r3MYhF+NgqnLRy2xBQdNAWOkFm24BV6GchjBj8KnvtFm8FzrdoOQWfgZGc4TwxOleF9mJqYxAIUvoIyQaTCi4JqoXIuBA7IES5Iu3POHv3wgSA6DTgepnvNN55vHdVAWJxydaHrArTDiuoDLsjdMY+C4X55No5Xkz7vJn1mZJvBLzvjd2L4WZ7Euf/4M4rj3cjwWhAxLrWMWYIfhJzT7NX4ff0PpetIWHkUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Aditivo - Troca de Locatario Integração">880281de3b7bde104a3b3537f4e45a7a</action_type>
+        <action_type_parent display_value="Integra+ Aditivo - Troca de Locatario Integração">6891059e3b7bde104a3b3537f4e45a7d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>e3128363-a747-46a5-a4a2-3f90e2089f54</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:37</sys_created_on>
+        <sys_id>2522c5de3b7bde104a3b3537f4e45a47</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:29</sys_updated_on>
+        <ui_id>65225a36-80e1-4607-81d1-43f678d34265</ui_id>
+        <values>H4sIAAAAAAAA/+1TwW7UMBD9l5zXUZJ1Em9vSKgSElCJQi9VFY3tcdfC66SJ03ZZ7b8z3mRbsYBUQEgcOM6LZ+a9N3nXu8Tq5CxRKitErnEpa6kxzzgs5bJc1oYjL6HWySLxsEF6GdrP6Km8BzfGerdTdakqI0q2VLVmHIRistYZK2W5KrnhUhhID20N+OEB+/2e+rUdOgfbqz8co9bW6Z4YnV3fLJIOemIZsE/OdiefwrbDxoFER9suQ2/9LbW/VPyx8aj+xIw4nMrhOLbtdeSQLxJ8DOg10hoDbsBFsgGvIbT99gnpEfSFd8/A2vpA05L4+HGwX2i0yLIsvjRIghROX5/KZjZzgtW6tQovumBbPyEBpJt7VOvGjX8/0Y9nQAOjC8czEDIONA+7yDrSmDmZy3X78OG48Nz6g8D5o2sVuKcKAtkgx4BDvMJoP56YMyFvT0+BDje0sdlA1xHSdH17bw9biPQmvXVUpMa1D8RusLc+BRUVpuQmpOeEvz7AV9DbKPcdjaHmuO6Tt3cjvomnxlrwsqpWrDYrwTiXOROFWbGsAlHBEvIKMdkfrG3uxihqMmm2o5kcpQeD6m0XXhGFe5yV7xcvCpMonv+fDrauBf1NnPRKaZUXyFAYThRBMaHymomqEJnRuaR4pHPjj5P0yxP+fogOoo+Nz6q/s+EnQSr+B+kfC1IJMsuRK1YpzBiX0jBQmrO8rIqVhJKCJn87SDdfAbQfHrCXBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Payload - Aditivo Locatario">cc00c5da3b7bde104a3b3537f4e45a3d</action_type>
+        <action_type_parent display_value="Integra+ - Payload - Aditivo Locatario">165ffc5a3b7bde104a3b3537f4e45a35</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>e3128363-a747-46a5-a4a2-3f90e2089f54</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>48d172de3b7712504a3b3537f4e45a7e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:37</sys_updated_on>
+        <ui_id>d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d</ui_id>
+        <values>H4sIAAAAAAAA/+2YS2/bOBDHv8pCZ9PQgxLF3LotChTotovNbi5FIQxfDgFZVPVImw3y3XdoSXGaVnbX9sEH38wh5/XX/EzLnx4Cq4KrIKdhKFMFiWBC6Sik+ClJE2aopimkECyCCtYaT8q+aXTVoeEOyt5bHh5eNxaU+02vi2g57j8+4gll27qE+5u9B+WtLRWugqtPnxdBDQ3m6nQTXD282Orua12UIHSJ8a67xlYrdP/VFibHbQ8/NOUToKGdQrtG+TqiRaC/dbpSGlMZKFu9CNZQKehcc/9kaTSoj1W5NdxaDHoVBP7wt9b+i6HzMAz9SaMxo9TD7tOyGCUbzPLWWak/1p111WDpQJSjj3Rlv64+DA14sbWBvuwmsdHStxhP175qX8ZYk7m+dV//mhK+tdWmwXGzdBLKpxV0KIPoO936J9Hbv1+IM1jev3wcutRrzFisoa7RUtSNu7ObLFj0erkqcbE0pfuK1bV2VS1B+g6XqCYs36L9zcZ8Azgt2O4fGAadfbp/Kvul1+/844ZcMoCEEQhTQSiLUsINjUkY8ZApCZmKVfC4kbb40vumBpFGOYpBUTzQysbW3Sss4U6PnT8uJiyS0GQx9zPFojh9MVMgnk2QW9dQ3Uun9HdoqCyKZM5jooGHhIqUEs5MTLIsV7FmucwEW47Ohff+OTiHhTkJVvsleMJqyP960OCnwszgFV/wOje8kozGWQ4kNSwiNAsVyZXmhIIMuQSBk8CPxouKnbNlnk9R1TXYR9WvxabY/0nYRvii7OUReH0f4xRs/UL/W7YGAT5MAswJM0NYciHszAhTRiBiLCaGpRmhUijCdSKIkUIYyEwS4jfm0YSxXRMmku0giXoYobYXjVtB1R1wj219/R1kV64Q9RHAzYY7CXv7lZkcf/9zoO76uTS7ZJthkF4YPDMGGU1SESpOjE4NoRENcQyTlORJHJks40xreTyDO39BCTY7TModjKByEzItnADBH8OdBMH9wswguFFmh2gzAKYXAM8MQJnhnZfoiEQcJP7MTDkREieRKi5zxjkOyAkuQbNzzp79uYGwWQU4Hro95D3Ot45qFLay0roCqQFlsSJ3BIG7Y54Ew/3yTI43oz5vRn1mZJvBL7vgd2b4GRZHuX/B05Lh/ZdmQHiESyWiNMaXPsZodjB+n/8DSIPoul0UAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Obter variáveis de catálogo">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Obter variáveis de catálogo">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:56:08</sys_created_on>
+        <sys_id>881fbc1a3b7bde104a3b3537f4e45aae</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:29</sys_updated_on>
+        <ui_id>d611c892-ea90-4b54-97f2-668d2e78c6b7</ui_id>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:30</sys_created_on>
+        <sys_id>c4d172de3b7712504a3b3537f4e45a85</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:38</sys_updated_on>
+        <ui_id>249b9a0d-3cd0-443e-82dc-5b8f393955e6</ui_id>
+        <values>H4sIAAAAAAAA/+VY3W7bNhR+FcFXG2B7ki1Ldu6GFAEGbAnQdr3pGuKIPEqI0qJCUkmTIA8z7GLYA+wJ8mI71I/t2k7qOinaYpf8Of/f+Xikt7c9KXoHPTELZ/lsNpmmYTgeh2GSjDlEWTZOeBZmEPf6vQLmSDcdZAppeQmq8usPDKzlloFS2jI94syBfU8XhLSlgus37b3XYDCHQGBwBK4ypKxwOvjhZHT4I13m51IJg0Xv4O27fq8Ef+7Q9A5u147cdYlMQYaq1km+BMfesf7OcawIo4LNwLyFbsmKRrc2wjsT9nv4wWEhkGzloCz2e3MoBDhtrhc7BkGcFGq5cS4LRxp7/vIHK29I/TT093KkuDg2Z4slazPXbPNzLTmelE7qotlpHG0OtarmxXETgM85pbhSrss57VSW9GHpffZOtB7lr8711cvO4JEs6vDaQ6U5qMUKnDMyqxxaXwxU6AvH5lCWsjhjpdGXshYmX+bDM0WLYa70FRm18qwYAveODylFMDyi/Rf19hsw0kfxG6khYXJIKio3a5JudWXqrFwyripbHxgobKOrd1fnil1U3ssm6jY+1qSILlhuZOl+JoFLbEO563dYnzyKkdkSElwXQnqbdgXwHByTDud/VCQuohinI4hIGed8NAsjxHESJ3HISeEkSk8v21DtECfheBZDNE2nPEzWrybQKLy9FUkU8elsNECYhYM4m8SDWZqPBkkyFSMk4SRLh7zMmdDM18qRBc1slRl9BkLf3Z0avKjQNm4OqZkoNZ3yQ/JG6ADnLBryyvgjErAOHDZXxqcnL1eWyWYn//8SsB87Ha6iZ1fkfSR8//f9v2gfwGPLUx/ttTwVPRtPxWH4lZjKmerbI6pPUU8T8Cf4JxKPokAs6221cazJ3AoBbXbk3hA9kqjERw/oDs51wicEtgJMUGrzkMstRnNvZu0tHX33b+k3iVBySLAm37JQsqhHGXL0eaA7eRQdWbSGg7r8S+DWe2D5JoAhAHf/T3CzP9fWle1AvIObiylQltoPpYeKxliZSw5Eun/p7YF0lNsZa6E8fjYoj0efB2UC0tvbRSwrWdyS8m6G9cXsJG4aCViXIMStiER37xbtcLiv3ejz7Y683bWeHX9W064irjl58SDwnnlSfqAN+1+y789JtLXHmjZmV1KcoVta724J7a5Avd923uJs0Vt1eE+euqNHv8yylalb5mxOlZIlfQoY5AQG+ro0yHJdFYK1HwFL4Pi65dLQtNdc3mSXl0iN6F8qq33mMdBBaeQcpdGBwTNpndHPxDw7RNkJvsLg8v5Pmlztwgkb5NrgPFjnoB0z8gA9xc84DT6Fno5AnUMgIEAH5WrrozH1CLGNoXas3SNg2JHEdvUu+iLePZ3qtrXBVsrb0efv4sfBU0mJI2TxCJJ0HEVhGIUiDadpGk2TLE8gjfNlCzJmC06sSZpzkIrUsw4YXXXDTebx1vanltdEyT8d1ezb39nfTviYGCTIa1ATo3hfdwqm5ZBMa4VQLAE6+Wok8q38+qrk6/XcNFu/bivXl3rlK/l7IS8q/MXDYYrhaBoJPpimUTqIc5EMZgImA5hlk3QskMf5/g/3u/8ASvZw5BwWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Aditivo - Troca de Locatario Integração">880281de3b7bde104a3b3537f4e45a7a</action_type>
+        <action_type_parent display_value="Integra+ Aditivo - Troca de Locatario Integração">6891059e3b7bde104a3b3537f4e45a7d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:30</sys_created_on>
+        <sys_id>c4d172de3b7712504a3b3537f4e45a86</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:30</sys_updated_on>
+        <ui_id>3e034e5b-528c-468e-82c3-b7a9241ac8e0</ui_id>
+        <values>H4sIAAAAAAAA/+1TTW/UMBD9Lzmvo2TjJE5vSKgSElCJQi9VFY3tSdfC66SJs+2y2v/OeJPdigWkAkLiwHGe5+O9N57bXWR0dBEplSxFqjGTpdSYJhwymeVZ2XDkOZQ6WkQO1kiZvv2MjsIN2DHEu50qc1U0ImeZKjXjIBSTpU5YLvMq5w2XooH4UFaDGx6x3++pXpuhs7C9+cM2amWs7onRxe3dIuqgJ5Ye++hid/bktx3WFiRamnbte+Puqfyl4o+FR/VnZoTmFA7Htm2vA4d0EeGTR6eRxjRgB1xEa3AafNtvT0iPoK+cfQZWxnnqFoXkp8F8odYiSZKQ2SAJUji9nsJ6NnOC1ao1Cq86b1o3IR6knWtUa8e1ez/RD2vABkbrj2sgZByoH3aBdaAxc2quV+3jh+PAS+MOAudH2yqwpwg82SBHj0PYwmg+npkzIW/PV4EW1zSxXkPXEVJ3fbsxhylEeh3fWwrixraPxG4w9y4GFRTG5CbEl4S/PsA30Jsg9x21oeIw7pMzDyO+CavGUvC8KCpWNpVgnMuUiWVTsaQAUUAGaYEY7Q/W1g9jEDWZNNtRT45SwqB60/lXRGGDs/L94kXHJJbP/6eDrW1Bf3NOFeeZBgVMpCUwnmQpA60Ey3RZaKyEhDyN58IfX9Ivd/j7R3QQfSx8Vv2dDT85pOX/Q/rHDikHmaTIFSsUJoxL2TBQmrM0L5YVfTA6NPnbh3T3FVughUyXBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Payload - Aditivo Locatario">cc00c5da3b7bde104a3b3537f4e45a3d</action_type>
+        <action_type_parent display_value="Integra+ - Payload - Aditivo Locatario">165ffc5a3b7bde104a3b3537f4e45a35</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:30</sys_created_on>
+        <sys_id>ccd172de3b7712504a3b3537f4e45a85</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:38</sys_updated_on>
+        <ui_id>9443daca-817a-4031-adc8-3d76de98ba51</ui_id>
+        <values>H4sIAAAAAAAA/+2YS2/bOBDHv8pCZ1PQgxTF3LotChTYbRfNbi5FIQxfDgFZUvVImw3y3XdoyXGSjew29sEH38wh5/XX/EzLX+4Cp4OLIKdRpJiGVHKpTRxR/JSylFtqKAMGwSKoYGXwpBra1lQ9Gm6gHLzl7u5t60DXv5lVEYfT/v09ntCua0q4vdp7UF27UuMquPjydRE00GKu3rTBxd2zrf62MUUJ0pQY77JvXbVE959tYeO47eF/TfkEaOg2oetW+zriRWB+9KbSBlNZKDuzCFZQaejr9vbB0hrQn6pya7h2GPQiCPzhH537F0PnURT5k9ZgRmXG3YdlMUk2mtV17ZT51PSurkZLD7KcfFRdDqvq49iAF9tYGMp+IzZahg7jmcZX7cuYarKX1/X3z5uE7121bnDaLGsF5cMKepRBDr3p/JMY3N/PxBktfzx/HKY0K8xYrKBp0FI0bX3j1lmw6FW4LHER2rL+jtV1blmFoHyHIaoJ4Xu0v1ubrwCnBdv9E8Ogs0/3T+W+DeaDf9yQKw6QcgIRk4TymBFhaUKiWERcK8h0ooP7tbTFt8E3NYo0yVGMiuKBTrWu6d9gCTdm6vx+scEijWyWCD9TPE7Ys5kC+WiC6lUD1a2qtXmChs7iWOUiIQZERKhklAhuE5JluU4Mz1UmeTg5F977ZXBeF+YoWO2X4AGrMf/bUYMXhZnBKznjdWp4pRlNshwIszwmNIs0ybURhIKKhAKJkyAOxovKnbNlH09R1bfYRzWs5LrYXyRsLXxRDuoAvJ7GOAZbP9H/lq1RgI8bAeaEmSEsPRN2YoRpKxExnhDLWUaokpoIk0pilZQWMptG+I15MGF814TJdDtIshlHqBtkWy+h6l9xj219/R3klnUhmwOAmw13FPb2K7Nx/P2vkbrLx9Lskm2GQXpm8MQY5DRlMtKCWMMsoTGNcAxTRvI0iW2WCW6MOpzBnb+gJJ8dJl0/QTChQgrAizhVGpmhqSF5ohVhMrepSAVjJgs/G4XTFg5bYooOmgJHyCxb8Aq9DOQxgx8Fz/2izeC5Vm2HoDNwsjOcJwanyvA+TE1MYgEKf4IyQaTCi4JqoXIuBA7IES5Iu3POHv3xgSA6DTgepnvNO55vHdVAWJxydaHrArTDiuoDLsjdMY+C4X55No5Xkz7vJn1mZJvBLzvjd2L4WZ7EuX/5M4rj3cgyICLGpZYxS/CFkHOavRq/r/8BQoM68HkUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:30</sys_created_on>
+        <sys_id>ccd172de3b7712504a3b3537f4e45a86</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:30</sys_updated_on>
+        <ui_id>fd960309-c511-4e5e-8eee-ead17ac1a12b</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy2obMRT9lWFWLdhmHrbreFccAl0kgTRkkwRxR7p2RDWjqaRx4hp/TRf9gH5CfqxXY9lx2zQ1IVAKmZ3u6Nx7ztFBulzGUsTjuI8iSQ/SIc/TPM+SJBv102KYF2kmckBM405cQYm00yDXRtB6DqrxheVyYiQIHWHJ0h5vjMHKrVa0Q0hbK1hchI1U4TdSCfofjy+vO3ENhno6NPF4+csvt6iRKShQEfBQ86akptGHQ+qxL98N+gxn0jqjH5Hgp9BahP5M+iL98ozSpBPjncNKIA2cgrLYiUuoBDhtFvHYmYYKBkGcVmqx3XEjK7fWWsKdlV+ofz/x+6ZI4njwYbtkwaONPVpyPK2d1NW64qBQG++0asrqZC3Bu4tTaJTbcbex1A9rT9mTWDOcfrzRt2ebeUeyatUFtkpzUNsVOGdk0Ti0/kBQYWtKCXUtqxmrjZ7LFkxUyt5M0aI3VfqWZlo5q3rAPe8eGQS9I6oftuULoHSQiGNqQ+BVK559bvzctYxAmLWaW8GsPSjaarmRtXtPjecYaK46IbLF4KkI8IOH897p+RDbOwbWcstAKW2ZzjhzYD/9ntpzIL4QCYyOwDU+sJXT0ZvTbPL22YE+94SikzWhfcXsgFHBH9SFRP9UC4EevFigR/8o0IHRf5bov+U4yZ68yvDhpNvo2p0ME2svyF41SZKLM7S1tg7G0XKZY5L3cVB0B9mId/vDEXZHGc+7xTs4yPop8BEmPRMAq9VVdYyVhRmWe4PLAPDgyf13IWd6byxnfrtHkqNkzf23+6/7o0WLYfqxN+bVkedeSViSjw6jtZOdvbO5aTCBkqx7JKybKykMYPMwYPvOvti9lA6T9nt9bl/wub3+AS94jEsjCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Get Token SAP">e559fadb3b925a104a3b3537f4e45a79</action_type>
+        <action_type_parent display_value="Integra+ Get Token SAP">bf71725b3b525a104a3b3537f4e45ac3</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:37</sys_created_on>
+        <sys_id>e122c5de3b7bde104a3b3537f4e45a45</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:37</sys_updated_on>
+        <ui_id>c75c6f85-3c7d-4a8c-b7d0-5b5954f4b8fa</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT IN00d172de3b7712504a3b3537f4e45a81,0cd172de3b7712504a3b3537f4e45a7c,0cd172de3b7712504a3b3537f4e45a84,84d172de3b7712504a3b3537f4e45a80"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c8d172de3b7712504a3b3537f4e45a80</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>1b538eb9-8a7b-4939-99f6-0913352f0ca1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>00d172de3b7712504a3b3537f4e45a81</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:37</sys_updated_on>
+        <ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</ui_id>
+        <values>H4sIAAAAAAAA/+1VS27bMBC9SqC1bVB/O7ugRYAUbQMkQTZtIIzIkc2WJlWSSuIaPk0XPUCPkIt1KMlJ0E9aFFl2Z775vTeaB28j0/m28+7CHDknlzo6fHc1iaQOGP3eRo0yN6/NUvIT7TxojucbdyKiw4gxEZeJwLQuyzjJWQZpneZp2WSY5TCPo0mkYY2UyY0W0kujqx6YRNeguhA472prliDMwavOSiG5oaCQrlWwuXwqh6+kEhZHti1Y6uvRRofbH0J+02KloEYVWnkr9ZLKZeDfMGjiBY95mhRpwlgyz+K6SOs4ESkgpJS3Lzy7++Y7ZQ4EHPRa7r7efTFP6AtTCXf7ecaKQC5mkwhvPWqBRKAB5XASrUEL8MZu7hGLIE61egBWUntqF4XkWyc/U+8kz0Nig6SU4xC8f1bjCgeYr4zkeNoGggPioVZjDTeqW+u3g46wfGygU36/fEI6R/2wDaQDi5FSc74yN2f7gcdS9wLHoDIc1P0LPK2h7jy68HlQ4ZoaVWtoW1pO1VpzLfti4rKeLRU9ZuHmaGi4xxnwQHxGO4LZMeEve/gSrAwq3lAbKh5o1uAkr/rbpXbekoRdv5bqUxcIDQJHKdWwDUpw3MrWH9GcaxxZ7ybPe/iPbn67FUUc8/kimSIs2DSr82y6KJtkWhRzkWA550VdzrxsDa2gatE5A5Xbu2C3e98xlooPgxngZ8M8/4DncNsC8iaPWf5rt2XFI7e9eMpiv3dX8gd3hXv4S3Mxxv6767G7pKsGl4za+uH/bK6r4IZhghsORyCXjohcBOxk/+cTAhs6gGDBB+jG2I9BwgO2+w5rd0n5xgYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40d172de3b7712504a3b3537f4e45a7c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>0cd172de3b7712504a3b3537f4e45a7c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:37</sys_updated_on>
+        <ui_id>e3128363-a747-46a5-a4a2-3f90e2089f54</ui_id>
+        <values>H4sIAAAAAAAA/+1VS27bMBC9iqG1begvO7ugRYAAbQMkQTZtIIzIkU2UIlWSSuIaPk0XPUCPkIt1KMlO0E8aFOmuO/HNcOa94TxoG+jOtZ2zl/rYWrFSwdH762kglMfoexvUUt++0SvBTpV1oBhebOwpD46CkPGoiDkmVVFEcRamkFRJlhR1imkGBQumgYIGKZNpxYUTWpU9MA1uQHY+YLvK6BVwPWm1tZ2YMOBgndGUw4VtJWyunpHK1kJygyP3Fgx1cWiCo+0PIbdpsZRQoaSKF84ItaLrwqupQ6ijJYtYEudJHIbxIo2qPKmimCeAkFDe/uL5/TfXST3hMOmV3X+9/6KfUOu7egX7ftpwTy4KpwHeOVQciUAN0uI0aEBxcNpsDohB4GdKPgBroRyVC3zynRWfqXacZT6xRlLKcAgejuU4yQFmay0YnrWe4IA4qOR4h2nZNerdoMO/AdbQSbd/A0I6S/Ww9aQ9i5FSfbHWt+f7hidC9QLHoNQM5OEEjsZQdQ6tfx6U2FChsoG2peGUrdE3or9MXJr5StJh7jeQmvrtnAPzxOc0I5ifEP66h6/ACK/iLZWhywPNCqxgZb/JVM4ZkrDrx1J+6jyhQeAopRymQQmWGdG6Y+pzgyPr3fRlbfDIAdstz6OILZbxDGEZztIqS2fLoo5neb7gMRYLllfF/LD9JZOC6GI5uKDcu2C3+9CFYcKtaH72zr9p8hKuW0JWZ1GY/dp1af7Ida+estrvXRb/wWV+L55psjAM/7vsscuELQe3jNr65n9tsmvviqGDHRaHIxOWiFx67HT/S/KBDS2At+IDdKvNRy/hAdt9B9QZj8bcBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4d172de3b7712504a3b3537f4e45a84</block>
+        <comment/>
+        <connected_to>c21a825c-4f09-43de-b7fe-bfb06b373b1f</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Senão">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>1b538eb9-8a7b-4939-99f6-0913352f0ca1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>0cd172de3b7712504a3b3537f4e45a84</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:38</sys_updated_on>
+        <ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</ui_id>
+        <values>H4sIAAAAAAAA/+1VS27bMBC9isG1behny84uaBEgQNsASZBNGwgjcmQTpUmVpJK4hk/TRQ/QI+RiGUryBy2SFkXQVXfmm997o3nwhpnG14131+bUObnQ7OTj7ZBJHTD6vWGVMvfvzELyc+08aI5Xa3cu2AmLuIjzRGBa5nmcTKIM0jKdpHmVYTaBWcaGTMMKKZMbLaSXRhctMGR3oJoQuGpKaxYgzKCSTnJDISFdrWB983wGX0olLPZMa7DU06NlJ5ufQn5dY6GgRBUaeSv1gspl4F5FUMVzHvM0maZJFCWzLC6naRknIgWEhPJ2hZePP3yjzEDAoNXx+P3xm3lBW5hKuNvNM1YEcnE0ZPjgUQskAhUoh0O2Ai3AG7veIxZBXGh1AJZSe2rHQvKDk1+pdzKZhMQKSSnHLrh/Fv0CO5gvjeR4UQeCHeKhVH0NN6pZ6Q+djrB6rKBRfrd6QhpH/bAOpAOLnlJ1tTT3l7uBZ1K3AvugMhzU/gWe1lA2Hl34PKhwRY2KFdQ1LaeorbmTbTFxWY0Xih7jcG80NNziGHggPqYdwfiM8LctfANWBhXvqQ0VdzRLoPMo2ruldt6ShG27luJLEwh1AnspRbcNSnDcytqf0pw77Flvh6979Ef3vtmIaRzz2TwZIcyjUVZOstE8r5LRdDoTCeYzPi3zsZe1oRUUNTpnoHA7D2y3n5ooSkVrBfjVLK/d/h84LT5y2puX7PW8s5LfOCvcwh8aK4qi/846dpZ0ReeQXls7/K+NdRuc0E1w3eEI5HRsRl8H7Hz3pxMCazqAYL8DdG/s5yDhgG2fABnu0/G+BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40d172de3b7712504a3b3537f4e45a80</block>
+        <comment/>
+        <connected_to>e3128363-a747-46a5-a4a2-3f90e2089f54</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Outro">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:29</sys_created_on>
+        <sys_id>84d172de3b7712504a3b3537f4e45a80</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:37</sys_updated_on>
+        <ui_id>1b538eb9-8a7b-4939-99f6-0913352f0ca1</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT IN6d22c5de3b7bde104a3b3537f4e45a36,a922c5de3b7bde104a3b3537f4e45a33,c41f7c1a3b7bde104a3b3537f4e45abe,cc1fbc1a3b7bde104a3b3537f4e45a7b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:37</sys_created_on>
+        <sys_id>6d22c5de3b7bde104a3b3537f4e45a36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:37</sys_created_on>
+        <sys_id>a922c5de3b7bde104a3b3537f4e45a33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Registro</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:56:08</sys_created_on>
+        <sys_id>c41f7c1a3b7bde104a3b3537f4e45abe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 14:56:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Nome da tabela</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 14:56:08</sys_created_on>
+        <sys_id>cc1fbc1a3b7bde104a3b3537f4e45a7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 14:56:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3b7efc963b7bde104a3b3537f4e45a8e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>integra_aditivo__integrao_locatrio</internal_name>
+        <label_cache>[{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.descri_o","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Descrição","reference_display":"Descrição","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fd2337cd-ddab-4c84-9429-3a201c0bcb48"}},{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.c_digo","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Código","reference_display":"Código","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"80009b85-d5ba-404d-9fc0-36fa82dc6d08"}},{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.mensagem","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Mensagem","reference_display":"Mensagem","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"92cc6ca3-c3c9-46cf-aee2-6f03dbd91ed4"}},{"name":"3e034e5b-528c-468e-82c3-b7a9241ac8e0.resposta","label":"15 - Integra+ Aditivo - Troca de Locatario Integração➛Resposta","reference_display":"Resposta","type":"string","base_type":"string","usedInstances":{"fd960309-c511-4e5e-8eee-ead17ac1a12b":["comments"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9dfe4aa4-958a-4cfc-9e9e-851a0e122c52"}},{"name":"9443daca-817a-4031-adc8-3d76de98ba51.payload","label":"14 - Integra+ - Payload - Aditivo Locatario➛Payload","reference_display":"Payload","type":"string","base_type":"string","usedInstances":{"3e034e5b-528c-468e-82c3-b7a9241ac8e0":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"5c13d3c3-aee2-43ad-90ca-d369b95b17b5"}},{"name":"249b9a0d-3cd0-443e-82dc-5b8f393955e6.Record.u_codigo_bp_sap_integration","label":"13 - Pesquisar registro➛Tarefa de Faturamento (O2C) Record➛Código BP SAP (u_codigo_bp_sap_integration)","reference":"","reference_display":"Código BP SAP (u_codigo_bp_sap_integration)","type":"string","base_type":"string","parent_table_name":"x_asscs_allos_o2c_task","column_name":"u_codigo_bp_sap_integration","usedInstances":{"9443daca-817a-4031-adc8-3d76de98ba51":["bpnumbersubrogado"]}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.cpf_do_locatario_subrogado","label":"1 - Obter variáveis de catálogo➛cpf_do_locatario_subrogado","reference":"","reference_display":"cpf_do_locatario_subrogado","type":"string","base_type":"string","usedInstances":{"249b9a0d-3cd0-443e-82dc-5b8f393955e6":["conditions"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.descri_o","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Descrição","reference_display":"Descrição","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fd2337cd-ddab-4c84-9429-3a201c0bcb48"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.c_digo","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Código","reference_display":"Código","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"80009b85-d5ba-404d-9fc0-36fa82dc6d08"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.mensagem","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Mensagem","reference_display":"Mensagem","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"92cc6ca3-c3c9-46cf-aee2-6f03dbd91ed4"}},{"name":"a625fee6-1de4-4a73-98c7-661703bee57c.resposta","label":"10 - Integra+ Aditivo - Troca de Locatario Integração➛Resposta","reference_display":"Resposta","type":"string","base_type":"string","usedInstances":{"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["comments"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9dfe4aa4-958a-4cfc-9e9e-851a0e122c52"}},{"name":"ea61208b-4ed5-448f-98af-b0421f82be7a.payload","label":"9 - Integra+ - Payload - Aditivo Locatario➛Payload","reference_display":"Payload","type":"string","base_type":"string","usedInstances":{"a625fee6-1de4-4a73-98c7-661703bee57c":["payload"],"3e034e5b-528c-468e-82c3-b7a9241ac8e0":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"5c13d3c3-aee2-43ad-90ca-d369b95b17b5"}},{"name":"6576d22f-8b6a-41dd-a82f-58215fac0519.Record.u_codigo_bp_sap_integration","label":"8 - Pesquisar registro➛Tarefa de Faturamento (O2C) Record➛Código BP SAP (u_codigo_bp_sap_integration)","reference":"","reference_display":"Código BP SAP (u_codigo_bp_sap_integration)","type":"string","base_type":"string","parent_table_name":"x_asscs_allos_o2c_task","column_name":"u_codigo_bp_sap_integration","usedInstances":{"ea61208b-4ed5-448f-98af-b0421f82be7a":["bpnumbersubrogado"],"9443daca-817a-4031-adc8-3d76de98ba51":["bpnumbersubrogado"]}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.cnpj_do_locatario_subrogado","label":"1 - Obter variáveis de catálogo➛cnpj_do_locatario_subrogado","reference":"","reference_display":"cnpj_do_locatario_subrogado","type":"string","base_type":"string","usedInstances":{"6576d22f-8b6a-41dd-a82f-58215fac0519":["conditions"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.tipo_de_pessoa_subrogado","label":"1 - Obter variáveis de catálogo➛tipo_de_pessoa_subrogado","reference":"","reference_display":"tipo_de_pessoa_subrogado","type":"choice","base_type":"choice","choices":[{"label":"-- Nenhum --","value":"","order":100.0},{"label":"Física","value":"fisica","order":100.0},{"label":"Jurídica","value":"juridica","order":100.0}],"usedInstances":{"c21a825c-4f09-43de-b7fe-bfb06b373b1f":["condition"],"b11bdd34-858c-4a47-96ee-457b82401ad9":["condition"]},"attributes":{"catalogType":"5","catalogTypeLabel":"Selecionar Caixa"}},{"name":"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d.payload","label":"4 - Integra+ - Payload - Aditivo Locatario➛Payload","reference_display":"Payload","type":"string","base_type":"string","usedInstances":{"65225a36-80e1-4607-81d1-43f678d34265":["payload"],"a625fee6-1de4-4a73-98c7-661703bee57c":["payload"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"5c13d3c3-aee2-43ad-90ca-d369b95b17b5"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.data_de_inicio_do_aditivo","label":"1 - Obter variáveis de catálogo➛data_de_inicio_do_aditivo","reference":"","reference_display":"data_de_inicio_do_aditivo","type":"glide_date","base_type":"glide_date","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["validadedesde"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["validadedesde"],"9443daca-817a-4031-adc8-3d76de98ba51":["validadedesde"]},"attributes":{"catalogType":"9","catalogTypeLabel":"Data"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.subrogado_codigo_sap","label":"1 - Obter variáveis de catálogo➛subrogado_codigo_sap","reference":"","reference_display":"subrogado_codigo_sap","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["bpnumbersubrogado"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.local_luc","label":"1 - Obter variáveis de catálogo➛local_luc","reference":"ast_contract","reference_display":"Contrato","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["contractnumber"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["contractnumber"],"9443daca-817a-4031-adc8-3d76de98ba51":["contractnumber"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.company_code","label":"1 - Obter variáveis de catálogo➛company_code","reference":"core_company","reference_display":"Empresa","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["companycode"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["companycode"],"9443daca-817a-4031-adc8-3d76de98ba51":["companycode"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.subrogado_cliente_possui_cadastro","label":"1 - Obter variáveis de catálogo➛subrogado_cliente_possui_cadastro","reference":"","reference_display":"subrogado_cliente_possui_cadastro","type":"choice","base_type":"choice","choices":[{"label":"-- Nenhum --","value":"","order":100.0},{"label":"Sim","value":"sim","order":100.0},{"label":"Não","value":"nao","order":100.0}],"usedInstances":{},"attributes":{"catalogType":"5","catalogTypeLabel":"Selecionar Caixa"}},{"name":"d611c892-ea90-4b54-97f2-668d2e78c6b7.subrogante_codigo_bp","label":"1 - Obter variáveis de catálogo➛subrogante_codigo_bp","reference":"","reference_display":"subrogante_codigo_bp","type":"string","base_type":"string","usedInstances":{"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["bpnumbersubrogante"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["bpnumbersubrogante"],"9443daca-817a-4031-adc8-3d76de98ba51":["bpnumbersubrogante"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Texto de Linha Única"}},{"name":"Criado em_1.current","label":"Gatilho - Record Criado em➛Tarefa de Faturamento (O2C) Record","reference":"x_asscs_allos_o2c_task","reference_display":"Tarefa de Faturamento (O2C)","type":"reference","base_type":"reference","usedInstances":{"d611c892-ea90-4b54-97f2-668d2e78c6b7":["requested_item"],"d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d":["current"],"6576d22f-8b6a-41dd-a82f-58215fac0519":["conditions"],"ea61208b-4ed5-448f-98af-b0421f82be7a":["current"],"69a11da0-b2a0-4dca-ba59-9f9645de2c3b":["record"],"9443daca-817a-4031-adc8-3d76de98ba51":["current"],"fd960309-c511-4e5e-8eee-ead17ac1a12b":["record"],"249b9a0d-3cd0-443e-82dc-5b8f393955e6":["conditions"]},"attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Tarefa de Faturamento (O2C) Record","reference":"x_asscs_allos_o2c_task","reference_display":"Tarefa de Faturamento (O2C)","type":"reference","base_type":"reference","usedInstances":{"a856e2ba-221b-4aa6-a5bb-f7d8788af2ed":["current"]},"attributes":{}},{"name":"c75c6f85-3c7d-4a8c-b7d0-5b5954f4b8fa.token_answer","label":"2 - Integra+ Get Token SAP➛token_answer","reference_display":"token_answer","type":"string","base_type":"string","usedInstances":{"65225a36-80e1-4607-81d1-43f678d34265":["token"],"a625fee6-1de4-4a73-98c7-661703bee57c":["token"],"3e034e5b-528c-468e-82c3-b7a9241ac8e0":["token"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5ca8928f-8a84-471f-8ce5-5dd0aaebd3aa"}}]</label_cache>
+        <master>true</master>
+        <name>Integra+ Aditivo - Integração Locatário</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Integra+ Aditivo - Integração Locatário">3b7efc963b7bde104a3b3537f4e45a8e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce2209de3b7bde104a3b3537f4e45a20</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ce2209de3b7bde104a3b3537f4e45a20</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>pb</language>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>a7d176de3b7712504a3b3537f4e45a23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <tablename>sys_hub_flow_snapshot</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ce2209de3b7bde104a3b3537f4e45a20^sys_idNOT IN4e2209de3b7bde104a3b3537f4e45a21"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ce2209de3b7bde104a3b3537f4e45a20</id>
+        <name>Integra+ Aditivo - Integração Locatário</name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:39</sys_created_on>
+        <sys_id>4e2209de3b7bde104a3b3537f4e45a21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4e2209de3b7bde104a3b3537f4e45a21"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ce2209de3b7bde104a3b3537f4e45a20^sys_idNOT IN022209de3b7bde104a3b3537f4e45a23,8e2209de3b7bde104a3b3537f4e45a3c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Registro</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</model>
+        <model_id>ce2209de3b7bde104a3b3537f4e45a20</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:39</sys_created_on>
+        <sys_id>022209de3b7bde104a3b3537f4e45a23</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=022209de3b7bde104a3b3537f4e45a23"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Nome da tabela</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</model>
+        <model_id>ce2209de3b7bde104a3b3537f4e45a20</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:39</sys_created_on>
+        <sys_id>8e2209de3b7bde104a3b3537f4e45a3c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8e2209de3b7bde104a3b3537f4e45a3c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ce2209de3b7bde104a3b3537f4e45a20^sys_idNOT IN862209de3b7bde104a3b3537f4e45a4b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <name>Criado em</name>
+        <remote_sys_id/>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:40</sys_created_on>
+        <sys_id>862209de3b7bde104a3b3537f4e45a4b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <trigger_definition display_value="Criado em">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYy27cNhT9FUGrBvBCj3lY3gVjBw2QxoDttAs3Fa7EyzERDjkRKdnTwB9TdNEv6Bf4x0pKmpdGM56Xm9gbQyRFnnt07rmXc/vN5ZAgd8/cG/sf3BOXCY2ZAH4zGaMZ15BwjAWM0MyNQBDQMpu4ZzrL8cSVGcHMPfNP3AJ4jtcT9Z6Yl8zS8o36dbeeNs8PMSiVqhg4lyqWQRprUF/MAsLUmMPk13rdDWRIwSHovAOdZ2YzoaXz02UweGMWp3eMkwyFe3b7+cQdg53XFsi3xhSzaFKaQhSgl4Z+GASeF5x2/KQXJn5AQkDPMxuusNCAr1vImMeODxoFQXMWBa6whacMgVwKPpmtuDM0V0SN4EGxP83up55dR9GAT7Gamz3GNT3VcHonWYqXY82kqEYqnNWk5PlIfKzwW2INjznXU2LNSK7Mfji2kC2IGhG9vpP3V9MD3zFRRldPcpkCnz2B1hlLco3KMk4ZN9zHFTdK5lmJ/upicHl1Hv/29mbw88VVfHVxfXP1fnBzce4+lnHFX3O7Y4WwxhJX4TzO1PCOIbdfUOSjxKA5cVWasbF+m2pWYA3n8WQu4oEUhD398/S3XBVyaucsY2pZyHVM06/peWu1PNthQc8p6JhpHP2ee15IelHQOUW/HyYAUS/yOhAmYTfs0w52upDSP1JJ2FDGyTimDIjMqteidX87S73XAyAIa6Se0AWpL3HVEqFuoW2RpE2ir0e2UX3H876T7qvM3Fv2I0mQn8+3c83kcGgSgYlxri1b9yC0irWMgZB4gUe71GB6Lg+q2FaT4fk0yHJhtohnX2g1F0oiZ4x+YMoEcGtSecpWuaWZpx/qLS8eMM01ZI6S1orREeDo0iwd488mArP2/QiGNdX0GjmmekEd9JNafPqFKcXEcAH87OySnLajBaj6TFUeypSDDiobJCOgDoTweU9XWCW7aJDYKG07J7XvU5ogDby+TWnfCxPqe32vC5SEnpcGC0m9CmYtSt2Qwovk9m6ZrUoR8u0l12S6jsFbTIYd5FMsK3DKiJVG7SaDo+L0j4ozsDgbFhnu5JEzwVbD58u63SLOI3cWQAowb5BtHdMu2MIaKZf3xqX3sMUE0i/DTOaCtBoU5fmDdHDkKByaNdIx9AnTtY6BZKbOvjmiSVKZ4TZIxhkbIctqKN/RIuekT9ULYnIEcwypn0TYQc94YmjsMOlGUZJCQGm/18fAb5jjHEYrttdjiltorWhT7UaLXC+bok13uxrkgZjb7XI/zIebZS3fVqus5l6HG97foYgN1Czm1u9WTHHIGcHp3N7pv3JKMU/4Qy2AnkZp1+/307658BgLMLetBPxO0IWo3wtPuw0LWIGyCaZuIeF/uQWpiSqBrLGHTyp/+itj8of7NeAlVapQa1uO9ijcUt+1FkqrLWNHSj39i8optwUDA2zPJYwnLQ4dsXxXu1YBb7plzeEtQXGMd+ZzBRwLlTA3hL2QNZj6jm1GQyfF8vc/+CaGndNuRMN2p6FRm9PMwayH+Xrajh3zpcH/xuZjN80XrZm0sVPYUrrF2mxY7B226XeOQtYOsexHVvCiZIUHN1rT3N18Kd2R61dU9cp2ZP/SV/WiayqfBfg1x+wlqokUGEu6sYgodCA1mgB7F0Au1QyHcqC8JbDsqPXN0t9E9dGqA2fQXh7SwfWtoYjjXqiR9KHbDdd001HzQt0G6Bm8r6zateXIMuVblbUthVU0s6etDOwl2aItC/YqaVszsrl2HchI8KKMHF63Nv1A8DyfP2iB+vwft+MHfjMgAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ce2209de3b7bde104a3b3537f4e45a20^sys_idNOT IN53d136de3b7712504a3b3537f4e45aef,53d136de3b7712504a3b3537f4e45af0,5bd136de3b7712504a3b3537f4e45aed,5bd136de3b7712504a3b3537f4e45aee,5bd136de3b7712504a3b3537f4e45aef,5bd136de3b7712504a3b3537f4e45af0,c22209de3b7bde104a3b3537f4e45a49,ca2209de3b7bde104a3b3537f4e45a48,ce2209de3b7bde104a3b3537f4e45a4a,d3d136de3b7712504a3b3537f4e45aec,dbd136de3b7712504a3b3537f4e45aec,dfd136de3b7712504a3b3537f4e45aea"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>53d136de3b7712504a3b3537f4e45aef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <ui_id>249b9a0d-3cd0-443e-82dc-5b8f393955e6</ui_id>
+        <values>H4sIAAAAAAAA/+VY3W7bNhR+FUFXG2B7ki1Ldu+GFAYGdAmQpr3pGuKIpBKitKiSlNMkyMMMuxj2AHuCvNgORck2bCe1MQdo0SuDP+fwO+d85yPlD/ehYOGrkE2jaTGdjidZFI1GUZSmIwpxno9Smkc5JGEvLGHOcaeFXHIcLkDWbvyFgDHUEJBSGaKGlFgwn3ADE6aScPu+3XcBmhcQMB7MwNYanZVWBT+dDU9+xs30WkimeRm++vCxF1bg1i3X4av7jaV90UrIuWyOxV/Yhm9vq+WQNGt+7s3KTvLg1C8ozRyWqBfyL5aXjCOIAqThvXAOJQOr9O1yRnNgZ6VcTVyL0qLH0G3+YsQdnjuJ3L6CY1iU+7XlkLSJ89PFa7Dw1uqaYtLarfRaCcqNTwjDrNbSnqzP+Q1nlRWq9CY+bG+tZD0vT306wqWDrk44UxsEwSsXqEPehlG8vVY35x3KmSibnLSLUlGQyxFYq0VeW4fnPuSSu2KTOVSVKK9IpdVCNMaIZT64kjgYFFLd4KFGXJUDoA74APMKgxnOv26m34MWLorf0Q0aIyAhkSLEl9CoWjepXBAqa9MsaCiN9xU+9EJza04kcnUVOaacfK4dbp+HNmLik+ZMqBaV/RVdLHgb3EOv65jxsxycrihHVcmEQ2HW2oaCJcLy+R81mrM44ZMhxOiMUjqcRjHnozRJk4iiw3GcXS7a4M2Aj6PRNIF4kk1olG5uTcE7vL9naRzTyXTY5zCN+kk+TvrTrBj203TChhyN0zwb0KogTBFXPYsnKGLqXKsrYOrh4VLzzzU3HuYAWxJT0zk/QTRMBXxO4gGttVtCA2PBcr9ldHl2vjZMt/Xgx0vAgRr3dX51GnfiCPb49+O/3DzBulbttuberHvoFlq1i4+mdkkUfU96h4d/e3J3uID5FHxFxWL2LMvYik9GaUt8LtdkbLuvDyb6HhA6op8hM0vQQaX0U8BapheCS7brXp+5hY17ffhj3uvfJM8RECO+eqKUomweaQj0pRpg/Cz78niDZw29VvRv5sDQ7TaAAOzjP8Hdwe2wB6Dl21ZUyj2om6SIQlDAS+AvtRtydwU0FNqU/26ybYjR0RpiNDxOQ9wvg15L7I4qdC91V9/O4s5bwKYF0nLNJH7Y1XQHnhsffu7wYbuxRwd19joJ/crrJ7l45Kf9E73ae0lxuEbT9jziO5vcCHbF7er0bhdT9gbkp13rLfdIV6wmvBf4TIif/VTN1z4TREHmWDtR4deM5hTpgR/VmpNC1SUj7XfMikqukoXQ+Dz1m7cl6Jxju7rr0ihXCx6ooNJizoVWgeZXwlitDr+tvx5Pl9K3PFg8/omParM8zgSF0nwebArVnrEfomHJEZ+vx9awGchrCBgE3EK1rg9c6+Zps0vG9iznM/zYU+n2RRe/CLr/r4e7OmOnLu6J+bv4O+T4ykU55MkQ0mwUx1EURyyLJlkWT9K8SCFLilX3EmJKimKLngsQEt2TjipdvaNteXKnHa4/e6DqKHmKEhMUDZlRchyivSC3IpMrJTmUGypzgRfIL7PmrlgydvzNKc138bdgLS42M+2ndub6pR4UtXhXis81/82Ra8Kj4SRmtD/J4qyfFCztTxmM+zDNx9mIcZoUx3wjfPwPuWoL8H4XAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Aditivo - Troca de Locatario Integração">880281de3b7bde104a3b3537f4e45a7a</action_type>
+        <action_type_parent display_value="Integra+ Aditivo - Troca de Locatario Integração">6891059e3b7bde104a3b3537f4e45a7d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>880281de3b7bde104a3b3537f4e45a7a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>53d136de3b7712504a3b3537f4e45af0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>3e034e5b-528c-468e-82c3-b7a9241ac8e0</ui_id>
+        <values>H4sIAAAAAAAA/+1TwU7cMBD9F5/XUbJxEodbBUKq1BaptFwQWo3tMWvV64TEAbar/ffam+wuhR5A5VT1OM8z4/ee/a43xChyQqRM5zxTmItKKMxSBrnIi7zSDFkBlSIz4mCFodM3P9CF8h7sEOvNRlaFLDUvaC4rRRlwSUWlUlqIoi6YZoJrSHZjC3D9A3bbbZhXpm8trK/+co1cGqu6wOjk+mZGWugCS48dOdk8O3qtTAsC7ROdz2T7dRvL3nfG3U71p2nkcg82nYoUshnBR49OYbhbg+1xRlbgFPimWx+QDkFdOHsElsb5sI3E5sfe/Az38TRNY6fGoEfieHooF5OXI6zPwEOgMkg/dFOrXDZGYj86oVDDYP3pU2xsuGi9adw44kHY/XRjh5X7MhpBDgv2TxeQoQ8ksI1SI/dJiL5cNg9f9yzPjdu5Mh3aRoI9VOCDd2Lwkc+GDObbM5tH5IXRaHEVblysoG0Dsmi75t7sbgmkV8mtDUWibfMQ2PXm1iUgo8IkPAEk5wE/28FX0Jko93NYE4bjdd+duRvwY/w0WHFWlGVNK11zypjIKJ/rmqYl8BJyyEpEsp2Rft2fWuj7o1HhhRZ3Q5Q52jYZtBg9jiOyM63/EEjd4+TFdvaqSPL58W+2sLYNqN9CWTOWK5BAeVYBZWmeUVCS01xVpcKaCyiyZBr8cx7fvOE9o7iTt4/iUd8LwW+J4/x/HP+FOBYg0gyZpKXElDIhNAWpGM2Kcl6HTxniKt4xjje/ALAXpjIjBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Aditivo - Troca de Locatario Integração">880281de3b7bde104a3b3537f4e45a7a</action_type>
+        <action_type_parent display_value="Integra+ Aditivo - Troca de Locatario Integração">6891059e3b7bde104a3b3537f4e45a7d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>880281de3b7bde104a3b3537f4e45a7a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>5bd136de3b7712504a3b3537f4e45aed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <ui_id>a625fee6-1de4-4a73-98c7-661703bee57c</ui_id>
+        <values>H4sIAAAAAAAA/+1TQW7bMBD8C8+mIMmURPtWJAhQoG2Aps0lCIwluYyJ0pQiUXFcw38vacl2mvSQoDkVPe5wdzkz5NxsiVFkTqRMc54pnIpKKMxSBlMxLaaVZsgKqBSZEAcrDJ2+/oEulA9g+1hvt7IqZKl5QaeyUpQBl1RUKqWFKGYF00xwDcl+bAGuW2O724V5ZbrGwub6L9fIpbGqDYzmN7cT0kAbWHpsyXz77Oi1Mi0ItE90PpPtN00sO98adzfWn8aRqwNYtypSyCYEHz06heFuDbbDCVmBU+DrdnNEWgR16ewJWBrnwzYSmx878zPcx9M0jZ0agx6Jw+mxXIxeDrA+Bw+BSi99346tclkbid3ghEINvfVnT7Gh4bLxpnbDiAdhD9O17Vfuy2AEOS44PF1A+i6QwCZKjdxHIfpqWa+/HlheGLd3ZTy0tQR7rMAH70TvI58t6c23ZzYPyAuj0eIq3LhYQdMEZNG09YPZ3xJIr5I7G4pE23od2HXmziUgo8IkPAEkFwE/38PX0Joo93NYE4bjdd+due/xY/w0WHFWlOWMVnrGKWMiozzXM5qWwEuYQlYikt2EdJvuzELXnYwKL7S476PMwbbRoMXgcRyRrWn8h0DqAUcvdpNXRZLnp7/ZwMbWoH4LJUKZ5SkXlKEqAmmu6YyDpiJleaZ5LrCCZBz8cx7fvOE9o7iXd4jiSd8LwW+JY/4/jv9CHAsQaYZM0lJiSpkQmoJUjGZFmc8EFCGu4h3jePsL02GwmSMHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>5bd136de3b7712504a3b3537f4e45aee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <ui_id>69a11da0-b2a0-4dca-ba59-9f9645de2c3b</ui_id>
+        <values>H4sIAAAAAAAA/+1V207bQBD9FctPrZRYdpwL5K1KhFSJiwSIF0DWZHcSVl173d01kEb5mj7wAf0Efqyz9uYioDRIvKA2L9HOzFmfczwzvlyEgofDsIs8TvaTPkuTNO3EcWevm0z66STp8BQQk7AVFpAjVWpkSnM634KsXGCxGGkBXAWYZ0nEKq2xsMslVXBhSgnzC19IEXYjJKd8OLy8boUlaLrTog6HiyepXUlJmKCk0lOcCWO1eoGnnZfuzBWrcmKWiVXw0GPHPhN8HVOGQI5QErdCvLdYcCQqU5AGW2EOBQer9DwcWl1RQCPwk0LO1xU3orCN1BzujfhBT+7Grm6KpI15G9bHzFvUhKdjsHBGNzNb6bVjSjA0jSscp1BJO9qONQUnpRWqaCAWJnKFVrLKi+PGkXB9wdYbqQyRwNLpdMwbWdOzG3V3uiJ5IIraEi9RKgZyfQJrtZhU1tFZhCix9jiHshTFLCu1uhU1mKjk0UzSIZpKdUfPNGJWRMAc74hcheiA4uM6fAHUUSTiiK4h8LIVmrkZSTBmI4U8zL5XjkkjzEvIahdqC7K6ExyYaVHaL/SoW/TEly3f+JPeaz3G9jcNtXXnpvnvMyLFTAZSKpOpDsssmG/Pe/8ciC8EHIMDoJcLziUVfDrpjD6/eSx2oLwai3P3D3/Q4AfjWexwA5YYHDcJPxa9dxuLvY80Fl7Gh5+Lv01D3Hl14+Kmk+oBMFuTQDqcRHNVxXHKT9GUylgYBosF9Du9KWK/nXDstrswSNv7e2zQ7veTQZxOEHsDFmkPWC6viiMsDMww3xmce4ADjx5/cTFTO2NZ5sodkjwmax4fHn/ujuY1JlMvfe/+O/LGxbZD960W2whyMueFdlwtNczpVVjMmvZ8sth8MrjwyfU3/922W9KP698H2nH/zKf/+jdUVrUy9QoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Payload - Aditivo Locatario">cc00c5da3b7bde104a3b3537f4e45a3d</action_type>
+        <action_type_parent display_value="Integra+ - Payload - Aditivo Locatario">165ffc5a3b7bde104a3b3537f4e45a35</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cc00c5da3b7bde104a3b3537f4e45a3d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>5bd136de3b7712504a3b3537f4e45aef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>9443daca-817a-4031-adc8-3d76de98ba51</ui_id>
+        <values>H4sIAAAAAAAA/+2YyW7bSBCGX2XAs1rg0s1m+5bYCBAgyyCe8SUIiOpNboAiGS5ONILffYoitdixpNCOL4Ju7uqlqn7+n5vU16XntHfhJdT3FdMQSS61CXyKf0Us4pYayoCBN/FymBtcqdqqMnmDgTvI2i6yXF5WDnTxl5mnwXSYv7/HFdrVZQaLm6ML1a3LNI68i6/fJl4JFeZqTOVdLB9N/W6xGUiTPaj2l/KbRdkF6qZy+WwYfxi2Xa+DRaW7MoKJZ342JtcG81vIajPx5pBraIpqsYlUBvTnPNsGbh1muvC8bvHP2v2H+RLf97uV1mAZyvSzm2E6KNaH7RU0gKW0qmmrYam6LZwyda+GNhbarLncjfULPpeNK/J+SwMyW+8usnaef+ql8DYHrB8QRtoaizBl12pX+9CIvb4tfnxZV/nO5StVhsmsUJBtRtCgdrJtunqWXuv+eSRzH/lFaJOZOWZM51CWGEnLqrhzqyxY9Hw6y3AwtVnxA6ur3Syfguo6nOIjgOk7jF+twjeADsN2P+IxuLlL92/uvrfmfWccSBQHiDgBn0lCecCIsDQkfiB8rhXEOtTe/cSrF/VlBnW9FQqfUPq97drsZRsESnuNuy2qcmXzBou6M4MW95M1XJFv41B0fuVByB75FeSOO4t5CflCFdo8AEzHQaASERIDwidUMkoEtyGJ40SHhicqlnw6bE673U/j97xjRsJ5vNkNnH2my77bJyUYA2l4hvQkII1iGsYJEGZ5QGjsa5JoIwgF5QsFEj0lXgFSKg/61u46NG8q7Cxv53JV/khOV48izVr1AkgfnjGO0N/odEto3+qndav7JBjDaXTm9BQ41VYiqDwklrOYUCU1ESaSxCopLcQ28vE/+Ctwyg+5V0Zbk8qyt2fdyqqYQd48407d7u3uQzcrUlm+ANu9x40k+LgGa4Lf/t2ze70rwiGBxpBMzySfAsmcRkz6WhBrmCU0oD5aN2IkicLAxrHgxqjXIPngm6Lke42qiwcgh1RIAfiaECmN5NHIkCTUijCZ2EhEgjETT78Yhaadtlvu0hrKFJ1oZhV0mj2N9Z88fCTkx+XZA/lKnwPSjUGcnRE/BcRVjHdzZAISCFD4Us0EkQqvKKqFSrgQaLVXuaztQQ/v/KyEODsN6DJTP+fbtxMD9UHknHJFqosUtMOKihdc1ofPHAnzcSHWMN8MSlwNSuwRaAzE8RniU4DY8jBIuo9iozje0ywGIgIcahmwED+UOafxH4T42/9A9m8YHRYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>5bd136de3b7712504a3b3537f4e45af0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>fd960309-c511-4e5e-8eee-ead17ac1a12b</ui_id>
+        <values>H4sIAAAAAAAA/+1VS27bMBC9iqBVC9iGPnbqeFfYCFAgHyAJskkCYUSOHaKUqJJUEtfwabroAXqEXKxDif4gSVMHyCZovTE4M49672lmdLkIBQ9HYR95FO/HeyyN0zSJomTYj/O9NI8TngJiHHbCEgqkSo1MaU7nW5C1CywWYy2AqwCLLO6xWmss7XJJFVyYSsL8whdShN0IySkfji6vO2EFmu60qMPR4lFqV1IScpRUeoozYaxWz/C088qduWJ1QcwysQoeeuzEZ4IvE8oQyBGKo06I9xZLjkRlCtJgJyyg5GCVnocjq2sKaAR+Usr5uuJGlLaVWsC9Ed/pyf3I1U2RtDFvw/qYeYva8HQCFs7oZmZrvXZMCYamdYXjFGppx9uxtuCkskKVLcRCLldoJeuiPG4dCdcXbL2R2hAJrJxOx7yVNT27UXenK5IHomws8RKlYiDXJ7BWi7y2js4iRImNxwVUlShnWaXVrWjARKXozSQdelOp7uiZRszKHjDHu0euQu+A4pMmfAHUUSTiiK4h8LITmrkZSzBmI4U8zL7VjkkrzEvIGhcaC7KmExyYaVHZz/SoW/TElx3f+PngpR5j+5uG2rpz0/z3GZFiJgMplclUwjIL5uvT3j8H4gsBx+AA6OWCc0kFH06S8cdXj8UOlFdjce7+4Q8a/GA8iR1uwBKD4zbhx2LwZmMxfE9j4WW8+7n42zREyYsbFzed1AyA2ZoE0uEkmqs6ilJ+iqZSxsIoWCxSjNI+DvLuIBmybn9viN1hwtJu/gn2k34MbIhRT3vAcnlVHmFpYIbFzuDCAxx4/PCLi5naGcsyV+6Q5DFZ8/Dz4cfuaN5gMvXc9+6/I69cbDt032qxjaEgc55px9VSw4JehcWsbc9Hi80ngwufXH/z32y7xXtR83tHO+6f+fRf/wZmKYDj9QoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Get Token SAP">e559fadb3b925a104a3b3537f4e45a79</action_type>
+        <action_type_parent display_value="Integra+ Get Token SAP">bf71725b3b525a104a3b3537f4e45ac3</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>e559fadb3b925a104a3b3537f4e45a79</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:40</sys_created_on>
+        <sys_id>c22209de3b7bde104a3b3537f4e45a49</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:40</sys_updated_on>
+        <ui_id>c75c6f85-3c7d-4a8c-b7d0-5b5954f4b8fa</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Obter variáveis de catálogo">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Obter variáveis de catálogo">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:40</sys_created_on>
+        <sys_id>ca2209de3b7bde104a3b3537f4e45a48</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>d611c892-ea90-4b54-97f2-668d2e78c6b7</ui_id>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ Aditivo - Troca de Locatario Integração">880281de3b7bde104a3b3537f4e45a7a</action_type>
+        <action_type_parent display_value="Integra+ Aditivo - Troca de Locatario Integração">6891059e3b7bde104a3b3537f4e45a7d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>880281de3b7bde104a3b3537f4e45a7a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>e3128363-a747-46a5-a4a2-3f90e2089f54</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:40</sys_created_on>
+        <sys_id>ce2209de3b7bde104a3b3537f4e45a4a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>65225a36-80e1-4607-81d1-43f678d34265</ui_id>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8F55NQZL1oH0rEgQo0DZA0+YSBMaSXMZEaUmRqDiu4X/v0pLtNOkhQXMqetzh7nJmyLnZMqvZnCkVpyLROJWl1JjEGUzlNJ+WJsMsh1KzCatghdTp6x9YUfkArg/1dqvKXBVG5HyqSs0zEIrLUsc8l/ksz0wmhYFoP7aAqltju9vRvLZd42Bz/Zdr1NI63RKj+c3thDXQEkuPLZtvnx29VqYDie6Jzmey/aYJZedbW92N9adx5OoA1q0OFJIJw0ePlUa624DrcMJWUGnwdbs5Ii2CvqzcCVjaytM2FpofO/uT7hNxHIdOg6RH4XB6LBejlwNszsEDUemV79uxVS1rq7AbnNBooHf+7Ck2NFw23tbVMOJBusN07fpV9WUwgh0XHJ6OkL4jEtgEqYH7KMRcLev11wPLC1vtXRkPXa3AHSvw5J3sfeCzZb399szmAXlhNDpc0Y2LFTQNIYumrR/s/hYivYruHBWRcfWa2HX2ropABYURPQFEF4Sf7+FraG2Q+5nW0HC47ntl73v8GD4NliLLi2LGSzMTPMtkwkVqZjwuQBQwhaRAZLsJ6zbdmYOuOxlFL7S474PMwbbRoMXgcRhRrW38ByL1gKMXu8mrIinS099sYONq0L+FUs+UVkmKHIXJiDQoLlRSclGkIjY6kRSyaBz8cx7fvOE9o7iXd4jiSd8LwW+JY/o/jv9CHHOQcYKZ4oXCmGdSGg5KZzzJi3QmIae4yneM4+0vPh0sbiMHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>d3d136de3b7712504a3b3537f4e45aec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <ui_id>6576d22f-8b6a-41dd-a82f-58215fac0519</ui_id>
+        <values>H4sIAAAAAAAA/+VY247bNhD9FUFPLWC7ki1Ldt6KDRYokGaB3W1e0oQYkZTNhhYVktor9mOKPhT9gH7B/liHomQbtndjo14gQZ4MXmZ4ZubMIeX396Fg4auQTaNpMZ2OJ1kUjUZRlKYjCnGej1KaRzkkYS8sYcFxp4Vcchxegazd+IaAMdQQkFIZooaUWDCfcAMTppJw+67ddwmaFxAwHpyCrTU6K60KfjgbnvyIm+lcSKZ5Gb56/6EXVuDWLdfhq/uNpX3RSsi5bI7FX9iGb2+r5ZA0a37uzcpO8uCtX1CaOSxRL+Q3lpeMI4gCpOG9cAElA6v07XJGc2BnpVxNzEVp0WPoNt8YcYfnTiK3r+AYFuV+bTkkbeL8dPEaLFxYXVNMWruVzpWg3PiEMMxqLe3J+pzfcFZZoUpv4sP21krWi/KtT0e4dNDVCWdqgyB45QJ1yNswiou5uj7vUJ6KsslJuygVBbkcgbVa5LV1eO5DLrkrNllAVYlyRiqtrkRjjFgWg5nEwaCQ6hoPNWJWDoA64APMKwxOcf51M/0OtHBR/Ipu0BgBCYkUIb6ERtW6SeUVobI2zYKG0nhf4UMvNLfmRCJXV5Fjysnn2uH2eWgjJj5pzoRqUdmf0cUVb4N76HUdM36Wg9MV5agqmXAozFrbULBEWL74vUZzFid8MoQYnVFKh9Mo5nyUJmkSUXQ4jrOPV23wZsDH0WiaQDzJJjRKN7em4B3e37M0julkOuxzmEb9JB8n/WlWDPtpOmFDjsZpng1oWf1BmCKufBaPUMTUuVYzYOrh4aPmn2tuPM4B9iTmpvN+gnCYCviCxANaa7eEBsaC5X7L6OPZ+dow3RaE7zADB6rclxnWqdyJo9jj34//cvME71q925p7s+6hW2j1Lj6a3iVR9C0pHh7+9Qne4RLmU/AFHYvZsyxjKz4ZpS3xuVwTsu3GPpjoe0DoiH6GzCxBB5XSTwFrmV4ILtmum/3ULWzc7MPv82b/KnmOgBjx1ROlFGXzTEOgL9UA42fZl8cbPGvotaJ/MweGbrcBBGAf/wnuDm6HPQAtX7eiUu5J3SRFFIICXgJ/qd2QuyugodCm/HeTbUOMjtYQo+FxGuJ+GfRaYndUoXuru/p2FnfeAjYtkJZrJvHDrqY78Nz48HOHD9uNPTqos9dJ6FdeP8nFIz/un+jV3kuKwxxN2/OI72xyLdiM29Xp3S6m7DXIT7vWW+6RrlhNeC/woRA/+7Gar30oiIIssHaiwu8ZzSnSAz+rNSeFqktG2i+ZFZVcJQuh8XnqN29L0DnHdnXXpVGuFjxQQaXFggutAs1nwlitDr+tvxxPl9ILHlw9/omParM8zgSF0nwRbArVnrEfomHJEZ+vx9awU5BzCBgE3EK1rg9c6+Zps0vG9iznM/zYU+n2RRe/CLr/r4e7OmOnLu6J+Zv4Q+T4ykU55MkQ0mwUx1EURyyLJlkWT9K8SCFLilX3EmJKimKLngsQEt2TjipdvaNteXKnHa4/e6DqKPkWJSYoGjKj5DhEe0FuRSZXSnIoN1TmEi+Qn06bu2LJ2PFXpzTfxB+DtbjczLSf2pnrl3pQ1OK3Unyu+S+OXBMeDScxo/1JFmf9pGBpf8pg3IdpPs5GjNOkOOYb4cN/j7ne24AXAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Payload - Aditivo Locatario">cc00c5da3b7bde104a3b3537f4e45a3d</action_type>
+        <action_type_parent display_value="Integra+ - Payload - Aditivo Locatario">165ffc5a3b7bde104a3b3537f4e45a35</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cc00c5da3b7bde104a3b3537f4e45a3d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>dbd136de3b7712504a3b3537f4e45aec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <ui_id>ea61208b-4ed5-448f-98af-b0421f82be7a</ui_id>
+        <values>H4sIAAAAAAAA/+2Y2W7bOBSGX2Wga9PQQopi7toEBQp0GTQzuSkK4XBzCMiSqiWtx8i7z5ElL0lju0qaG8N34eF2zs//Cyl/XXpOexdeQn1fMQ2R5FKbwKf4V8QibqmhDBh4Ey+HucGRqq0qkzcYuIOs7SLL5WXlQBd/mXkaTIf++3scoV1dZrC4OTpQ3bpMY8u7+Ppt4pVQ4V6NqbyL5aOu3002A2myB9n+kn6zKLtA3VQunw3tD8O063WwqHSXRjDxzM/G5Nrg/hay2ky8OeQamqJabCKVAf05z7aBW4c7XXheN/hn7f7D/RLf97uR1mAayvS9m2Y6KNaH7RU0gKm0qmmrYai6LZwyda+GNhbarLncjfUDPpeNK/J+SgMyW88usnaef+ql8DYLrA8II22NSZiyK7XLfSjEXt8WP76ss3zn8pUqQ2dWKMg2LWhQO9k2XT5Lr3X/PJK5j/witMnMHHdM51CWGEnLqrhzq10w6fl0lmFjarPiB2ZXu1k+BdVVOMUjgOk7jF+twjeADsNyP+IyOLnb7t/cfW/N+844kCgOEHECPpOE8oARYWlI/ED4XCuIdai9+4lXL+rLDOp6KxSeUPq97crsZRsESnuNuymqcmXzBpO6M4MW95M1XJFv41B0fuVByB75FeSOO4t5CflCFdo8AEzHQaASERIDwidUMkoEtyGJ40SHhicqlnw6TE672U/j97xlRsJ5vNgNnP1Ol321T0owBtLwDOlJQBrFNIwTIMzygNDY1yTRRhAKyhcKJHpKvAKkVB70rd11aN5UWFnezuUq/ZGcro4izVr1AkgfrjGO0N+odEtoX+qndan7JBjDaXTm9BQ41VYiqDwklrOYUCU1ESaSxCopLcQ28vE/+Ctwyg+5V0Zbk8qyt2fdyqqYQd48407dzu3uQzcrUlm+ANu9y40k+LgGa4Lf/t2ze70rwiGBxpBMzySfAsmcRkz6WhBrmCU0oD5aN2IkicLAxrHgxqjXIPngS1HyvUbVxQOQY8bx4R5aksgYMH2tCSTYZEkYMIuvBhaI6Rej0LTTdstdWkOZohPNrIJOs6ex/pOLj4T8uDx7IF/pc0C6MYizM+KngLiK8W6OTEACAQof1UwQqfCKolqohAuBVnuVy9oe9PDOz0qIs9OALjP1c759OzFQH0TOKVekukhBO8yoeMFlfXjNkTAfF2IN882gxNWgxB6BxkAcnyE+BYgtD4Ok+yg2iuM9zfBCEgE2tQxYiB/KnNP4D0L87X/DfHYyHRYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integra+ - Payload - Aditivo Locatario">cc00c5da3b7bde104a3b3537f4e45a3d</action_type>
+        <action_type_parent display_value="Integra+ - Payload - Aditivo Locatario">165ffc5a3b7bde104a3b3537f4e45a35</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cc00c5da3b7bde104a3b3537f4e45a3d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>e3128363-a747-46a5-a4a2-3f90e2089f54</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>dfd136de3b7712504a3b3537f4e45aea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <ui_id>d9cdc12e-e8f4-44ac-8c17-86280fd1bc7d</ui_id>
+        <values>H4sIAAAAAAAA/+2YyW7bSBCGX2XAs1rg0mSTvs3YCBAgG+IZX4KAqN7kBkg2w8WJIvjdpyiSkmxHUmjHF0E3dfVSVT//Ty3qy8ox0rlwYuq6IpQQcMal8lyKn4IwYJoqGkIIzswpIFe4UrRVpYoGA3eQtV1ktbqsDEj7l8pTbz7M39/jCmnqMoPlzdGF4tZkEkfOxZevM6eECnM1qnIuVo+mfrfYDLjKHlT7pPxmWXaBuqlMsRjG74Zt12PQVrIrw5s56kejCqkwv4asVjMnh0JCY6vlJlIpkB+LbBu4NZjpwnG6xT9q8xPzxa7rdiu1wjKE6mc3w3RQrA/rK2gAS2lF01bDUnFrjVB1r4ZUGtqsudyN9Qs+lo2xRb+lAZ6Nu23W5sWHXgpnc8D4gDDS1liEKrtWu9qHRvT1rf3+eazyjSnWqgyTmRWQbUbQoHa8bbp6Vk5r/n0kcx95IrTKVI4Z0xzKEiNpWdk7s86CRefzRYaDuc7sd6yuNotiDqLrcI6PAOZvMH61Dt8AOgzbfY/H4OYu3X+F+daqt51xIBYMIGAE3JATyryQJJr6xPUSl0kBkfSlcz9z6mV9mUFdb4XCJ5R+a7s2e9kGgdJe426LqEzZ/I1F3alBi/vZCFfg6shPOr8yzw8f+RX4jjttXkKxFFaqB4DJyPNEnPhEQeISykNKEqZ9EkWx9BWLRcTZfNicdrt/jd/zjpkI5/FmN3D2mS77bn8pwRRI/TOkJwFpEFE/ioGEmnmERq4ksVQJoSDcRABHTyWvACnlB32rdx1aNBV2VrQ5X5c/kdP1o0izVrwA0odnTCP0NzrdEtq3+mFsdZ8EUzgNzpyeAqdScwSV+USzMCJUcEkSFXCiBecaIh24+A3+CpyyQ+7lwdakvOztWbe8sgsommfcqdu93X1oFjbl5Quw3XvcRIKPazAS/M+nnt3rXREOCTSFZHom+RRIZjQIuSsTolWoCfWoi9YNQhIHvqejKGFKidcg+eAvRc72GlXaZ4Ms7QheDX8A5KfHTQT5uAR7QF5rcECeKRiHZ4xPAWMR4f0bKI94CQj84RwmhAt0L5WJiFmSoNVe5ULWBz2889cRImskoMtU/Zz3204M1Cc1hRHGpsgeSIMV2RdwfPjMiTAfF2KE+WZQ4mpQYo9AUyCOzhCfAsSa+V7cvfgqwfAuDiMgiYdDyb3Qx5dhxmj0ByH++j+s6T46ARYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ce2209de3b7bde104a3b3537f4e45a20^sys_idNOT IN93d136de3b7712504a3b3537f4e45af4,97d136de3b7712504a3b3537f4e45af3,9bd136de3b7712504a3b3537f4e45af2,d7d136de3b7712504a3b3537f4e45af1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4d172de3b7712504a3b3537f4e45a84</block>
+        <comment/>
+        <connected_to>c21a825c-4f09-43de-b7fe-bfb06b373b1f</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Senão">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>1b538eb9-8a7b-4939-99f6-0913352f0ca1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>93d136de3b7712504a3b3537f4e45af4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>b11bdd34-858c-4a47-96ee-457b82401ad9</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn2dDLlp1bkCBAgLQB4iCXNhBWJGUTpUmVjySu4a/poR/QT/CPZSnJdtCiaYv62Js5u1zOjHbgNdHeNd7ZO31mrZgrcvrhISJCBQx/r0kt9dO1ngt6pawDRflsZa8YOSUxZUmRMp5VRZGkoziHrMpGWVHnPB/BJCcRUbDk2Em1YsIJrcoWiMgjSB8KM18ZPQemT2phBdVYYsI2Elb3v+6gCyGZ4T3TBgzOdNyQ0/UPJRFY1jHUyZQmNEvHWRrH6SRPqnFWJSnLgEOKAyVUXGLr7fa781KfMDhpGW+/bb/qN1S4VRNw64xQ8/583c+a7UBtWOCWxBHhz44rxpFVDdLyiCxBMXDarPaI4cBulDwAC6EcjiOh+dmKL/hgOhqFxpqjUMq74v5Y9v51cH0BDpCKp86bvpUutKDcdhYxXoOX7vw11jXcNEFqd8VBJXe3tfRL9b5zhOwH7D4XIt4iCd4EpYF6r6OeLfTT7Y7lpVCtK31RagpyfwKH3lXeBT5rwiVf4qByCU2DjpaN0Y+ivYxclsO5xMMw7Cg+GvZ3CDQQH6KxMLxE/KKF78GIoOIdjsHLHc0KcKXKdtdxHNrEySYidmXPJVh7EInulp99oNhJ7sWVnT/hCjWicWf48iPvdWyi40bnVWrWazZOEjqZpgMO03iQV6N8MC3qdDAeT1jKiwkdV8XQiUajKWXDrdVQ2l2SNpuPPo4z1gYKfo7csccfNa/Jq7yevxXSv8xn+pt8huX4w3jGcfw/n/+cT2HLLlW9tvbxI8bzIeSpe3PvNcWV1eouYFe7P8BQWOFyhRAfoCdtPgVRB2zzAhcU8P5KBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c8d172de3b7712504a3b3537f4e45a80</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>1b538eb9-8a7b-4939-99f6-0913352f0ca1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>97d136de3b7712504a3b3537f4e45af3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>c21a825c-4f09-43de-b7fe-bfb06b373b1f</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn2aDedm5BggAp0gaIg1zaQFiRlM2WFlWRTOIa/poe+gH9BP9Yl5JsB22RNmiOvZmzy92ZEQdeE+1s46y50SfGyHlNjt/fBUTWHsPfa1Ip/XCp55Jd1MZCzcRsZS44OSaU8jCPuIjLPA+jlCYQl3Ea51UikhQmIQlIDUuBnUzXXFqp66IDAnIPyvnCzJWtngPXR29cK7lkGotcmkbB6va5HraQirdiYNtAi3OtaMnx+qeS9EwrClU4ZSGLoyyOKI0mSVhmcRlGPAYBMQ5UUAqFrdfb79YpfcThqGO9/bb9qp9RYleNx41tZT0fzpfDrNkO1C333EIaEPFoRc0FsqpAGRGQJdQcrG5Xe6QVwK9qdQAWsrY4jvjmRyO/4MIoTX1jJVAoE31xfywGB3u4OgMLSMUx69qhlS20ZML0FnFRgVP29CnWN1w1Xmp/xUKpdre1csv6Xe8I2Q/YfTBEnEESovFKPfVBRzVb6IfrHctzWXeuDEWlGaj9CSx6Vzrr+ayJUGKJg4olNA06WjStvpfdZeSyHM8VHsb+neJS/4bHwDzxMRoL43PEzzr4FlrpVbzFMXi5p1mCkazo3juOQ5sE2QTErMypAmMOItHd4rPzFHvJg7ii98dfYa1s7AluvheDjk3wuvF5kpz1mmdhyCbTaCRgSkdJmSajaV5Foyyb8EjkE5aV+djKRqMpRSOM0VCYXZY2mw+O0ph/7CMFv8bu9Re8LLNTSKs0pOnvM5tkTzJ7+lxQX5jR6A8Z9Q/kLyNKKf2f0X/OqDRFn6xBW7f8FSN65zPV79x7zaRBajceu9j9EfrCCh+XD/IBetDtJy/qgG1+ANIAwgpSBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40d172de3b7712504a3b3537f4e45a80</block>
+        <comment/>
+        <connected_to>e3128363-a747-46a5-a4a2-3f90e2089f54</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Outro">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>9bd136de3b7712504a3b3537f4e45af2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>1b538eb9-8a7b-4939-99f6-0913352f0ca1</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40d172de3b7712504a3b3537f4e45a7c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Integra+ Aditivo - Integração Locatário">ce2209de3b7bde104a3b3537f4e45a20</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:43</sys_created_on>
+        <sys_id>d7d136de3b7712504a3b3537f4e45af1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:43</sys_updated_on>
+        <ui_id>e3128363-a747-46a5-a4a2-3f90e2089f54</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNn29Bbdm5BggAB0gZIglzaQFiRlE2UIlWSSuIa/poe+gH9BP9Yl5JsB22RJmh6682cXe7OjDjwmujWNa2zN/rYWrFQ5OjD3ZgI5TH8vSaV1A8XeiHoubIOFOXXK3vOyBEJKAvziPG4zPMwSoME4jJO47xKeJJCTsmYKKg5dlKtmHBCq6IDxuQeZOsLti2NXgDTo0Zb24oRBQbWGY09TNhGwur2Ba10KSQzfODegMEtjhtytP6pJDzvKoAqnNOQxlEWR0EQzZKwzOIyjFgMHGIcKKHkEluvtt9dK/WIwajTsP22/aqf0eVWTcfVGaEWw/limHW9A7VhnlsYjAl/dFwxjqwqkJaPSQ2KgdNmtUcMB3ap5AFYCuVwHPHNj1Z8wYVRmvrGiqNQyvvi/lgMRvZwdQoOkEpLXWuGVrrUgnLbW8R4Ba10J0+xvuGy8VL7Kw5KubutZVur970jZD9g990QaS2S4I1X6qkPOqrrpX642rE8E6pzZShKTUHuT+DQu7J1ns+acMlrHFTU0DToaNEYfS+6y8ilni4kHqb+1eJS/6KnQD3xKRoL0zPETzv4FozwKt7hGLzc0yzBClp0rx/HoU2cbMbEruyJBGsPItHd4nPrKfaSB3FF74+/Qo1o3DFuvueDjs34bcP0JEfrNcvCkM7m0YTDPJgkZZpM5nkVTbJsxiKez2hW5tN9hgoqBdLlRZ+lYpelzeZjGwQxs6L+NYH/ZsnrsjuHtErDIP19dpPsSXZPngvsK7Ma/SGr/qG8MKpBEPzP6l9nVdiiT9igrVv+hlG989nqd+69psIitRuPne/+Hn1hhY/LB/oAPWjzyYs6YJsfLvVg6WgHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20^sys_idNOT IN5bd136de3b7712504a3b3537f4e45ae1,822209de3b7bde104a3b3537f4e45a41,9bd136de3b7712504a3b3537f4e45ada,c62209de3b7bde104a3b3537f4e45a3a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Nome da tabela</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>5bd136de3b7712504a3b3537f4e45ae1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:39</sys_created_on>
+        <sys_id>822209de3b7bde104a3b3537f4e45a41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Registro</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 23:17:42</sys_created_on>
+        <sys_id>9bd136de3b7712504a3b3537f4e45ada</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 23:17:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:39</sys_created_on>
+        <sys_id>c62209de3b7bde104a3b3537f4e45a3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ce2209de3b7bde104a3b3537f4e45a20"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3b7efc963b7bde104a3b3537f4e45a8e</sys_id>
+        <latest_snapshot>ce2209de3b7bde104a3b3537f4e45a20</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3b7efc963b7bde104a3b3537f4e45a8e^sys_idNOT INae2209de3b7bde104a3b3537f4e45ade"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>3b7efc963b7bde104a3b3537f4e45a8e</plan_id>
+        <snapshot>ce2209de3b7bde104a3b3537f4e45a20</snapshot>
+        <sys_created_by>patrick.almeida</sys_created_by>
+        <sys_created_on>2025-02-20 15:09:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae2209de3b7bde104a3b3537f4e45ade</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>patrick.almeida</sys_updated_by>
+        <sys_updated_on>2025-02-20 15:09:41</sys_updated_on>
+        <trigger display_value="">2e2209de3b7bde104a3b3537f4e45adc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3b7efc963b7bde104a3b3537f4e45a8e"/>
+</record_update>

@@ -110,9 +110,9 @@ function integrateSAPmarca() {
 function criarMarcarServiceNow(current, brandCode) {
     var grMarca = new GlideRecord('x_asscs_allos_marca');
     grMarca.initialize();
-    grMarca.u_network_name = (current.variables.nome_da_marca && current.variables.nome_da_marca.getDisplayValue()) || (current.variables.nome_marca && current.variables.nome_marca.getDisplayValue()) || "";
-    grMarca.u_bahia_nature_project = (current.variables.natureza_projeto_bahia && current.variables.natureza_projeto_bahia.getDisplayValue()) || (current.variables.new_natureza_projeto_bahia && current.variables.new_natureza_projeto_bahia.getDisplayValue()) || "";
-    grMarca.u_macrosegment = (current.variables.macrosegmento && current.variables.macrosegmento.getDisplayValue()) || (current.variables.new_macrosegmento && current.variables.new_macrosegmento.getDisplayValue()) || "";
+    grMarca.u_network_name = (current.variables.nome_da_marca && current.variables.nome_da_marca.getValue()) || (current.variables.nome_marca && current.variables.nome_marca.getDisplayValue()) || "";
+    grMarca.u_bahia_nature_project = (current.variables.natureza_projeto_bahia && current.variables.natureza_projeto_bahia.getValue()) || (current.variables.new_natureza_projeto_bahia && current.variables.new_natureza_projeto_bahia.getValue()) || "";
+    grMarca.u_macrosegment = (current.variables.macrosegmento && current.variables.macrosegmento.getValue()) || (current.variables.new_macrosegmento && current.variables.new_macrosegmento.getValue()) || "";
     grMarca.codigo_da_marca = brandCode;
     grMarca.insert();
 }]]></script>
@@ -126,7 +126,7 @@ function criarMarcarServiceNow(current, brandCode) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f712b91987e91e10f538edf80cbb35a8</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Criar Marca no SAP</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
@@ -134,7 +134,7 @@ function criarMarcarServiceNow(current, brandCode) {
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_ui_action_f712b91987e91e10f538edf80cbb35a8</sys_update_name>
         <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2024-12-02 18:01:01</sys_updated_on>
+        <sys_updated_on>2025-02-21 17:49:04</sys_updated_on>
         <table>x_asscs_allos_o2c_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

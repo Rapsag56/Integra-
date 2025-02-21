@@ -31,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>002639c03ba29e104a3b3537f4e45a10</sys_id>
-        <sys_mod_count>207</sys_mod_count>
+        <sys_mod_count>216</sys_mod_count>
         <sys_name>Integra+ - Luc - Alterar - Action</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integra+" source="x_asscs_integra">65ebd91987291e10f538edf80cbb350e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_002639c03ba29e104a3b3537f4e45a10</sys_update_name>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:11</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:21</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -92,10 +92,10 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 15:51:55</sys_created_on>
         <sys_id>542639c03ba29e104a3b3537f4e45a72</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:34:14</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD5c2639c004a29e1043c70e54388dab5e":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD5c2639c004a29e1043c70e54388dab5e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Status da ação\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"94479697-3ffe-4dbd-851f-c8ba92386564\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD5c2639c004a29e1043c70e54388dab5e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}}</value>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:53:35</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD5c2639c004a29e1043c70e54388dab5e":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD5c2639c004a29e1043c70e54388dab5e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Status da ação\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"94479697-3ffe-4dbd-851f-c8ba92386564\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD5c2639c004a29e1043c70e54388dab5e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Status da ação">5c2639c03ba29e104a3b3537f4e45a64</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -167,10 +167,10 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 15:51:55</sys_created_on>
         <sys_id>482639c03ba29e104a3b3537f4e45a39</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:08</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:11</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=482639c03ba29e104a3b3537f4e45a39"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -209,9 +209,9 @@
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 15:51:55</sys_created_on>
         <sys_id>982639c03ba29e104a3b3537f4e45a5a</sys_id>
-        <sys_mod_count>46</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:08</sys_updated_on>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:11</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
  &#13;
 var currentRecord = inputs.current_record;&#13;
@@ -237,6 +237,17 @@ function getMeasurements(currentRecordFields) {&#13;
                 //     //antes data_de_inicio_de_criacao_da_luc&#13;
                 // ),&#13;
                // "MeasValidTo": "2040-12-31"&#13;
+            },&#13;
+            {&#13;
+                "MeasType": "ZD05", //Área Bruta Locável&#13;
+                "MeasValue": inputs.areaTotalLuc.replace(/\./g, "").replace(",", ".") || 'não há', // Valor do tamanho do AC&#13;
+                "MeasValidFrom": inputs.dataInicio&#13;
+                // "MeasValidFrom": getMeasValidFrom(&#13;
+                //     currentRecordFields.variables.inicio_vigencia,&#13;
+                //     currentRecordFields.variables.change_start_date //depois&#13;
+                //     //antes data_de_inicio_de_criacao_da_luc&#13;
+                // ),&#13;
+               // "MeasValidTo": "2040-12-31"&#13;
             });&#13;
            // gs.info('Linha Payload Measurements: ' + JSON.stringify(payload.Measurements, null, 2));&#13;
             //payload.Counters.push({&#13;
@@ -244,10 +255,10 @@ function getMeasurements(currentRecordFields) {&#13;
             //});&#13;
         }&#13;
 &#13;
-       /* if (currentRecordFields.variables.do_you_have_crd_novo.getValue() == 'yes' || currentRecordFields.variables.do_you_have_crd_novo.getValue() == 'Yes') {&#13;
+        if (currentRecordFields.variables.do_you_have_crd.getValue() == 'yes' || currentRecordFields.variables.do_you_have_crd.getValue() == 'Yes') {&#13;
             payload.Measurements.push({&#13;
                 "MeasType": "ZD01", //CRD&#13;
-                "MeasValue": currentRecordFields.variables.crd_value_vs_novo.getDisplayValue() || 'não há', // Valor do tamanho do AC&#13;
+                "MeasValue": currentRecordFields.variables.crd_value_vs.getDisplayValue() || 'não há', // Valor do tamanho do AC do_you_have_crd&#13;
                 "MeasValidFrom": getMeasValidFrom(&#13;
                     currentRecordFields.variables.inicio_vigencia,&#13;
                     currentRecordFields.variables.data_de_inicio_de_criacao_da_luc&#13;
@@ -257,7 +268,7 @@ function getMeasurements(currentRecordFields) {&#13;
             //payload.Counters.push({&#13;
               //  "NameCharacteristic": "Não há" // Relacionado ao MeasType "ZD06"&#13;
             //});&#13;
-        }*/&#13;
+        }&#13;
 &#13;
     // Verifica se measurements está habilitado&#13;
    // if (currentRecordFields.variables.measurements.getValue() == 'true') {&#13;
@@ -3048,15 +3059,15 @@ var myObj = {&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>102639c03ba29e104a3b3537f4e45a5f</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:08</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:17</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -3211,14 +3222,14 @@ var myObj = {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 15:51:55</sys_created_on>
         <sys_id>d82639c03ba29e104a3b3537f4e45a68</sys_id>
-        <sys_mod_count>135</sys_mod_count>
+        <sys_mod_count>141</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:08</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4007,17 +4018,17 @@ var myObj = {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Integra+ - Luc - Alterar - Action">002639c03ba29e104a3b3537f4e45a10</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1db8f9483ba29e104a3b3537f4e45ade","name":"plan","plan_signature":null}}</plan>
-        <snapshot>e229145a3b13d6104a3b3537f4e45a50</snapshot>
+        <snapshot>93fa826a87735e90f538edf80cbb35b3</snapshot>
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 16:03:11</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1db8f9483ba29e104a3b3537f4e45ade</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:12</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:24</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -4108,10 +4119,10 @@ var myObj = {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 16:03:10</sys_created_on>
         <sys_id>8db8f9483ba29e104a3b3537f4e45a80</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:34:16</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-20 19:53:38</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Status da ação">8db8f9483ba29e104a3b3537f4e45a74</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4183,10 +4194,10 @@ var myObj = {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 16:03:09</sys_created_on>
         <sys_id>3cb8f9483ba29e104a3b3537f4e45a4a</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:11</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:21</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3cb8f9483ba29e104a3b3537f4e45a4a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4225,9 +4236,9 @@ var myObj = {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 16:03:09</sys_created_on>
         <sys_id>bcb8f9483ba29e104a3b3537f4e45a6a</sys_id>
-        <sys_mod_count>42</sys_mod_count>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:11</sys_updated_on>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:21</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
  &#13;
 var currentRecord = inputs.current_record;&#13;
@@ -4253,6 +4264,17 @@ function getMeasurements(currentRecordFields) {&#13;
                 //     //antes data_de_inicio_de_criacao_da_luc&#13;
                 // ),&#13;
                // "MeasValidTo": "2040-12-31"&#13;
+            },&#13;
+            {&#13;
+                "MeasType": "ZD05", //Área Bruta Locável&#13;
+                "MeasValue": inputs.areaTotalLuc.replace(/\./g, "").replace(",", ".") || 'não há', // Valor do tamanho do AC&#13;
+                "MeasValidFrom": inputs.dataInicio&#13;
+                // "MeasValidFrom": getMeasValidFrom(&#13;
+                //     currentRecordFields.variables.inicio_vigencia,&#13;
+                //     currentRecordFields.variables.change_start_date //depois&#13;
+                //     //antes data_de_inicio_de_criacao_da_luc&#13;
+                // ),&#13;
+               // "MeasValidTo": "2040-12-31"&#13;
             });&#13;
            // gs.info('Linha Payload Measurements: ' + JSON.stringify(payload.Measurements, null, 2));&#13;
             //payload.Counters.push({&#13;
@@ -4260,10 +4282,10 @@ function getMeasurements(currentRecordFields) {&#13;
             //});&#13;
         }&#13;
 &#13;
-       /* if (currentRecordFields.variables.do_you_have_crd_novo.getValue() == 'yes' || currentRecordFields.variables.do_you_have_crd_novo.getValue() == 'Yes') {&#13;
+        if (currentRecordFields.variables.do_you_have_crd.getValue() == 'yes' || currentRecordFields.variables.do_you_have_crd.getValue() == 'Yes') {&#13;
             payload.Measurements.push({&#13;
                 "MeasType": "ZD01", //CRD&#13;
-                "MeasValue": currentRecordFields.variables.crd_value_vs_novo.getDisplayValue() || 'não há', // Valor do tamanho do AC&#13;
+                "MeasValue": currentRecordFields.variables.crd_value_vs.getDisplayValue() || 'não há', // Valor do tamanho do AC do_you_have_crd&#13;
                 "MeasValidFrom": getMeasValidFrom(&#13;
                     currentRecordFields.variables.inicio_vigencia,&#13;
                     currentRecordFields.variables.data_de_inicio_de_criacao_da_luc&#13;
@@ -4273,7 +4295,7 @@ function getMeasurements(currentRecordFields) {&#13;
             //payload.Counters.push({&#13;
               //  "NameCharacteristic": "Não há" // Relacionado ao MeasType "ZD06"&#13;
             //});&#13;
-        }*/&#13;
+        }&#13;
 &#13;
     // Verifica se measurements está habilitado&#13;
    // if (currentRecordFields.variables.measurements.getValue() == 'true') {&#13;
@@ -7117,14 +7139,14 @@ var myObj = {&#13;
         <sys_created_by>patrick.almeida</sys_created_by>
         <sys_created_on>2024-12-13 16:03:10</sys_created_on>
         <sys_id>0db8f9483ba29e104a3b3537f4e45a78</sys_id>
-        <sys_mod_count>91</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Integra+">65ebd91987291e10f538edf80cbb350e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>patrick.almeida</sys_updated_by>
-        <sys_updated_on>2025-01-26 15:39:11</sys_updated_on>
+        <sys_updated_by>renan.gaspar</sys_updated_by>
+        <sys_updated_on>2025-02-21 15:06:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -7999,6 +8021,6 @@ var myObj = {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>002639c03ba29e104a3b3537f4e45a10</sys_id>
         <latest_snapshot>a0b8b9483ba29e104a3b3537f4e45af9</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch4a-12-16-2024_01-07-2025_0947.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
